@@ -29,11 +29,13 @@ pipeline {
                 script {
                     sh """
                         git add docs;
-                        git commit -m 'Automatic commit from CDR Jenkins'
-                        if [[ $? != 1 ]]; then
+                        git diff-index --quiet HEAD
+
+                        if [[ $? != 0 ]]; then
+                            git commit -m 'Automatic commit from CDR Jenkins'
                             git push git@github.com:ConsumerDataStandardsAustralia/engineering HEAD:${GIT_BRANCH};
                         else
-                            echo "Received code of $?"
+                            echo "Received code of \$?"
                         fi
                     """
                 }
