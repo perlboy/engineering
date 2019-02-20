@@ -28,8 +28,8 @@ pipeline {
             steps {
                 script {
                     sh '''
-                        git add docs;
                         touch docs/.nojekyll;
+                        git add docs;
                         git diff-index --quiet HEAD && exit 0;
                         git commit -m 'Automatic commit from CDR Jenkins';
                         git push git@github.com:ConsumerDataStandardsAustralia/engineering HEAD:${GIT_BRANCH};
