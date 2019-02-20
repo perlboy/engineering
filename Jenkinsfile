@@ -1,4 +1,5 @@
 
+// Engineering Documentation build and publish
 pipeline {
     agent any
 
@@ -30,11 +31,4 @@ pipeline {
         }
 
     }
-
-
-
-
-
-node {
-
 }
