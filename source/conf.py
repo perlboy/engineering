@@ -26,7 +26,7 @@ author = 'CSIRO Data61'
 # The short X.Y version
 version = '0.1'
 # The full version, including alpha/beta/rc tags
-release = 'alpha'
+release = '0.1-alpha'
 
 
 # -- General configuration ---------------------------------------------------
@@ -86,7 +86,17 @@ html_theme = 'sphinx_boogergreen_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'logo_only': True,
+    'display_version': False,
+    'style_external_links': True,
+    'prev_next_buttons_location': 'both',
+    'collapse_navigation': False,
+    'sticky_navigation': False
+}
+
+# D61 Logo
+html_logo = '_static/logo.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
