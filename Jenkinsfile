@@ -24,14 +24,15 @@ pipeline {
             }
         }
 
-        stage("Synchronise with git") {
+        stage("Synchronise with git if required") {
             steps {
-                // Now we have extracted on top of the original html directory, let's mass add (and delete in html)
-                sh "git add docs"
-                // Now do an automatic commit
-                sh "git commit -m 'Automatic commit from CDR Jenkins'"
-                // And push
-                sh "if [[ $rc != 1 ]]; then git push git@github.com:ConsumerDataStandardsAustralia/engineering HEAD:${GIT_BRANCH}; fi"
+                script {
+                    sh """
+                        git add docs;
+                        git commit -m 'Automatic commit from CDR Jenkins'
+                        if [[ $? != 1 ]]; then git push git@github.com:ConsumerDataStandardsAustralia/engineering HEAD:${GIT_BRANCH}; fi
+                    """
+                }
             }
         }
 
