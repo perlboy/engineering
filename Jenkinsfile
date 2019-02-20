@@ -27,7 +27,7 @@ pipeline {
         stage("Synchronise with git if required") {
             steps {
                 script {
-                    sh """
+                    sh '''
                         git add docs;
                         git diff-index --quiet HEAD
 
@@ -37,7 +37,7 @@ pipeline {
                         else
                             echo "Received code of \$?"
                         fi
-                    """
+                    '''
                 }
             }
         }
