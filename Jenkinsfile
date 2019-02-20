@@ -3,14 +3,19 @@
 pipeline {
     agent any
     triggers {
-            pollSCM('H/15 * * * *')
+            pollSCM('1,15,30,45 * * * *')
     }
 
     stages {
         stage("Check out and build image from Dockerfile") {
             steps {
-                checkout scm: [$class: 'GitSCM',
-                    extensions: [[$class: 'UserExclusion', excludedUsers: 'csirocdr']]
+                checkout scm: [
+                    $class: 'GitSCM',
+                    extensions: [
+                        // Avoid JENKINS-36195
+                        [$class: 'DisableRemotePoll'],
+                        [$class: 'PathRestriction', excludedRegions: 'docs/.*', includedRegions: '' ]
+                    ]
                 ]
 
                 script {
