@@ -29,7 +29,7 @@ pipeline {
                 // Now do an automatic commit
                 sh "git commit -m 'Automatic commit from CDR Jenkins'"
                 // And push
-                sh "git push"
+                sh "git push HEAD:master"
             }
         }
 
