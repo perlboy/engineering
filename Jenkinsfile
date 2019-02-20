@@ -2,6 +2,9 @@
 // Engineering Documentation build and publish
 pipeline {
     agent any
+    triggers {
+            pollSCM('H/15 * * * *')
+    }
 
     stages {
         stage("Check out and build image from Dockerfile") {
