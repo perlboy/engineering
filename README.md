@@ -1,4 +1,4 @@
-# CDR Engineering
+# CDR Engineering Working Group
 
 https://consumerdatastandards.org.au/
 
@@ -8,11 +8,21 @@ The Consumer Data Right is intended to apply sector by sector across the whole e
 
 This work is being delivered by a newly formed team within Data61 - the Consumer Data Standards team - acting as the interim standards body. The work of the team will be overseen by Mr. Andrew Stevens as interim Chair, with industry and consumer advice provided by an Advisory Committee. Data61 will be working closely with the Australian Competition and Consumer Commission (ACCC) as lead regulator of the Consumer Data Right, supported by the Office of the Australian Information Commissioner (OAIC).
 
+## About the Engineering Working Group
+
 This repository will be used to propose, discuss and develop engineering work items related to the technical delivery of the CDR.
 
-The Engineering Working Group is being led by Stuart Low (Lead Engineer) in consultation with the other CDR Working Groups and the wider community involved in the delivery of the Consumer Data Right.
+There are a number of objectives of this workstream:
 
-For more information, contact cdr-data61@csiro.au. Further updates will be added to this page as the Consumer Data Standards work gets underway.
+1. Functionally demonstrate the Standards in action by delivering examples of Reference Implementations
+2. Deliver a Conformance tool that allows Data Holder’s to perform internal validation of their API and Authentication endpoints
+3. Deliver tools to provide a valuable and enjoyable developer experience, commonly referred to as a Sandbox
+
+We intend to engage with the interested community in the same manner as the other working group. Initially, we will also conduct a number of workshops in order to ensure that the products delivered are useful to participants within the CDR scheme.
+
+Stuart Low will be the Engineering Lead for this Working Group.
+
+If you are interested in receiving further updates we encourage you to signup to the [Engineering Working Group Mailing List](http://eepurl.com/ghaJmn). Further updates will be added to this page as the Consumer Data Standards work gets underway.
 
 ## Rules of engagement
 
