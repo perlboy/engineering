@@ -35,7 +35,7 @@ The following outlines the workshop's in this round.
 | (Melbourne)               | Multipurpose Room                   | * Software Developers    | 09:00 - 12:00  |            |
 |                           | 912 Collins Street, Docklands       | * Vendor Engineers       |                |            |
 +---------------------------+-------------------------------------+--------------------------+----------------+------------+
-| Data Recipient Workshop   | Community Hub @ The Dock            | * Technical Architects   | 6 March 2019   | Planning   |
+| Data Recipient Workshop   | Community Hub @ The Dock            | * Technical Architects   | 7 March 2019   | Planning   |
 | (Melbourne)               | Multipurpose Room                   | * Technical Team Leads   | 13:00 - 16:00  |            |
 |                           | 912 Collins Street, Docklands       | * Software Developers    |                |            |
 +---------------------------+-------------------------------------+--------------------------+----------------+------------+
