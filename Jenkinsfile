@@ -1,14 +1,19 @@
 
 // Engineering Documentation build and publish
 pipeline {
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-            label "engineering:${env.BUILD_ID}"
-        }
-    }
+    agent any
 
     stages {
+        stage("Check out and build image from Dockerfile") {
+            steps {
+                checkout scm
+
+                script {
+                    def engineeringImage = docker.build("engineering:${env.BUILD_ID}")
+                }
+            }
+        }
+
         stage("Replace docs output") {
             steps {
                 sh "docker run engineering:${env.BUILD_ID} tar -c -C /opt/engineering/build html | tar x"
