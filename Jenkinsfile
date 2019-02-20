@@ -6,7 +6,9 @@ pipeline {
     stages {
         stage("Check out and build image from Dockerfile") {
             steps {
-                checkout scm
+                checkout scm: [$class: 'GitSCM',
+                    extensions: [[$class: 'UserExclusion', excludedUsers: 'csirocdr']]
+                ]
 
                 script {
                     def engineeringImage = docker.build("engineering:${env.BUILD_ID}")
@@ -29,7 +31,7 @@ pipeline {
                 // Now do an automatic commit
                 sh "git commit -m 'Automatic commit from CDR Jenkins'"
                 // And push
-                sh "git push HEAD:${GIT_BRANCH} HEAD:${GIT_BRANCH}"
+                sh "git push git@github.com:ConsumerDataStandardsAustralia/engineering HEAD:${GIT_BRANCH}"
             }
         }
 
