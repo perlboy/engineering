@@ -24,6 +24,14 @@ Stuart Low will be the Engineering Lead for this Working Group.
 
 If you are interested in receiving further updates we encourage you to signup to the [Engineering Working Group Mailing List](http://eepurl.com/ghaJmn). Further updates will be added to this page as the Consumer Data Standards work gets underway.
 
+## About this documentation
+
+| This documentation is built using [Sphinx Documentation](http://www.sphinx-doc.org/en/master/).
+
+| Our continuous integration software will publish the currently compiled version of this documentation to the [Engineering Documentation on Github Pages](https://consumerdatastandardsaustralia.github.io/engineering).
+
+| For developers of this documentation the repository includes a Dockerfile for local container builds along with a ``requirements.txt`` for Python dependency use (ie. ``pip install requirements.txt``).
+
 ## Rules of engagement
 
 We're committed to undertaking conversations relating to the technical standards in the open. Questions or comments that participants might ask us via email or private message are likely to be questions or comments other participants have as well. Our answers will be of interest to everyone. There are likely to be experiences and lessons everybody working in this ecosystem can learn from. Having these conversations transparently helps us reduce duplication, resolve issues faster and keep everyone up to date with the conversation.
