@@ -17,7 +17,7 @@ Glossary
       The Consumer Data Right
 
    Standards API
-      The `Consumer Data Standards <https://consumerdatastandardsaustralia.github.io/standards>`_
+      The `Standards API <https://consumerdatastandardsaustralia.github.io/standards>`_
 
    client library
       Software libraries designed for inclusion within a :term:`Data Recipient` implementations
@@ -38,7 +38,7 @@ Glossary
       `CSIRO Data61 <https://www.data61.csiro.au/>`_
 
    Consumer Data Standards Australia
-      The interim standards body, operating within :term:`Data61` developing technical standards to deliver on the :term:`Consumer Data Right`.
+      The interim standards body, operating within :term:`Data61` developing technical standards to deliver on the :term:`Consumer Data Right`. `Official Consumer Data Standards Website <https://consumerdatastandards.org.au/>`_
 
    project team
       See :term:`Consumer Data Standards Australia`
