@@ -26,11 +26,11 @@ If you are interested in receiving further updates we encourage you to signup to
 
 ## About this documentation
 
-| This documentation is built using [Sphinx Documentation](http://www.sphinx-doc.org/en/master/).
+This documentation is built using [Sphinx Documentation](http://www.sphinx-doc.org/en/master/).
 
-| Our continuous integration software will publish the currently compiled version of this documentation to the [Engineering Documentation on Github Pages](https://consumerdatastandardsaustralia.github.io/engineering).
+Our continuous integration software will publish the currently compiled version of this documentation to the [Engineering Documentation on Github Pages](https://consumerdatastandardsaustralia.github.io/engineering).
 
-| For developers of this documentation the repository includes a Dockerfile for local container builds along with a ``requirements.txt`` for Python dependency use (ie. ``pip install requirements.txt``).
+For developers of this documentation the repository includes a Dockerfile for local container builds along with a ``requirements.txt`` for Python dependency use (ie. ``pip install requirements.txt``).
 
 ## Rules of engagement
 
