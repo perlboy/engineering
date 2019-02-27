@@ -125,4 +125,11 @@ Agenda
 | 16:00                     | Stuart Low    | Finish                                                    |
 +---------------------------+---------------+-----------------------------------------------------------+
 
+--------------------
+Related Links
+--------------------
 
+| A list of related links:
+
+- `Workshop Announcement Blog <https://consumerdatastandards.org.au/2019/02/21/upcoming-engineering-workshops/>`_
+- `Development Working Group Mailing List <http://eepurl.com/gh1P7L>`_
