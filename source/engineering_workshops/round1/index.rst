@@ -40,7 +40,7 @@ The following outlines the workshop's in this round.
 |                           | 912 Collins Street, Docklands       | * Software Developers    |                |            |
 +---------------------------+-------------------------------------+--------------------------+----------------+------------+
 
-.. important:: We recommend that a maximum of 2 people attend from each company.
+.. important:: We recommend that a maximum of 3 people attend from each company.
 
 ------------------------------
 Target Audiences
