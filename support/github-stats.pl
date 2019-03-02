@@ -75,6 +75,7 @@ foreach my $oneRepo (@repos) {
 
 my $totalInteractions = 0;
 my $totalIssues = 0;
+my $totalRepositories = keys %repoMap;
 my %userMap;
 my $repoTable = Text::ASCIITable->new();
 $repoTable->setCols(['Repo Name', 'Issues', 'Open Issues', 'Comments', 'Users', 'Commits']);
@@ -101,7 +102,7 @@ foreach my $oneRepo (keys %repoMap) {
     );
 }
 
-my $totalUniqueUsers = scalar(keys %userMap);
+my $totalUniqueUsers = keys %userMap;
 
 
 #my @issues = $issueApi->issues();
@@ -115,7 +116,7 @@ print qq~
 ------------------------------------------------
 ~;
 
-printf("Total Repositories: %d\n", length(keys %repoMap));
+printf("Total Repositories: %d\n", $totalRepositories);
 printf("Total Issues: %d\n", $totalIssues);
 printf("Total Interaction Count: %d\n", $totalInteractions);
 printf("Total Unique Contributor Count: %d\n", $totalUniqueUsers);
