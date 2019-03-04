@@ -12,10 +12,11 @@ $| = 1;
 #####
 my $orgName           = 'ConsumerDataStandardsAustralia';
 my $topUserCount      = 10;
+#my @excludedUsersList = ();
 my @excludedUsersList = (
     'csirostu',   'perlboy',   'JamesMBligh', 'ajmcmiddlin',
     'nghamilton', 'benkolera', 'enemeth79',   'lukepopp',
-    'ellenbroad', 'csirocdr'
+    'ellenbroad', 'csirocdr', 'tonymorris'
 );
 my @repositoryList = ( 'standards', 'infosec' );
 my $specificRepositories = 0;
@@ -55,12 +56,13 @@ foreach my $oneRepo (@repos) {
         if ( $oneIssue->{'state'} eq 'open' ) {
             $repoMap{$repoName}{'open_issue_count'}++;
         }
-        $repoMap{$repoName}{'issue_interactions'} += $oneIssue->{'comments'};
+
         chomp( $oneIssue->{'user'}->{'login'} );
         my $searchUser = $oneIssue->{'user'}->{'login'};
         if ( !grep( /^$searchUser$/i, @excludedUsersList ) ) {
             $repoMap{$repoName}{'contributors'}
               { $oneIssue->{'user'}->{'login'} }++;
+
         }
 
         # Work through comments
@@ -68,13 +70,17 @@ foreach my $oneRepo (@repos) {
             while ( my $oneComment =
                 $issueApi->next_comment( $oneIssue->{'number'} ) )
             {
-                print "C ";
                 chomp( $oneComment->{'user'}->{'login'} );
                 my $searchUser = $oneComment->{'user'}->{'login'};
                 if ( !grep( /^$searchUser$/i, @excludedUsersList ) ) {
                     $repoMap{$repoName}{'contributors'}
                       { $oneComment->{'user'}->{'login'} }++;
-                }
+                    $repoMap{$repoName}{'issue_interactions'}++;
+		    print "C ";
+
+                } else {
+		    print "! ";
+		}
             }
 
         }
@@ -91,6 +97,7 @@ foreach my $oneRepo (@repos) {
         {
             $repoMap{$repoName}{'contributors'}
               { $oneCommit->{'author'}->{'login'} }++;
+
         }
         $repoMap{$repoName}{'commit_count'}++;
     }
