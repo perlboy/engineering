@@ -72,57 +72,49 @@ Agenda
 +---------------------------+---------------+-----------------------------------------------------------+
 | Time                      | Presenter     | Activity                                                  |
 +===========================+===============+===========================================================+
-| 09:00                     | Stuart Low    | Introductions                                             |
+| 09:00                     | Warren Bradey | Welcome                                                   |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 09:10                     | John Brøndum  | General Project Update                                    |
+| 09:10                     | John Brøndum  | Introductions                                             |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 09:30                     | John Brøndum  | Goals of the:                                             |
-|                           |               |     - Conformance Suite                                   |
-|                           |               |     - Reference Implementations                           |
-|                           |               |     - Desktop Sandbox                                     |
+| 09:15                     | John Brøndum  | Delivery Strategy                                         |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 09:40                     | John Brøndum  | Vendor Collaboration Strategy                             |
+| 09:45                     | John Brøndum  | Delivery Schedule                                         |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 09:50                     | Stuart Low    | Engineering Overview                                      |
-|                           |               |     - Goals                                               |
-|                           |               |     - Task Management Approach                            |
-|                           |               |     - Versioning and Release Management                   |
+| 10:00                     | Stuart Low    | Engineering Strategy                                      |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 10:00                     | Stuart Low    | Modeling the Standards                                    |
+| 10:25                     | Stuart Low    | Engineering Stream Management                             |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 10:15                     | Stuart Low    | Conformance Suite Requirements and Proposal               |
+| 11:35                     | Stuart Low    | Modelling of the API Standards                            |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 11:00                     | Stuart Low    | Reference Implementation Requirements and Proposal        |
+| 11:00                     | Stuart Low    | Conformance Test Suite                                    |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 11:45                     | Stuart Low    | Desktop Sandbox Approach                                  |
+| 11:30                     | Stuart Low    | Reference Implementation                                  |
++---------------------------+---------------+-----------------------------------------------------------+
+| 11:50                     | Stuart Low    | Desktop Sandbox                                           |
 +---------------------------+---------------+-----------------------------------------------------------+
 | 12:00                     |               | Lunch                                                     |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 13:00                     | Stuart Low    | Introductions                                             |
+| 13:00                     | Warren Bradey | Welcome                                                   |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 13:10                     | John Brøndum  | General Project Update                                    |
+| 13:10                     | John Brøndum  | Introductions                                             |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 13:30                     | John Brøndum  | Goals of the:                                             |
-|                           |               |     - Conformance Suite                                   |
-|                           |               |     - Reference Implementations                           |
-|                           |               |     - Desktop Sandbox                                     |
+| 13:15                     | John Brøndum  | Delivery Strategy                                         |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 13:40                     | John Brøndum  | Vendor Collaboration Strategy                             |
+| 13:45                     | John Brøndum  | Delivery Schedule                                         |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 13:50                     | Stuart Low    | Engineering Overview                                      |
-|                           |               |     - Goals                                               |
-|                           |               |     - Task Management Approach                            |
-|                           |               |     - Versioning and Release Management                   |
+| 14:00                     | Stuart Low    | Engineering Strategy                                      |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 14:00                     | Stuart Low    | Modeling the Standards API                                |
+| 14:20                     | Stuart Low    | Engineering Stream Management                             |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 14:15                     | Stuart Low    | Conformance Suite Proposal                                |
+| 14:30                     | Stuart Low    | Modelling of the API Standards                            |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 14:30                     | Stuart Low    | Reference Implementation Requirements and Proposal        |
+| 15:00                     | Stuart Low    | Conformance Test Suite                                    |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 15:15                     | Stuart Low    | Sandbox Requirements and Approach                         |
+| 15:10                     | Stuart Low    | Reference Implementation                                  |
 +---------------------------+---------------+-----------------------------------------------------------+
-| 16:00                     | Stuart Low    | Finish                                                    |
+| 15:30                     | Stuart Low    | Desktop Sandbox                                           |
++---------------------------+---------------+-----------------------------------------------------------+
+| 16:00                     | Warren Bradey | Conclusion                                                |
 +---------------------------+---------------+-----------------------------------------------------------+
 
 --------------------
