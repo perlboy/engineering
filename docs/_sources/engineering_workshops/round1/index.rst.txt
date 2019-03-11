@@ -23,19 +23,19 @@ The following outlines the workshop's in this round.
 +---------------------------+-------------------------------------+--------------------------+----------------+-------------------------------------------------------------------------------------------------------------------------+
 | Title                     | Location                            | Target Audience          | Date/Time      | Status                                                                                                                  |
 +===========================+=====================================+==========================+================+=========================================================================================================================+
-| Data Holder Workshop      | Data61                              | * Technical Team Leads   | 6 March 2019   | `Signup #1 <https://www.eventbrite.com.au/e/consumer-data-right-data-holder-workshop-sydney-tickets-55880255348>`_      |
+| Data Holder Workshop      | Data61                              | * Technical Team Leads   | 6 March 2019   | Completed: `Access Workshop Material <../../_static/workshop1.pdf>`_                                                    |
 | (Sydney)                  | Level 4, 13 Garden Street, Eveleigh | * Software Developers    | 09:00 - 12:00  |                                                                                                                         |
 |                           |                                     | * Vendor Engineers       |                |                                                                                                                         |
 +---------------------------+-------------------------------------+--------------------------+----------------+-------------------------------------------------------------------------------------------------------------------------+
-| Data Recipient Workshop   | Data61                              | * Technical Architects   | 6 March 2019   | `Signup #2 <https://www.eventbrite.com.au/e/consumer-data-right-data-recipient-workshop-sydney-tickets-56539218324>`_   |
+| Data Recipient Workshop   | Data61                              | * Technical Architects   | 6 March 2019   | Completed: `Access Workshop Material <../../_static/workshop1.pdf>`_                                                    |
 | (Sydney)                  | Level 4, 13 Garden Street, Eveleigh | * Technical Team Leads   | 13:00 - 16:00  |                                                                                                                         |
 |                           |                                     | * Software Developers    |                |                                                                                                                         |
 +---------------------------+-------------------------------------+--------------------------+----------------+-------------------------------------------------------------------------------------------------------------------------+
-| Data Holder Workshop      | Community Hub @ The Dock            | * Technical Team Leads   | 7 March 2019   | `Signup #3 <https://www.eventbrite.com.au/e/consumer-data-right-data-holder-workshop-melbourne-tickets-56846559590>`_   |
+| Data Holder Workshop      | Community Hub @ The Dock            | * Technical Team Leads   | 7 March 2019   | Completed: `Access Workshop Material <../../_static/workshop1.pdf>`_                                                    |
 | (Melbourne)               | Multipurpose Room                   | * Software Developers    | 09:00 - 12:00  |                                                                                                                         |
 |                           | 912 Collins Street, Docklands       | * Vendor Engineers       |                |                                                                                                                         |
 +---------------------------+-------------------------------------+--------------------------+----------------+-------------------------------------------------------------------------------------------------------------------------+
-| Data Recipient Workshop   | Community Hub @ The Dock            | * Technical Architects   | 7 March 2019   |`Signup #4 <https://www.eventbrite.com.au/e/consumer-data-right-data-recipient-workshop-melbourne-tickets-56847310837>`_ |
+| Data Recipient Workshop   | Community Hub @ The Dock            | * Technical Architects   | 7 March 2019   | Completed: `Access Workshop Material <../../_static/workshop1.pdf>`_                                                    |
 | (Melbourne)               | Multipurpose Room                   | * Technical Team Leads   | 13:00 - 16:00  |                                                                                                                         |
 |                           | 912 Collins Street, Docklands       | * Software Developers    |                |                                                                                                                         |
 +---------------------------+-------------------------------------+--------------------------+----------------+-------------------------------------------------------------------------------------------------------------------------+
@@ -125,3 +125,4 @@ Related Links
 
 - `Workshop Announcement Blog <https://consumerdatastandards.org.au/2019/02/21/upcoming-engineering-workshops/>`_
 - `Development Working Group Mailing List <http://eepurl.com/gh1P7L>`_
+- `Access Workshop Material <../../_static/workshop1.pdf>`_
