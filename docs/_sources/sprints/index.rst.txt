@@ -4,7 +4,7 @@ Sprint Planning
 | The following page provides a high level summary of Engineering Working Group Sprints
 
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #         | Goals                    | Objectives                                                                                                                                       | Start Date           | Status     |
+| Sprint #         | Goals                    | Key Deliverables                                                                                                                                 | Start Date           | Status     |
 +==================+==========================+==================================================================================================================================================+======================+============+
 | Sprint #0        | Initial Planning         | 1) Creation of high level deliverable focused issues on the Engineering GitHub Project for feedback from CDR participants                        | 11 March 2019        | Started    |
 |                  |                          | 2) Initial planning of technical backlog items within the relevant GitHub repositories (notably cds-models and cds-codegen)                      |                      |            |
