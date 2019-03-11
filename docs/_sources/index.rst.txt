@@ -17,6 +17,7 @@ Table of Contents
    :maxdepth: 3
 
    engineering_workshops/index.rst
+   sprints/index.rst
 
    glossary
 
