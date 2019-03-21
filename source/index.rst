@@ -18,11 +18,6 @@ Table of Contents
 
    engineering_workshops/index.rst
    sprints/index.rst
-   sprints/sprint0.rst
-   sprints/sprint1.rst
-   sprints/sprint2.rst
-   sprints/sprint3.rst
-
    glossary
 
 
