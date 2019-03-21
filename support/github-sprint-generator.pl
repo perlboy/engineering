@@ -14,7 +14,7 @@ my $orgName           = 'ConsumerDataStandardsAustralia';
 my @repositoryList       = (
     'engineering', 'cds-models', 'cds-codegen'
 );
-my $targetSprint      = "Sprint #0";
+my $targetSprint      = "Sprint #3";
 
 
 die "Must supply TOKEN variable" if !$ENV{'TOKEN'};
@@ -62,10 +62,10 @@ foreach my $oneRepo (@repos) {
                 $ownerLink .= "`@" .  $oneAssignee->{'login'} . " <https://github.com/" .  $oneAssignee->{'login'} . ">`_ ";
             }
             $sprintTable->addRow( [ $issueId, $oneIssue->{'title'}, $creatorLink, $oneIssue->{'state'}, $ownerLink ] );
-        }
 
-        if($repoName eq 'engineering') {
-            $sprintDescription = $oneIssue->{'milestone'}{'description'};
+            if($repoName eq 'engineering') {
+                $sprintDescription = $oneIssue->{'milestone'}{'description'};
+            }
         }
 
     }
