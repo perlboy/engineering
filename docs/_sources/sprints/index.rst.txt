@@ -3,8 +3,6 @@ Sprint Planning
 
 | The following page provides a high level summary of Engineering Working Group Sprints
 
-**Sprint 0 Warning: This is a work in progress**
-
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
 | Sprint #         | Goals                    | Key Deliverables                                                                                                                                 | Start Date           | Status     |
 +==================+==========================+==================================================================================================================================================+======================+============+
@@ -14,15 +12,15 @@ Sprint Planning
 |                  |                          | 3) Definition of Deliverables for Sprint #1, #2, #3                                                                                              |                      |            |
 |                  |                          | 4) High Level definition of goals through to Sprint #10                                                                                          |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #1        | - Baseline and Quick Win | 1) General: Model Recursion Setup                                                                                                                | 25 March 2019        | Planning   |
+| :ref:`sprint-#1` | - Baseline and Quick Win | 1) General: Model Recursion Setup                                                                                                                | 25 March 2019        | Planning   |
 |                  |                          | 2) Product API: "Quick Win" Client and Stubs                                                                                                     |                      |            |
 |                  |                          | 3) Product API: Swagger -> Model Instantiation                                                                                                   |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #2        | - Instant Product API    | 1) Authless cds-codegen Java Client with CLI                                                                                                     | 08 April 2019        | Planning   |
+| :ref:`sprint-#2` | - Instant Product API    | 1) Authless cds-codegen Java Client with CLI                                                                                                     | 08 April 2019        | Planning   |
 |                  |                          | 2) Authless cds-codegen Java Server with Payload                                                                                                 |                      |            |
 |                  |                          | 3) Initial Payload Conformance                                                                                                                   |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #3        | - Authentication and     | 1) Customer API Model Definition                                                                                                                 | 22 April 2019        | Planning   |
+| :ref:`sprint-#3` | - Authentication and     | 1) Customer API Model Definition                                                                                                                 | 22 April 2019        | Planning   |
 |                  |   Authorisation          | 2) OpenID/FAPI Server Stub Generation                                                                                                            |                      |            |
 |                  | - Customer Enablement    | 3) OpenID/FAPI Client Generation                                                                                                                 |                      |            |
 |                  |                          |                                                                                                                                                  |                      |            |
