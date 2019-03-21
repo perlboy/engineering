@@ -54,7 +54,7 @@ foreach my $oneRepo (@repos) {
         $issueApi->next_repos_issue( $orgName, $repoName, { state => 'all' } ) )
     {
         if( $oneIssue->{'milestone'}{'title'} eq $targetSprint) {
-            my $issueId = "`#" . $repoName . "/" . $oneIssue->{'number'} . " <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/" . $oneIssue->{'number'} . ">`_";
+            my $issueId = "`#" . $repoName . "/" . $oneIssue->{'number'} . " <https://github.com/ConsumerDataStandardsAustralia/$repoName/issues/" . $oneIssue->{'number'} . ">`_";
             my $creatorLink = "`@" .  $oneIssue->{'user'}{'login'} . " <https://github.com/" .  $oneIssue->{'user'}{'login'} . ">`_";
 
             my $ownerLink;
