@@ -1,9 +1,0 @@
-# We don't commit built output for now.
-build/
-# Strip eclipse, bad Stu
-.project
-# No settings or pydev either
-.settings/
-.pydevproject
-*.iml
-.idea/
