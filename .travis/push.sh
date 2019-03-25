@@ -16,6 +16,8 @@ setup_ghpages_repo() {
 copy_html() {
   docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
   shopt -s dotglob; cp -r html/* ./output/
+  touch output/.nojekyll
+
 }
 
 commit_website_files() {
