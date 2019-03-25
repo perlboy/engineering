@@ -15,7 +15,7 @@ setup_ghpages_repo() {
 
 copy_html() {
   docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
-  shopt -s dotglob; cp html/* ./output/
+  shopt -s dotglob; cp -r html/* ./output/
 }
 
 commit_website_files() {
