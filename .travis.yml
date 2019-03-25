@@ -1,14 +1,15 @@
 sudo: required
 language: ruby
-
 env:
   global:
-    - IMAGE_NAME=consumerdatastandardsaustralia/engineering
-
+  - IMAGE_NAME=consumerdatastandardsaustralia/engineering
+  - secure: dPK12+d2EtIcQaaRWWHbVf15KdL/29kYJOt/y/08/dD636izVswC3WJd6jSgjubMp/f/EteqL0/+fw7cN93nYKdGTIiH2X3xL7Ifp/sY7MXCRMVYoVBmEhdhV9zCe34k3FfWps7pMd1UfswTOQ4SZojzgX+u5Ci+aon6q50r1r7te57XqczKaFjbikNTj11M27jCda88hAm0fteHaZe/H4SlSuHHOx7Uwba1HP09Hbc5q4nrSlcCr98M4WT+9cdlKAbsTLODKJhWAa7GlMTYS8U6PIo2ZEvNPhEwaUq3JcpWXUKt6k9astefY5jugEbMSvdBNM4hI6iDIionBaOcLQXC65p6AB79U6c1F37PVXZSlyRNTe1rvqBrDfgMHLbhAyheZmI9GaQ9iYxNAP00l6viqFmK526jxhq8qsiK1eOwckbMjbbTkH1fEtr8sYXY+f8vu4LWOCS8Mxcbht18HYUYKIrU3rKCM1/BRtxMQ/7SwTRdj6VtODX9f47zeIKSWXIM05ZU7ApQ2mhxgYyVGaW3Jxy45O0VuSeK93qL6FjJ8EQKMCd39eVIIgH8rcxsfxlcqa25/oXpvEqoNUFLtw9sK7buBH9CLLNNqk8Ek5k3B4q/KYtyTFj9Sx66sfs3FOjKh0vVGVYZT4PL47KzOC87+OIubo7LnQNMOHDMWes=
 services:
-  - docker
-
+- docker
 script:
-        - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
-
-
+- docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
+- rm -fr docs
+- docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
+- mv html docs
+after_success:
+- ".travis/push.sh"
