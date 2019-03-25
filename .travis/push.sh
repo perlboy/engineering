@@ -6,7 +6,8 @@ setup_git() {
 }
 
 strip_repository() {
-  git checkout gh-pages	
+  git fetch --all
+  git checkout gh-pages
   rm -fr *
   touch .nojekyll
   docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
