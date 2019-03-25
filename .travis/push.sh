@@ -10,7 +10,7 @@ strip_repository() {
   rm -fr *
   touch .nojekyll
   docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
-  cp -Rp html/ ./
+  shopt -s dotglob; mv html/* ./
   rm -fr html
 }
 
