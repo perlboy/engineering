@@ -1,21 +1,26 @@
 #!/bin/bash
 
 setup_git() {
-  git config --global user.email "travis@travis-ci.org"
-  git config --global user.name "Travis CI"
+	git config --global user.email "travis@travis-ci.org"
+	git config --global user.name "Travis CI"
 }
 
-strip_repository() {
-  git checkout origin/gh-pages
-  rm -fr *
-  touch .nojekyll
+setup_ghpages_repo() {
+	git clone https://${GH_TOKEN}@github.com/ConsumerDataStandardsAustralia/engineering output > /dev/null 2>&1
+	cd output
+	git checkout gh-pages || git checkout --orphan gh-pages
+	find -maxdepth 1 ! -name .git ! -name . | xargs rm -rf
+	cd ..
+}
+
+copy_html() {
   docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
-  shopt -s dotglob; mv html/* ./
-  rm -fr html
+  shopt -s dotglob; cp html/* ./output/
 }
 
 commit_website_files() {
-  git add .
+  cd output
+  git add -A .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
 
@@ -26,7 +31,8 @@ upload_files() {
 
 if [ "$TRAVIS_BRANCH" == "master" ]; then
 	setup_git
-	strip_repository
+	setup_ghpages_repo
+	copy_html
 	commit_website_files
 	upload_files
 fi
