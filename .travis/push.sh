@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 setup_git() {
   git config --global user.email "travis@travis-ci.org"
@@ -25,8 +25,8 @@ upload_files() {
 }
 
 if [ "$TRAVIS_BRANCH" == "master" ]; then
-     setup_git
-     strip_repository
-     commit_website_files
-     upload_files
+	setup_git
+	strip_repository
+	commit_website_files
+	upload_files
 fi
