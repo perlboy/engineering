@@ -7,8 +7,7 @@ services:
 - docker
 script:
 - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
-- rm -fr docs
-- docker run $IMAGE_NAME tar -c -C /opt/engineering/build html | tar x
-- mv html docs
+- rm -fr * 
+- docker run $IMAGE_NAME tar -c -C /opt/engineering/build/html | tar x
 after_success:
 - ".travis/push.sh"
