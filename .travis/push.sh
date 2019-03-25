@@ -22,11 +22,14 @@ commit_website_files() {
   cd output
   git add -A .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+  cd ..
 }
 
 upload_files() {
+  cd output
   git remote add origin-pages https://${GH_TOKEN}@github.com/ConsumerDataStandardsAustralia/engineering > /dev/null 2>&1
   git push --quiet --set-upstream origin-pages gh-pages 
+  cd ..
 }
 
 if [ "$TRAVIS_BRANCH" == "master" ]; then
