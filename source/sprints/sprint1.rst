@@ -91,6 +91,7 @@ Achievements
 - All day team meeting (`Planning meeting Engineering update <../_static/20190325_Team_Planning_Update.pdf>`_)
 - We are now publishing to sonatype repository (`CDS Maven artifacts <https://oss.sonatype.org/#nexus-search;quick~consumerdatastandards>`_)
 - Feedback items posted for public review (`Open Feedback Requests <https://github.com/ConsumerDataStandardsAustralia/engineering/issues?q=is%3Aopen+is%3Aissue+label%3Afeedback>`_)
+- Switched to travis-ci for all builds and publishes (`Consumer Data Standards Australia Travis-CI <https://travis-ci.com/ConsumerDataStandardsAustralia>`_)
 
 Retrospective
 -----------------
