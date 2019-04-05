@@ -14,7 +14,7 @@ my $orgName           = 'ConsumerDataStandardsAustralia';
 my @repositoryList       = (
     'engineering', 'cds-models', 'cds-codegen'
 );
-my $targetSprint      = "Sprint #1";
+my $targetSprint      = "Sprint #2";
 
 
 die "Must supply TOKEN variable" if !$ENV{'TOKEN'};
