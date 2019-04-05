@@ -38,7 +38,7 @@ Sprint Issue Breakdown
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
 | `#cds-codegen/6 <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/6>`_   | Support swagger extensions in codegen                                | `@csirostu <https://github.com/csirostu>`_   | closed | `@fyang1024 <https://github.com/fyang1024>`_                                             |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
-| `#cds-codegen/5 <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/5>`_   | Pipeline: Swagger-codegen Server                                     | `@csirostu <https://github.com/csirostu>`_   | open   | `@csirostu <https://github.com/csirostu>`_                                               |
+| `#cds-codegen/5 <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/5>`_   | Pipeline: Swagger-codegen Server                                     | `@csirostu <https://github.com/csirostu>`_   | moved  | `@csirostu <https://github.com/csirostu>`_                                               |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
 | `#cds-codegen/4 <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/4>`_   | Produce swagger.json model definitions                               | `@csirostu <https://github.com/csirostu>`_   | closed | `@fyang1024 <https://github.com/fyang1024>`_                                             |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
@@ -68,11 +68,11 @@ Sprint Issue Breakdown
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
 | `#engineering/18 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/18>`_ | Fix doc publishing                                                   | `@csirostu <https://github.com/csirostu>`_   | closed | `@csirostu <https://github.com/csirostu>`_                                               |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
-| `#engineering/17 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/17>`_ | Write upgradeability roadmap                                         | `@csirostu <https://github.com/csirostu>`_   | open   |                                                                                          |
+| `#engineering/17 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/17>`_ | Write upgradeability roadmap                                         | `@csirostu <https://github.com/csirostu>`_   | moved  |                                                                                          |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
-| `#engineering/15 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/15>`_ | Write model parser for slate doc                                     | `@csirostu <https://github.com/csirostu>`_   | open   |                                                                                          |
+| `#engineering/15 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/15>`_ | Write model parser for slate doc                                     | `@csirostu <https://github.com/csirostu>`_   | moved  |                                                                                          |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
-| `#engineering/14 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/14>`_ | Sprint Planning #2                                                   | `@csirostu <https://github.com/csirostu>`_   | open   |                                                                                          |
+| `#engineering/14 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/14>`_ | Sprint Planning #2                                                   | `@csirostu <https://github.com/csirostu>`_   | closed |                                                                                          |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
 | `#engineering/13 <https://github.com/ConsumerDataStandardsAustralia/engineering/issues/13>`_ | All Day Team Meeting                                                 | `@csirostu <https://github.com/csirostu>`_   | closed | `@fyang1024 <https://github.com/fyang1024>`_ `@csirostu <https://github.com/csirostu>`_  |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------+----------------------------------------------+--------+------------------------------------------------------------------------------------------+
@@ -85,15 +85,33 @@ Sprint Issue Breakdown
 Achievements
 ----------------
 
-*Pending*
+- Converted handcrafted cds_full into java models using piecemeal swagger-codegen  (Stu: swagger-codegen is a nightmare) (`See CDS Models <https://github.com/ConsumerDataStandardsAustralia/cds-models>`_)
+- cds-codegen from cds-models to produce a swagger.json (`See CDS Codegen Core <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/modules/cds-codegen-core>`_)
+- Initial maven plugin for swagger-codegen pipelining (`See CDS Codegen Maven Plugin <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/modules/cds-codegen-maven-plugin>`_)
+- All day team meeting (`Planning meeting Engineering update <../_static/20190325_Team_Planning_Update.pdf>`_)
+- We are now publishing to sonatype repository (`CDS Maven artifacts <https://oss.sonatype.org/#nexus-search;quick~consumerdatastandards>`_)
+- Feedback items posted for public review (`Open Feedback Requests <https://github.com/ConsumerDataStandardsAustralia/engineering/issues?q=is%3Aopen+is%3Aissue+label%3Afeedback>`_)
 
 Retrospective
 -----------------
 
-*Pending*
+**What went well?**
 
-    - What went well?
-    - What needs improvement?
-    - Next steps?
+- We worked really hard, did some overtime but achieved the sprint goal, we now have a clean swagger.json machine generated using swagger-core
+- Kept rework to a minimum
+- Team meeting was good checkpoint for everyone
 
+**What needs improvement?**
+
+- Interface between Standards and Engineering needs to be improved
+- Didn't quite get onto swagger codegen outputs, Stu will try and finish this weekend so Sprint #2 is clear
+- Multiple backlog items not identified
+- Upgradeability roadmap still in progress
+
+**Next steps?**
+
+- Technical Delivery Manager to coordinate process for integrating Standards changes with Engineering
+- Establish joint standup for Engineering & Standards
+- Get better at engineering task identification
+- Technical Delivery Manager looking to establishing integration scrum to help Work Streams with shared tasks
 
