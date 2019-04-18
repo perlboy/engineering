@@ -78,7 +78,8 @@ Achievements
 - Engineering: `Sample Client with CLI (cds-client-java) <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-client-java>`_ produced with Product APIs
 - Engineering: `Sample Stubs (cds-stubs-java) <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-stubs-java-spring>`_ produced with Product APIs
 - Engineering: `Sample Holder (cds-holder-java-spring) <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-holder-java-spring>`_ produced with Product APIs
-- Engineering: Initial `cds-codegen (cds-codegen-core) <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/modules/cds-codegen-core>`_ with Model Generation 
+- Engineering: Initial `cds-codegen (cds-codegen-core) <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/modules/cds-codegen-core>`_ with Model Generation
+- Engineering: Initial `cds-codegen artefact pull request <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/pull/35>`_
 - Standards: Sample Product Reference Payloads sent to Engineering for Data Loading (Coming Soon)
 - Standards: Customer APIs pending Pull Request with updates to integrate into cds-models
 - Standards: Payee APIs intended for next sprint
