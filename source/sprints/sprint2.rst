@@ -16,7 +16,7 @@ Deliverables
     1) Authless Java Client with CLI
     2) Authless Java Server with Payload
     3) (Continuing in Sprint #3) cds-codegen Baseline
-    4) (Continuing in Sprint #4) Initial Payload Conformance tool
+    4) (Continuing in Sprint #3) Initial Payload Conformance tool
 
 
 

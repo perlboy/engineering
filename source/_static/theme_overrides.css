@@ -1,15 +1,45 @@
-/* override table width restrictions */
-@media screen and (min-width: 767px) {
+.wy-table-responsive table td, .wy-table-responsive table th {
+  white-space: normal !important;
+  font-size: 90%;
+}
 
-  .wy-table-responsive table td {
-    /* !important prevents the common CSS stylesheets from
-       overriding this as on RTD they are loaded after this stylesheet */
-    white-space: normal !important;
-  }
+.wy-nav-content {
+  max-width: 1440px;
+}
 
-  .wy-table-responsive {
-    overflow: visible !important;
-  }
+.wy-nav-side {
+  background: #000000;
+}
 
+.wy-menu-vertical {
+  background: #000000;
+}
 
+.wy-menu-vertical a {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-menu-vertical li ul li a {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-menu-vertical li.current a {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
+  background: #000000;
+}
+
+.wy-menu-vertical li.toctree-l2.current>a {
+  background: #000000;
+}
+
+.wy-menu-vertical li.toctree-l1.current>a {
+  border-bottom: #000000;
+  border-top: #000000;
+}
 
