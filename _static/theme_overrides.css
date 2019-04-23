@@ -30,12 +30,9 @@
   background: #000000;
 }
 
-.wy-menu-vertical li.toctree-l2.current li.toctree-l3>a {
-  background: #000000;
-}
+.wy-menu-vertical li.current a {
+  background: #000000 !important;
 
-.wy-menu-vertical li.toctree-l2.current>a {
-  background: #000000;
 }
 
 .wy-menu-vertical li.toctree-l1.current>a {
