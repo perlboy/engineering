@@ -1,0 +1,313 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="This is the central documentation location for the Engineering Working Group of Consumer Data Standards Australia">
+        <meta name="viewport" content="width=device-width">
+        <title>Sprint #2 &mdash; CDS Engineering</title>
+            <link rel="stylesheet" href="../_static/normalize.css" type="text/css">
+            <link rel="stylesheet" href="../_static/sphinx.css" type="text/css">
+            <link rel="stylesheet" href="../_static/main.css" type="text/css">
+            <link rel="stylesheet" href="../_static/data61.css" type="text/css">
+            <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+            <link rel="stylesheet" href="../_static/font-awesome.min.css" type="text/css">
+        <link rel="shortcut icon" href="../_static/tinkerer.ico" /><!-- Load modernizr and JQuery -->
+        <script src="../_static/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../_static/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="../_static/plugins.js"></script>
+        <script src="../_static/main.js"></script>
+        <link rel="search" title="Search" href="../search.html" /><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.html" /><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.7.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        SOURCELINK_SUFFIX: '.txt',
+        HAS_SOURCE:  true
+      };
+    </script><script type="text/javascript" src="../_static/underscore.js"></script><script type="text/javascript" src="../_static/doctools.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Scroll to content if on small screen
+            if (screen.width < 480)
+            {
+                $(document).scrollTop(document.getElementsByTagName("article")[0].offsetTop - 44);
+            }
+        });
+    </script></head>
+    <body role="document">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+      <div id="container"><header role="banner">
+      <hgroup>
+        <a href="#">
+             <h1><img width="150px" src="../_static/logo.png"  alt="Consumer Data Standards Australia"/></h1>
+        </a>
+       <tagline><h2>Engineering Working Group</h2></tagline>></hgroup>
+    </header>
+<nav role="navigation">
+            <ul><li class="main-nav">
+                  <a href="../index.html">Home</a>
+                </li>
+              <li class="main-nav">
+                  <a href="sprint_planning.html">Sprint Planning</a>
+                </li>
+              </ul>
+          </nav><div class="main-container" role="main"><div class="main wrapper body clearfix"><article>
+    <div class="section" id="sprint-2">
+<span id="id1"></span><h1>Sprint #2</h1>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Instant Product API</li>
+<li>Codegen Round #1</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables</h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Authless Java Client with CLI</li>
+<li>Authless Java Server with Payload</li>
+<li>(Continuing in Sprint #3) cds-codegen Baseline</li>
+<li>(Continuing in Sprint #3) Initial Payload Conformance tool</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="sprint-issue-breakdown">
+<h2>Sprint Issue Breakdown</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="25%" />
+<col width="17%" />
+<col width="3%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Issue ID#</th>
+<th class="head">Task Name</th>
+<th class="head">Creator</th>
+<th class="head">Status</th>
+<th class="head">Assigned to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/34">#cds-codegen/34</a></td>
+<td>Initial synchronise with CDS Types from Models and CLI refactor</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/16">#cds-codegen/16</a></td>
+<td>Samples: Java Sandbox: Do initial ODBC wiring to Server Stubs</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/fyang1024">&#64;fyang1024</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/15">#cds-codegen/15</a></td>
+<td>Samples: Java Client: Write CLI wrappers for Product API</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/fyang1024">&#64;fyang1024</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/14">#cds-codegen/14</a></td>
+<td>Samples: Java Server: Produce baseline server stubs</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/fyang1024">&#64;fyang1024</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/13">#cds-codegen/13</a></td>
+<td>Samples: Java Client: Baseline Client Library</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/fyang1024">&#64;fyang1024</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/12">#cds-codegen/12</a></td>
+<td>CDS Codegen: Write Model Handler</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/11">#cds-codegen/11</a></td>
+<td>Pipeline: Swagger-codegen Client</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/8">#cds-codegen/8</a></td>
+<td>CDS Codegen: Write Endpoint Handler</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>moved</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/7">#cds-codegen/7</a></td>
+<td>CDS Codegen: Create Handler Framework</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/5">#cds-codegen/5</a></td>
+<td>Pipeline: Swagger-codegen Server</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models/issues/20">#cds-models/20</a></td>
+<td>Introduce Java Type for format</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models/issues/19">#cds-models/19</a></td>
+<td>Add missing custom data types</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models/issues/18">#cds-models/18</a></td>
+<td>Updated Models with CDS Types and Product Reference Updates</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models/issues/17">#cds-models/17</a></td>
+<td>CDS Strong Typing Discussion</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models/issues/4">#cds-models/4</a></td>
+<td>Ratify Product API in Model</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>moved</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/27">#engineering/27</a></td>
+<td>Advisory Committee Meeting</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/26">#engineering/26</a></td>
+<td>Feedback Request #2: Shared Definition Approach</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/25">#engineering/25</a></td>
+<td>Feedback Request #1: Engineering Artefacts</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/19">#engineering/19</a></td>
+<td>Sprint Planning #3</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>moved</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/16">#engineering/16</a></td>
+<td>Feedback Processing #1</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/15">#engineering/15</a></td>
+<td>Write model parser for slate doc</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/14">#engineering/14</a></td>
+<td>Sprint Planning #2</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>closed</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="achievements">
+<h2>Achievements</h2>
+<ul class="simple">
+<li>Engineering: <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-client-java">Sample Client with CLI (cds-client-java)</a> produced with Product APIs</li>
+<li>Engineering: <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-stubs-java-spring">Sample Stubs (cds-stubs-java)</a> produced with Product APIs</li>
+<li>Engineering: <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-holder-java-spring">Sample Holder (cds-holder-java-spring)</a> produced with Product APIs</li>
+<li>Engineering: Initial <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/modules/cds-codegen-core">cds-codegen (cds-codegen-core)</a> with Model Generation</li>
+<li>Engineering: Initial <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/pull/35">cds-codegen artefact pull request</a></li>
+<li>Standards: Sample Product Reference Payloads sent to Engineering for Data Loading (Coming Soon)</li>
+<li>Standards: Customer APIs pending Pull Request with updates to integrate into cds-models</li>
+<li>Standards: Payee APIs intended for next sprint</li>
+</ul>
+</div>
+<div class="section" id="retrospective">
+<h2>Retrospective</h2>
+<p><strong>What went well?</strong></p>
+<ul class="simple">
+<li>We managed to produce sample client, stubs and holder (yay!)</li>
+<li>Identifying it was more beneficial to switch tasks</li>
+<li>Representation from Standards in Engineering standups is helpful</li>
+<li>Internal review repository looks like it helping cross-stream comms</li>
+</ul>
+<p><strong>What needs improvement?</strong></p>
+<ul class="simple">
+<li>Spent a lot of time debating a solution</li>
+<li>Shrinking the time to identify perhaps best outcome is to switch tasks</li>
+<li>We didn’t have a very well defined sprint plan</li>
+<li>It was challenging to agree on a solution</li>
+<li>Getting a better understanding of task estimates</li>
+</ul>
+<p><strong>Next steps?</strong></p>
+<ul class="simple">
+<li>Discuss further “who is our customer” so Fei &amp; Stu are aligned</li>
+<li>Organise planning time on Wednesday to allow for future sprint development</li>
+<li>Continue codegen development</li>
+<li>Integrate templates into codegen</li>
+</ul>
+</div>
+</div>
+
+    <div class="postmeta">
+        
+        
+        
+        </div></article><aside class="sidebar"><section><div class="widget">
+    <h1>Recent Posts</h1>
+    <ul><li>
+            <a href="../2019/04/25/sprint_0_completed.html">Sprint #0 Completed</a>
+        </li></ul>
+</div>
+</section><section><div class="widget" id="searchbox" role="search">
+    <h1><a href="#searchbox">Search</a></h1>
+    <form action="../search.html" method="get">
+        <input type="text" name="q" />
+        <button type="submit"><span class="fa fa-search"></span></button>
+    </form>
+</div></section></aside></div> <!-- #main --></div> <!-- #main-container -->
+
+        <div class="footer-container" role="contentinfo"><footer class="wrapper">&copy; Copyright 2019, Data61. Powered by <a href="http://www.tinkerer.me/">Tinkerer</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.</footer></div> <!-- footer-container -->
+
+      </div> <!--! end of #container --><!--[if lt IE 7 ]>
+          <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
+</html>

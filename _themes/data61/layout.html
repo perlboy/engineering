@@ -1,0 +1,50 @@
+{#-
+    data61/layout.html
+    ~~~~~~~~~~~~~~~~
+
+    Layout for Data61 theme.
+
+    :copyright: Copyright 2011-2018 by Vlad Riscutia and contributors (see
+    CONTRIBUTORS file). Modified by Stuart Low, Data61, 2019
+    :license: FreeBSD, see LICENSE file
+-#}
+
+{%- extends "boilerplate/layout.html" -%}
+
+{%- block header -%}
+    <header role="banner">
+      <hgroup>
+        <a href="#">
+             <h1><img width="150px" src="{{ pathto('_static/' + logo, 1) }}"  alt="Consumer Data Standards Australia"/></h1>
+        </a>
+       {# <h1><a href="{{ pathto(pages[0][0]) }}">{{ shorttitle|e }}</a></h1> #}
+        {%- if tagline -%}<tagline><h2>{{ tagline|e }}</h2></tagline>>{%- endif -%}
+      </hgroup>
+    </header>
+{% endblock -%}
+
+{%- block extrahead -%}
+    {{ super() }}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Scroll to content if on small screen
+            if (screen.width < 480)
+            {
+                $(document).scrollTop(document.getElementsByTagName("article")[0].offsetTop - 44);
+            }
+        });
+    </script>
+{%- endblock -%}
+
+{#- Supress quicklinks -#}
+{%- block quicklinks -%}{%- endblock -%}
+
+{#- Post layout -#}
+{%- block document -%}
+    <article>
+        {%- block body -%}{%- endblock -%}
+        {%- block relbar -%}{{ relbar() }}{%- endblock -%}
+        {%- block comments_section -%}{%- endblock -%}
+    </article>
+{%- endblock -%}

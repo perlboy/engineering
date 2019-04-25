@@ -1,0 +1,211 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="https://www.facebook.com/2008/fbml" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="This is the central documentation location for the Engineering Working Group of Consumer Data Standards Australia">
+        <meta name="viewport" content="width=device-width">
+        <title>Sprint #4 &mdash; CDS Engineering</title>
+            <link rel="stylesheet" href="../_static/normalize.css" type="text/css">
+            <link rel="stylesheet" href="../_static/sphinx.css" type="text/css">
+            <link rel="stylesheet" href="../_static/main.css" type="text/css">
+            <link rel="stylesheet" href="../_static/data61.css" type="text/css">
+            <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+            <link rel="stylesheet" href="../_static/font-awesome.min.css" type="text/css">
+        <link rel="shortcut icon" href="../_static/tinkerer.ico" /><!-- Load modernizr and JQuery -->
+        <script src="../_static/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../_static/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="../_static/plugins.js"></script>
+        <script src="../_static/main.js"></script>
+        <link rel="search" title="Search" href="../search.html" /><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.html" /><script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.7.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        SOURCELINK_SUFFIX: '.txt',
+        HAS_SOURCE:  true
+      };
+    </script><script type="text/javascript" src="../_static/underscore.js"></script><script type="text/javascript" src="../_static/doctools.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Scroll to content if on small screen
+            if (screen.width < 480)
+            {
+                $(document).scrollTop(document.getElementsByTagName("article")[0].offsetTop - 44);
+            }
+        });
+    </script></head>
+    <body role="document">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+      <div id="container"><header role="banner">
+      <hgroup>
+        <a href="#">
+             <h1><img width="150px" src="../_static/logo.png"  alt="Consumer Data Standards Australia"/></h1>
+        </a>
+       <tagline><h2>Engineering Working Group</h2></tagline>></hgroup>
+    </header>
+<nav role="navigation">
+            <ul><li class="main-nav">
+                  <a href="../index.html">Home</a>
+                </li>
+              <li class="main-nav">
+                  <a href="sprint_planning.html">Sprint Planning</a>
+                </li>
+              </ul>
+          </nav><div class="main-container" role="main"><div class="main wrapper body clearfix"><article>
+    <div class="section" id="sprint-4">
+<span id="id1"></span><h1>Sprint #4</h1>
+<div class="section" id="goals">
+<h2>Goals</h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Authentication and Authorisation</li>
+<li>Customer Enablement</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables</h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Customer API Model Definition</li>
+<li>OpenID/FAPI Server Stub Generation</li>
+<li>OpenID/FAPI Client Generation</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="sprint-issue-breakdown">
+<h2>Sprint Issue Breakdown</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="23%" />
+<col width="14%" />
+<col width="3%" />
+<col width="30%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Issue ID#</th>
+<th class="head">Task Name</th>
+<th class="head">Creator</th>
+<th class="head">Status</th>
+<th class="head">Assigned to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/24">#cds-codegen/24</a></td>
+<td>Java Server: Enforce endpoint security through Oauth interface</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/23">#cds-codegen/23</a></td>
+<td>Java Server: Attach Oauth/FAPI Proxy to PingID Authorisation Server</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/22">#cds-codegen/22</a></td>
+<td>Java Server: Create Oauth/FAPI Authorisation Interface</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/issues/21">#cds-codegen/21</a></td>
+<td>Java Client: Integrate NimbusDS FAPI Client</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models/issues/7">#cds-models/7</a></td>
+<td>Ratify Customer API in Model</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/24">#engineering/24</a></td>
+<td>Feedback Processing #3</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/23">#engineering/23</a></td>
+<td>FAPI Keycloak Implementation</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/17">#engineering/17</a></td>
+<td>Write upgradeability roadmap</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/12">#engineering/12</a></td>
+<td>Engineering Workshop Survey</td>
+<td><a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+<td>open</td>
+<td><a class="reference external" href="https://github.com/fyang1024">&#64;fyang1024</a> <a class="reference external" href="https://github.com/csirostu">&#64;csirostu</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="achievements">
+<h2>Achievements</h2>
+<p><em>Pending</em></p>
+</div>
+<div class="section" id="retrospective">
+<h2>Retrospective</h2>
+<p><em>Pending</em></p>
+<blockquote>
+<div><ul class="simple">
+<li>What went well?</li>
+<li>What needs improvement?</li>
+<li>Next steps?</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+    <div class="postmeta">
+        
+        
+        
+        </div></article><aside class="sidebar"><section><div class="widget">
+    <h1>Recent Posts</h1>
+    <ul><li>
+            <a href="../2019/04/25/sprint_0_completed.html">Sprint #0 Completed</a>
+        </li></ul>
+</div>
+</section><section><div class="widget" id="searchbox" role="search">
+    <h1><a href="#searchbox">Search</a></h1>
+    <form action="../search.html" method="get">
+        <input type="text" name="q" />
+        <button type="submit"><span class="fa fa-search"></span></button>
+    </form>
+</div></section></aside></div> <!-- #main --></div> <!-- #main-container -->
+
+        <div class="footer-container" role="contentinfo"><footer class="wrapper">&copy; Copyright 2019, Data61. Powered by <a href="http://www.tinkerer.me/">Tinkerer</a> and <a href="http://sphinx.pocoo.org/">Sphinx</a>.</footer></div> <!-- footer-container -->
+
+      </div> <!--! end of #container --><!--[if lt IE 7 ]>
+          <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+    </body>
+</html>

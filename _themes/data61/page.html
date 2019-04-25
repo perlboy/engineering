@@ -1,0 +1,22 @@
+{#-
+    data61/page.html
+    ~~~~~~~~~~~~~~
+
+    Data61 page layout.
+
+    :copyright: Copyright 2011-2018 by Vlad Riscutia and contributors (see
+    CONTRIBUTORS file). Modified by Stuart Low, Data61, 2019
+    :license: FreeBSD, see LICENSE file
+-#}
+
+{%- extends "layout.html" -%}
+
+{%- block body -%}
+    {{ timestamp(metadata.formatted_date) }}
+    {{ body }}
+    {{ post_meta(metadata) }}
+{%- endblock -%}
+
+{%- block comments_section -%}
+    {{ comments }} 
+{%- endblock -%}
