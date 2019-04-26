@@ -15,7 +15,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import ablog
 
 # -- Project information -----------------------------------------------------
 
@@ -45,10 +45,11 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
+    'ablog'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['_templates', ablog.get_html_templates_path()]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -113,6 +114,12 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+html_sidebars = {
+   '**': [...,
+          'postcard.html', 'recentposts.html',
+          'tagcloud.html', 'categories.html',
+          'archives.html', ]
+}
 
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -200,3 +207,9 @@ todo_include_todos = True
 def setup(app):
    app.add_stylesheet("theme_overrides.css")
 
+# Blog details
+blog_baseurl = "https://consumerdatastandardsaustralia.github.io/engineering/"
+fontawesome_link_cdn = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+blog_authors = {
+    'csirostu': ('Stuart Low', 'https://github.com/csirostu')
+}
