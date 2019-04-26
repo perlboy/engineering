@@ -6,6 +6,7 @@ Sprint #2 Closed
    :category: sprint-updates
    :author: csirostu
    :language: en
+   :excerpt: 3
 
 Once again it has been a pretty big fortnight as we got deep into taking our Models built in :ref:`sprint-#1` and initiating the production of Codegen. While we haven't quite got to where we wanted to be by now we are pretty happy with the progress and have now made available Product API focused samples for `Client <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-client-java>`_, `Server Stubs (using Spring) <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-stubs-java-spring>`_ and a `Model Holder <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-holder-java-spring>`_ .
 
