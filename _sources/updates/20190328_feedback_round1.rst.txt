@@ -6,6 +6,7 @@ Feedback Requests Round #1
    :category: feedback-requests
    :author: csirostu
    :language: en
+   :excerpt: 2
 
 As communicated previously we have been working towards an initial set of feedback requests. The first two of these are now published and open for comment (see title links) on the GitHub engineering issues list.
 
