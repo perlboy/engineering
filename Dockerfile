@@ -4,7 +4,7 @@ FROM nginx
 RUN apt-get update
 
 # Deploy dependencies
-RUN apt-get install -y make python3-pip
+RUN apt-get install -y make python3-pip git
 
 # Transfer the sphinx over
 COPY . /opt/engineering
@@ -23,7 +23,7 @@ RUN rm -fr /usr/share/nginx/html
 RUN cp -R /opt/engineering/build/html /usr/share/nginx/html
 
 # Now uninstall python3-pip and make
-RUN apt-get remove -y make python3-pip
+RUN apt-get remove -y make python3-pip git
 RUN apt-get autoremove -y
 
 # Clean up APT when done.
