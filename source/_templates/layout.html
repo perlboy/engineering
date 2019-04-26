@@ -1,0 +1,35 @@
+{% extends "!layout.html" %}
+
+{%- block content %}
+    {% if theme_style_external_links|tobool %}
+  <div class="rst-content style-external-links">
+    {% else %}
+  <div class="rst-content">
+    {% endif %}
+    {% if pagename != master_doc %}
+    <div class="normal-header">
+    {% include "breadcrumbs.html" %}
+    </div>
+    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    {% else %}
+    {% include "header_home.html" %}
+    <div role="main" class="document-home" itemscope="itemscope" itemtype="http://schema.org/Article">
+    {% endif %}
+    {%- block document %}
+     <div itemprop="articleBody">
+      {% block body %}{% endblock %}
+     </div>
+     {% if self.comments()|trim %}
+     <div class="articleComments">
+      {% block comments %}{% endblock %}
+     </div>
+     {% endif%}
+    </div>
+    {%- endblock %}
+    {% if pagename != master_doc %}
+    {% include "footer.html" %}
+    {% else %}
+    {% include "footer_home.html" %}
+    {% endif %}
+  </div>
+{%- endblock %}

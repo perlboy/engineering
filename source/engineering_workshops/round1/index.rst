@@ -1,4 +1,4 @@
-Engineering Workshop Round 1
+Workshop Round 1
 =======================================================
 
 | In order to ensure that the software assets produced as part of the :term:`CDR` project are **useful** to participants in the scheme it is critically important that industry consultation occurs.
