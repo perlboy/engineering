@@ -213,4 +213,5 @@ fontawesome_link_cdn = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/cs
 blog_authors = {
     'csirostu': ('Stuart Low', 'https://github.com/csirostu')
 }
-
+disqus_shortname = "cds-engineering"
+disqus_pages = True
