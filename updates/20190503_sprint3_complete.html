@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>All posts &mdash; CDS Engineering 0.1-alpha documentation</title>
+  <title>Sprint #3 Complete &mdash; CDS Engineering 0.1-alpha documentation</title>
   
 
   
@@ -223,10 +223,14 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>All posts</li>
+      <li>Sprint #3 Complete</li>
     
     
       <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/updates/20190503_sprint3_complete.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -240,73 +244,107 @@
     
      <div itemprop="articleBody">
       
-  
-  
-  <div class="section">
+  <div class="section" id="sprint-3-complete">
+<h1>Sprint #3 Complete<a class="headerlink" href="#sprint-3-complete" title="Permalink to this headline">¶</a></h1>
+<p>It’s always great when after effort in many different areas you have something that pays off. Looking back on the past 4-6 weeks and what we’ve got done we are proud of where we have got so far. It’s also a time to take note and improve on what has been developed (more on that later).</p>
+<p>This week we made available a number of CDS Codegen generated artefacts:</p>
+<ul class="simple">
+<li><p>Java Client Library available on <a class="reference external" href="https://oss.sonatype.org/#nexus-search;quick~cds-client-java">Sonatype</a></p></li>
+<li><p>Java Client CLI available on <a class="reference external" href="https://oss.sonatype.org/#nexus-search;quick~cds-client-java-cli">Sonatype</a> and as a <a class="reference external" href="https://hub.docker.com/u/consumerdatastandardsaustralia">Docker Container</a></p></li>
+</ul>
+<p>In addition we’ve developed:</p>
+<ul class="simple">
+<li><p>Java Model Holder available as a <a class="reference external" href="https://hub.docker.com/u/consumerdatastandardsaustralia">Docker Container</a> and on <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/support/samples/cds-holder-java-spring">GitHub (as source)</a></p></li>
+<li><p>Server Stubs on <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/support/samples/cds-stubs-java-spring">GitHub (as source)</a></p></li>
+</ul>
+<p>Finally we have a very release (“tech preview”) of Conformance with:</p>
+<ul class="simple">
+<li><p>Response validation harness for targeting live API Product API endpoints</p></li>
+<li><p>File based payload validation which accepts a JSON sample, identifies which target model it is and performs validation on “correctness”.</p></li>
+</ul>
+<p>These are available on <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-conformance">GitHub (as source)</a></p>
+<p><strong>CDS Codegen</strong></p>
+<p>CDS Codegen is now actively producing the <code class="docutils literal notranslate"><span class="pre">cds-client-java</span></code> and <code class="docutils literal notranslate"><span class="pre">cds-client-java-cli</span></code> artefacts which is great however we are missing a large portion of documentation and need to do more code review to ensure our code base (which has significantly grown in the past 4 weeks) is as friendly to external parties as possible (thereby encouraging development).</p>
+<p><strong>Conformance Tool</strong></p>
+<p>The Conformance Tool has two modes of operation:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Live targeting of an API, interrogation (listing) of Products and validation of all Product Details to <code class="docutils literal notranslate"><span class="pre">cds-models</span></code></p></li>
+<li><p>File based validation of <code class="docutils literal notranslate"><span class="pre">cds-models</span></code> conformance</p></li>
+</ol>
+</div></blockquote>
+<p>As mentioned there is an Alpha in source, we’ll look to cleanup ease of execution of this in Sprint #4</p>
+<p><strong>Other Items</strong></p>
+<p><em>Engineering Site</em>: The <a class="reference external" href="https://consumerdatastandardsaustralia.github.io/engineering/index.html">Engineering Site</a> has been reworked a bit and a blog added. We’ve also introduced Disqus integration to allow public comment on any of it’s content.</p>
+<p><em>Product API Payload Conformance</em>: Release as outlined above</p>
+<p><em>ACCC Registry</em>: Discussions with the ACCC and their implementation partner have continued with a full day workshop run to align activities as they work through bridging the policy and technical components (for which Engineering is a “coal mine canary” for).</p>
+<p><em>Upgradeability Roadmap</em>: This is still ongoing, we’ve had 2 revisions internally and are looking to release a Feedback Request soon following a third. It’s not scheduled for resolution until Sprint #8 so we still have time.</p>
+<p><strong>Showcase Video</strong>: I’m intending to wrap up a quick demo of the components we’ve developed over the weekend and will send a further email when I release in the meantime for the super keen the startup lines for the holder and CLI are:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>CDS Client CLI from Docker: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">consumerdatastandardsaustralia/cds-client-java-cli:0.0.2-SNAPSHOT</span></code></p></li>
+<li><p>CDS Model Holder with Product Payload Loader: <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-p</span> <span class="pre">8080:8080</span> <span class="pre">consumerdatastandardsaustralia/cds-holder-java:0.0.2-SNAPSHOT</span></code></p></li>
+</ol>
+</div></blockquote>
+<p>For the CLI, after running <code class="docutils literal notranslate"><span class="pre">server</span> <span class="pre">http://&lt;docker</span> <span class="pre">presentation</span> <span class="pre">address&gt;:8080/cds-au/v1</span></code> it is now possible to <code class="docutils literal notranslate"><span class="pre">list-products</span></code> and <code class="docutils literal notranslate"><span class="pre">get-product-detail</span></code>:</p>
+<img alt="../_images/20190503_cds-client-java-cli-0.0.2-SNAPSHOT.png" src="../_images/20190503_cds-client-java-cli-0.0.2-SNAPSHOT.png" />
+<p><a class="reference external" href="https://consumerdatastandardsaustralia.github.io/engineering/sprints/sprint3.html">Sprint Report #3 here</a></p>
+<p><strong>Sprint #4 Summary</strong></p>
+<p>Live Sprint Status: <a class="reference internal" href="../sprints/sprint4.html#sprint-4"><span class="std std-ref">Sprint #4</span></a></p>
+<p>As I’ve indicated prior we feel it’s now important that we optimise and improve the code produced over the past 4 weeks by doing code review (“pair programming”) to enhance and tighten the artefacts we have developed and are producing. Side by Side with that we are also doing a significant amount of discovery for the emergent InfoSec Profile (ISP). Ideally we will start putting this discovery into code this Sprint but are also open to the possibility of extending InfoSec related implementation into Sprint #5.</p>
+<p>With this in context, our key objectives for Sprint #4:</p>
+<ol class="arabic simple">
+<li><p>Perform code review on initial artefacts</p></li>
+<li><p>InfoSec Profile compliant Server and Client discovery</p></li>
+<li><p>Initial Customer API Model Ratification</p></li>
+</ol>
+<p>Following the completion of (1) we feel we will then have a sufficient starting point to demonstrate and test Product APIs targeted for July 2019 availability.</p>
+<p><strong>Continuing Progress</strong></p>
+<p>With a good start on initial tools to test for Product APIs on track we also think it’s important to take a step back (“slow down to speed up”) and consolidate what we’ve produced so far while looking towards the next major milestone of enabling authentication services to demonstrate the InfoSec Profile.</p>
+</div>
 
-    <h2>
-      Posted in
-      <a href="2019.html">2019</a>
-    </h2>
+  <div class="section">
+  
     
+
+
+<div class="section">
+  <span style="float: left;">
+  
+  
+  <a href="20190418_sprint2_closed.html">
+    <i class="fa fa-arrow-circle-left"></i>
+    Sprint #2 Closed
+  </a>
+  
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right;">
+  
+</div>
+
+  
+  
     <div class="section">
-      <p>
-      
-      
-        03 May 2019
-      
-      - <a href="../updates/20190503_sprint3_complete.html">Sprint #3 Complete</a>
-      </p>
-      
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'cds-engineering';
+        var disqus_identifier = '/updates/20190503_sprint3_complete/';
+        var disqus_title = 'Sprint #3 Complete';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/updates/20190503_sprint3_complete';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        18 April 2019
-      
-      - <a href="../updates/20190418_sprint2_closed.html">Sprint #2 Closed</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        05 April 2019
-      
-      - <a href="../updates/20190405_sprint1_completed.html">Sprint #1 Completed</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        28 March 2019
-      
-      - <a href="../updates/20190328_feedback_round1.html">Feedback Requests Round #1</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        22 March 2019
-      
-      - <a href="../updates/20190322_sprint0_completed.html">Sprint #0 Completed</a>
-      </p>
-      
-    </div>
-    
+  
   </div>
-  
-  
 
      </div>
      
