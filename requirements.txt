@@ -1,4 +1,4 @@
-ablog==0.9.4
+-e git+https://github.com/sunpy/ablog.git@2fc904e6ea8cfa59e63461ba6c5f201f54f58031#egg=ablog
 alabaster==0.7.12
 Babel==2.6.0
 certifi==2019.3.9
