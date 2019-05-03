@@ -75,15 +75,35 @@ Sprint Issue Breakdown
 Achievements
 ----------------
 
-*Pending*
+- Automated Client Library & CLI generation: `Consumer Data Standards Sonatype <https://oss.sonatype.org/#nexus-search;quick~consumerdatastandards>`_
+- Sample Data Holder for Product API: `Sample Data Holder Available <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/support/samples/cds-holder-java-spring>`_
+- Nice packaging for artefacts with Docker: `CDS DockerHub Account now has runnable cli/holder and codegen <https://hub.docker.com/r/consumerdatastandardsaustralia>`_
+- Live API Alpha Conformance Test Tool: Available in `Codegen Samples <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-conformance>`_ pending packaging and migration 
+- File based (JSON) validation CLI Alpha Conformance Test Tool: Available in `Codegen Samples <https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/cds-artefact-generator/support/samples/cds-conformance>`_ pending packaging and migration 
+- ACCC Registry conversations
 
 Retrospective
 -----------------
 
-*Pending*
+**What went well?**
 
-    - What went well?
-    - What needs improvement?
-    - Next steps?
+- We achieved the goals!
+- We were much more efficient this sprint, Fei and Stu continuing to improve on working together
+- Major initial release of *hopefully* artefacts, want to get community feedback
+- Maintain momentum through Easter
+- We did a Sprint #4 plan prior to retrospective
+- Under pressure Stu and Fei still kept their cool when interacting on code development
+
+**What needs improvement?**
+
+- We should slow down a bit to speed up in the future
+- Need to conduct code review, good that we achieved the goals now need to tighten things up
+- Stu's mental dictionary is very large and he needs to get better at using easier language
+
+**Next steps?**
+
+- Take stock and do code review of what we've go so far
+- Get up to speed with InfoSec Profile so we can have shared understanding
+- Unify sub-stream work items to allow Technical Delivery Manager to review
 
 
