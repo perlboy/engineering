@@ -12,9 +12,9 @@ $| = 1;
 #####
 my $orgName           = 'ConsumerDataStandardsAustralia';
 my @repositoryList       = (
-    'engineering', 'cds-models', 'cds-codegen'
+    'engineering', 'cds-models', 'cds-codegen', 'cds-client-java', 'cds-client-java-cli'
 );
-my $targetSprint      = "Sprint #3";
+my $targetSprint      = "Sprint #4";
 
 
 die "Must supply TOKEN variable" if !$ENV{'TOKEN'};
