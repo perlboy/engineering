@@ -14,6 +14,8 @@ Sprint Planning
    sprint2.rst
    sprint3.rst
    sprint4.rst
+   sprint5.rst
+   sprint6.rst
 
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
 | Sprint #         | Goals                    | Key Deliverables                                                                                                                                 | Start Date           | Status     |
@@ -39,14 +41,14 @@ Sprint Planning
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
 | :ref:`sprint-#4` | - Authentication and     | 1) Customer API Model Definition                                                                                                                 | 06 May 2019          | Started    |
 |                  |   Authorisation          | 2) OpenID/FAPI Server Stub Generation                                                                                                            |                      |            |
-|                  | - Customer Enablement    | 3) OpenID/FAPI Client Generation                                                                                                                 |                      |            |
+|                  | - Code Review            | 3) OpenID/FAPI Client Generation                                                                                                                 |                      |            |
 |                  |                          |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #5        | - Admin Enablement       | 1) Admin API Model Definition                                                                                                                    | 20 May 2019          | Planning   |
+| :ref:`sprint-#5` | - Admin Enablement       | 1) Admin API Model Definition                                                                                                                    | 20 May 2019          | Planning   |
 |                  | - Conformance Harness    | 2) Conformance Harness for Test Execution                                                                                                        |                      |            |
 |                  |                          | 3) Absorb OBIE FAPI Conformance                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #6        | - Accounts Enablement    |                                                                                                                                                  | 03 June 2019         | Planning   |
+| :ref:`sprint-#6` | - Accounts Enablement    |                                                                                                                                                  | 03 June 2019         | Planning   |
 |                  | - ACCC Directory         |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
 | Sprint #7        | - Transaction Enablement |                                                                                                                                                  | 17 June 2019         | Planning   |
