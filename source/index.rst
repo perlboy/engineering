@@ -1,4 +1,4 @@
-.. CDS Engineering Blog Index
+.. _CDS Engineering Blog:
 
 .. title:: Latest Updates
 

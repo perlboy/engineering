@@ -13,6 +13,11 @@ The Engineering Working Group focuses on demonstrating these API Standards throu
 
 This documentation is intended to be the primary location for documentation produced by the Engineering Working Group. This documentation is generated and published automatically from the `master` branch of the `Engineering Repository on GitHub <https://github.com/ConsumerDataStandardsAustralia/engineering>`_
 
+Mailing List
+--------------
+
+We are providing updates on the `Engineering mailing list <https://csiro.us18.list-manage.com/subscribe?u=fb3bcb1ec5662d9767ab3c414&id=9dbef6e859>`_ and we encourage you to signup. We will replicate the updates we mailout on the `CDS Engineering Blog <https://consumerdatastandardsaustralia.github.io/engineering/>`__.
+
 Current Staff
 ----------------
 
