@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CDS Engineering Artefacts &mdash; CDS Engineering 0.1-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Client Artefacts" href="client/index.html" />
+    <link rel="prev" title="Contributing to the Engineering Working Group" href="../contributing.html" />
+   
+  
+  <link rel="alternate" type="application/atom+xml"  href="../blog/atom.xml" title="Blog">
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contributing.html#software-contributions">Software Contributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#mailing-list">Mailing List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#current-staff">Current Staff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#external-contributors">External Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Artefacts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client/index.html">Client Artefacts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client/client-java-cli/index.html">Client CLI (Java+Spring Boot)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="client/client-java/index.html">Client Library (Java)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="server/index.html">Server Artefacts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="server/holder-java-spring/index.html">Model Holder (cds-holder-java-spring)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="server/stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="server/engineering-swaggers/index.html">Engineering Swagger</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conformance/index.html">Conformance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="runtime/index.html">Runtime Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="runtime/registry/index.html">Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sandbox/index.html">Sandbox Deployments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/desktop-sandbox/index.html">Desktop Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="support/index.html">Supporting Artefacts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="support/codegen/index.html">Code Generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support/models/index.html">Models</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#artefact-overview">Artefact Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../activities.html">Planning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../engineering_workshops/index.html">Engineering Workshops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../engineering_workshops/index.html#purpose-of-the-workshops">Purpose of the Workshops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering_workshops/index.html#workshops">Workshops</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../engineering_workshops/round1/index.html">Workshop Round 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sprints/index.html">Sprint Planning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint0.html">Sprint #0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint1.html">Sprint #1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint2.html">Sprint #2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint3.html">Sprint #3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint4.html">Sprint #4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint5.html">Sprint #5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint5.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint5.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint5.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint6.html">Sprint #6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint6.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint6.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint6.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CDS Engineering</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+    
+  <div class="rst-content style-external-links">
+    
+    
+    <div class="normal-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>CDS Engineering Artefacts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/artefacts/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="client/index.html" class="btn btn-neutral float-right" title="Client Artefacts" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../contributing.html" class="btn btn-neutral float-left" title="Contributing to the Engineering Working Group" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+    </div>
+    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+     <div itemprop="articleBody">
+      
+  <div class="section" id="cds-engineering-artefacts">
+<h1>CDS Engineering Artefacts<a class="headerlink" href="#cds-engineering-artefacts" title="Permalink to this headline">¶</a></h1>
+<p>The Engineering Working Group is producing a number of artefacts to demonstrate the emerging <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a> ecosystem. The primary aim of these artefacts is to allow interested parties to create simulations of the target environment which closely represent the implementation of the <a class="reference internal" href="../glossary.html#term-consumer-data-standards"><span class="xref std std-term">Consumer Data Standards</span></a> and it’s associated components.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Artefact Catalogue</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="client/index.html">Client Artefacts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client/client-java-cli/index.html">Client CLI (Java+Spring Boot)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client/client-java/index.html">Client Library (Java)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="server/index.html">Server Artefacts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="server/holder-java-spring/index.html">Model Holder (cds-holder-java-spring)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server/stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server/engineering-swaggers/index.html">Engineering Swagger</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conformance/index.html">Conformance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runtime/index.html">Runtime Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="runtime/registry/index.html">Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sandbox/index.html">Sandbox Deployments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sandbox/desktop-sandbox/index.html">Desktop Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="support/index.html">Supporting Artefacts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="support/codegen/index.html">Code Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="support/models/index.html">Models</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="artefact-overview">
+<h2>Artefact Overview<a class="headerlink" href="#artefact-overview" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/engineering-artefacts.png" src="../_images/engineering-artefacts.png" />
+<p>The following is an explanation of the high level sections included in the above diagram.</p>
+<p><strong>Data Holder</strong></p>
+<p>Data Holders, as the name suggests, hold consumer data that is intended for sharing. This sharing occurs in accordance with the technical definitions contained within the <a class="reference internal" href="../glossary.html#term-consumer-data-standards"><span class="xref std std-term">Consumer Data Standards</span></a>.</p>
+<p>Specifically within Engineering there are a number of artefacts being delivered including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Server Stubs</em> - A starter project based on Java &amp; Spring Boot which delivers the defined APIs with no business logic included</p></li>
+<li><p><em>Sample Auth</em> - A test deployment of the target Authentication and Authorisation intended as part of the <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a></p></li>
+<li><p><em>Model Holder</em> - A functional simulation of the delivery expected from the <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a> by  <a class="reference internal" href="../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a>’s</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Data Recipient</strong></p>
+<p>As with Data Holders, Data Recipients as the name suggests, are potential receivers of <a class="reference internal" href="../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a> data which they utilise to deliver tailored value propositions to consumers. <a class="reference internal" href="../glossary.html#term-data-recipient"><span class="xref std std-term">Data Recipient</span></a>’s consume this data in accordance with the technical definitions contained within the <a class="reference internal" href="../glossary.html#term-consumer-data-standards"><span class="xref std std-term">Consumer Data Standards</span></a>.</p>
+<p>In order to assist with development of these value propositions Engineering is working on a number of tools to assist. In addition to <a class="reference internal" href="../glossary.html#term-data-recipient"><span class="xref std std-term">Data Recipient</span></a> focused tools Engineering is also delivering a set of tools to assist <a class="reference internal" href="../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a>’s in validating their deliver of the <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a>, referred to as Conformance.</p>
+<p>Within Engineering there are number of artefacts being delivered:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>CDS Client Library</em> (cds-client-java) - A Java based library to allow prospective recipients of <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a> data to rapidly integrate their product or services into the <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a> ecosystem</p></li>
+<li><p><em>Client CLI</em> (cds-client-java-cli) - A command line interface (<a class="reference internal" href="../glossary.html#term-cli"><span class="xref std std-term">CLI</span></a>) which wraps the client library into a console based command interpreter focused on the <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a> functionality</p></li>
+<li><p><em>Test Harness</em> - A set of automated tests to provide a validation reporting to a <a class="reference internal" href="../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a> in line with the future regulatory expectations</p></li>
+<li><p><em>Validator CLI</em> - Intended to be integrated into the <em>Client CLI</em> soon, the Validator CLI is a command line interface specifically focused on providing on-demand validation of prospective JSON payloads so that <a class="reference internal" href="../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a> personnelle can perform internal verification of proposed API responses</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Registry</strong></p>
+<p>The Registry encapsulates the “command and control” infrastructure intended to be operated by the <a class="reference internal" href="../glossary.html#term-accc"><span class="xref std std-term">ACCC</span></a>. The Registry is intended to serve a number of outcomes including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>CDR Identities</em> - Identifying who are the participants of the <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a></p></li>
+<li><p><em>Certificate Authority</em> - A cryptographic method of endorsing <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a> participants</p></li>
+<li><p><em>Discoverability</em> - A method of communicating how to initiate communications between participants of the <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Supporting Artefacts</strong></p>
+<p>In order to efficiently deliver the target artefacts <a class="reference internal" href="../glossary.html#term-cds-engineering"><span class="xref std std-term">CDS Engineering</span></a> has built a number of supporting artefacts that provide Engineering with a single source of truth and couple it with code generation capability.</p>
+<p>These are outlined as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>CDS Models</em> - A Java based definition which, using Java Annotations, looks to programmatically define the <a class="reference internal" href="../glossary.html#term-consumer-data-standards"><span class="xref std std-term">Consumer Data Standards</span></a> in such a way that software can perform “reflections” to process for the specific outcome that is intended</p></li>
+<li><p><em>CDS Codegen</em> - A Java based, JSON configured and Velocity template powered code generation tool which utilises the <em>CDS Models</em> to automatically generate various code outputs. Currently these include <em>cds-client-java</em> and <em>cds-client-java-cli</em>.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Supporting Documentation</strong></p>
+<p>The Supporting Documentation provides the architectural, policy and legislative inputs used to define the <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a> ecosystem. Engineering has spent a considerable amount of time in processing these into a unified view of the <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a> and produce software outputs from them. These include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>API Standards</em> - Ostensibly referred to as “the Standards” this documentation provides a definition of the Endpoints available, the parameters these Endpoints accept, the Payloads that these Endpoints return along with security (scope) and error definitions.</p></li>
+<li><p><em>InfoSec Profile</em> - This documentation refers to the specific Security regime intended for implementation as part of the <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a>. It includes overall guidance on intended encryption methods for use, information on how consent flows will technically work as well as tieing together the various international standards around effective session setup and any <a class="reference internal" href="../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a> specific modifications being utilised.</p></li>
+<li><p><em>ACCC Rules &amp; Policies</em> - As the lead regulator the ACCC has been in long term consultation on the rules framework intended to be deployed in the delivery of the <a class="reference internal" href="../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a> legislation.</p></li>
+<li><p><em>Legislation</em> - This is a direct reference to the <a class="reference internal" href="../glossary.html#term-cdr-bill"><span class="xref std std-term">CDR Bill</span></a> which is pending acceptance within parliament</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+  <div class="section">
+  
+  
+    <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'cds-engineering';
+        var disqus_identifier = '/artefacts/';
+        var disqus_title = 'CDS Engineering Artefacts';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+  </div>
+
+     </div>
+     
+    </div>
+    
+    <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="client/index.html" class="btn btn-neutral float-right" title="Client Artefacts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../contributing.html" class="btn btn-neutral float-left" title="Contributing to the Engineering Working Group" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, CSIRO Data61
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+    
+  </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -8,6 +8,7 @@
 
    Home<self>
    About<about>
+   Artefacts<artefacts/index>
    Planning<activities>
    Glossary<glossary>
 

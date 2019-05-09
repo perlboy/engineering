@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Server Artefacts &mdash; CDS Engineering 0.1-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Model Holder (Java+Spring Boot)" href="holder-java-spring/index.html" />
+    <link rel="prev" title="CDS Java Client Library (cds-client-java)" href="../client/client-java/index.html" />
+   
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="Blog">
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributing.html#software-contributions">Software Contributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#mailing-list">Mailing List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#current-staff">Current Staff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#external-contributors">External Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Artefacts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../client/index.html">Client Artefacts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../client/client-java-cli/index.html">Client CLI (Java+Spring Boot)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../client/client-java/index.html">Client Library (Java)</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Server Artefacts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="holder-java-spring/index.html">Model Holder (cds-holder-java-spring)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="engineering-swaggers/index.html">Engineering Swagger</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../conformance/index.html">Conformance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../runtime/index.html">Runtime Components</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../runtime/registry/index.html">Registry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sandbox/index.html">Sandbox Deployments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sandbox/desktop-sandbox/index.html">Desktop Sandbox</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../support/index.html">Supporting Artefacts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support/codegen/index.html">Code Generator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/models/index.html">Models</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#artefact-overview">Artefact Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../activities.html">Planning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering_workshops/index.html">Engineering Workshops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../engineering_workshops/index.html#purpose-of-the-workshops">Purpose of the Workshops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../engineering_workshops/index.html#workshops">Workshops</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering_workshops/round1/index.html">Workshop Round 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sprints/index.html">Sprint Planning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint0.html">Sprint #0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint1.html">Sprint #1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint2.html">Sprint #2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint3.html">Sprint #3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint4.html">Sprint #4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint5.html">Sprint #5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint5.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint5.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint5.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint6.html">Sprint #6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint6.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint6.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint6.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CDS Engineering</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+    
+  <div class="rst-content style-external-links">
+    
+    
+    <div class="normal-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">CDS Engineering Artefacts</a> &raquo;</li>
+        
+      <li>Server Artefacts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/artefacts/server/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="holder-java-spring/index.html" class="btn btn-neutral float-right" title="Model Holder (Java+Spring Boot)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../client/client-java/index.html" class="btn btn-neutral float-left" title="CDS Java Client Library (cds-client-java)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+    </div>
+    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+     <div itemprop="articleBody">
+      
+  <div class="section" id="server-artefacts">
+<h1>Server Artefacts<a class="headerlink" href="#server-artefacts" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="holder-java-spring/index.html">Model Holder (cds-holder-java-spring)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="engineering-swaggers/index.html">Engineering Swagger</a></li>
+</ul>
+</div>
+</div>
+
+  <div class="section">
+  
+  
+    <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'cds-engineering';
+        var disqus_identifier = '/artefacts/server/';
+        var disqus_title = 'Server Artefacts';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/server/';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+  </div>
+
+     </div>
+     
+    </div>
+    
+    <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="holder-java-spring/index.html" class="btn btn-neutral float-right" title="Model Holder (Java+Spring Boot)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../client/client-java/index.html" class="btn btn-neutral float-left" title="CDS Java Client Library (cds-client-java)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, CSIRO Data61
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+    
+  </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
