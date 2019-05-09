@@ -7,3 +7,5 @@ build/
 .pydevproject
 *.iml
 .idea/
+# mac rubbish
+.DS_Store
