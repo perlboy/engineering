@@ -49,7 +49,9 @@ Within Engineering there are number of artefacts being delivered:
     
 **Registry**
 
-The Registry encapsulates the "command and control" infrastructure intended to be operated by the :term:`ACCC`. The Registry is intended to serve a number of outcomes including:
+The Registry encapsulates the "command and control" infrastructure intended to be operated by the :term:`ACCC`. :term:`CDS Engineering` intends to develop a self contained simulation of this infrastructure to provide supporting capability to our other artefacts.
+
+The Registry is intended to serve a number of outcomes including:
 
     - *CDR Identities* - Identifying who are the participants of the :term:`CDR`
     - *Certificate Authority* - A cryptographic method of endorsing :term:`CDR` participants
