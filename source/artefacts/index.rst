@@ -32,7 +32,7 @@ Specifically within Engineering there are a number of artefacts being delivered 
 
     - *Server Stubs* - A starter project based on Java & Spring Boot which delivers the defined APIs with no business logic included
     - *Sample Auth* - A test deployment of the target Authentication and Authorisation intended as part of the :term:`CDS`
-    - *Model Holder* - A functional simulation of the delivery expeced from the :term:`CDS` by  :term:`Data Holder`\'s
+    - *Model Holder* - A functional simulation of the delivery expected from the :term:`CDS` by  :term:`Data Holder`\'s
 
 **Data Recipient**
 
