@@ -1,24 +1,7 @@
-CDS Engineering Artefacts
+Artefact Overview
 ================================================
 
-
 The Engineering Working Group is producing a number of artefacts to demonstrate the emerging :term:`CDR` ecosystem. The primary aim of these artefacts is to allow interested parties to create simulations of the target environment which closely represent the implementation of the :term:`Consumer Data Standards` and it's associated components.
-
-.. toctree::
-   :caption: Artefact Catalogue
-   :maxdepth: 3
-
-   Client Artefacts <client/index.rst>
-   Server Artefacts <server/index.rst>
-   Conformance <conformance/index.rst>
-   Runtime Components <runtime/index.rst>
-   Sandbox Deployments <sandbox/index.rst>
-   Supporting Artefacts <support/index.rst>
-
-
-
-Artefact Overview
------------------------
 
 .. image:: engineering-artefacts.png
 
@@ -66,6 +49,7 @@ These are outlined as follows:
 
     - *CDS Models* - A Java based definition which, using Java Annotations, looks to programmatically define the :term:`Consumer Data Standards` in such a way that software can perform "reflections" to process for the specific outcome that is intended
     - *CDS Codegen* - A Java based, JSON configured and Velocity template powered code generation tool which utilises the *CDS Models* to automatically generate various code outputs. Currently these include *cds-client-java* and *cds-client-java-cli*.
+    - *Engineering Swagger Specification* - An OpenAPI 2 (fka Swagger) specification created by *CDS Codegen* from *CDS Models* to describe the Engineering ratified version of the :term:`CDS`.
 
 **Supporting Documentation**
 
@@ -75,7 +59,6 @@ The Supporting Documentation provides the architectural, policy and legislative 
     - *InfoSec Profile* - This documentation refers to the specific Security regime intended for implementation as part of the :term:`CDR`. It includes overall guidance on intended encryption methods for use, information on how consent flows will technically work as well as tieing together the various international standards around effective session setup and any :term:`CDS` specific modifications being utilised.
     - *ACCC Rules & Policies* - As the lead regulator the ACCC has been in long term consultation on the rules framework intended to be deployed in the delivery of the :term:`CDR` legislation.
     - *Legislation* - This is a direct reference to the :term:`CDR Bill` which is pending acceptance within parliament
-
 
 
 

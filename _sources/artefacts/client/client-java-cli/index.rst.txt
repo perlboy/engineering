@@ -26,4 +26,8 @@ CDS Client CLI (cds-client-java-cli)
 +---------------------+---------------------------------------------------------------------------------------+
 
 
+Quick Start
+----------------------------
 
+.. include:: quickstart.rst
+   :start-after: start-content
