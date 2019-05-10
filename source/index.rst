@@ -5,12 +5,66 @@
 .. toctree::
    :maxdepth: 3
    :hidden:
+   :caption: Overview
 
    Home<self>
    About<about>
-   Artefacts<artefacts/index>
    Planning<activities>
    Glossary<glossary>
+   
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Engineering Artefacts
+     
+   Overview<artefacts/index>
+   Quick Start<artefacts/quickstart>
+   
+   
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Client Artefacts
+     
+   Overview <artefacts/client/index>
+   Client CLI (Java+Spring Boot)<artefacts/client/client-java-cli/index>
+   Client Library (Java)<artefacts/client/client-java/index>
+   
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Server Artefacts
+   
+   Overview <artefacts/server/index>
+   Model Holder (cds-holder-java-spring) <artefacts/server/holder-java-spring/index>
+   Server Stubs (cds-stubs-java-spring) <artefacts/server/stubs-java-spring/index>
+
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Runtime
+   
+   Overview <artefacts/runtime/index>
+   Registry <artefacts/runtime/registry/index>
+   Conformance <artefacts/runtime/conformance/index>
+   
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Sandbox
+
+   Overview <artefacts/sandbox/index>
+   Desktop Sandbox <artefacts/sandbox/desktop-sandbox/index>
+   
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :caption: Support Artefacts
+   
+   Overview <artefacts/support/index>
+   Code Generator <artefacts/support/codegen/index>
+   Models <artefacts/support/models/index>
+   Swagger Specification <artefacts/support/swagger/index>
 
 Welcome
 =========

@@ -1,10 +1,9 @@
 Server Artefacts
 ================================================
 
-.. toctree::
-   :maxdepth: 3
-   
-   Model Holder (cds-holder-java-spring) <holder-java-spring/index>
-   Server Stubs (cds-stubs-java-spring) <stubs-java-spring/index>
-   Engineering Swagger <engineering-swaggers/index>
+.. image:: artefacts-server-highlight.png
+
+.. include:: holder-java-spring/quickstart.rst
+
+.. include:: stubs-java-spring/quickstart.rst
 

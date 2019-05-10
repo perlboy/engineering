@@ -1,7 +1,9 @@
 Runtime Artefacts
 ================================================
 
-.. toctree::
-   :maxdepth: 3
-   
-   Registry <registry/index>
+.. image:: artefacts-runtime-highlight.png
+
+.. include:: conformance/quickstart.rst
+
+.. include:: registry/quickstart.rst
+

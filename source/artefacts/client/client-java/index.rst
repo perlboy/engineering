@@ -21,8 +21,10 @@ CDS Java Client Library (cds-client-java)
 |                     | * Maven                                                                               |
 +---------------------+---------------------------------------------------------------------------------------+
 
+Quick Start
+-----------------
 
-
-
+.. include:: quickstart.rst
+   :start-after: start-content
 
 
