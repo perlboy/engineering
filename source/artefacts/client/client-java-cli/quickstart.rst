@@ -9,8 +9,9 @@ Requirements
 If you wish to simply run the CDS Java Client CLI you only require Docker.
 
 If you wish to build CDS Java Client CLI this requires:
-1. Java 1.8+
-2. Maven/Gradle
+
+    1. Java 1.8+
+    2. Maven
 
 Execution
 ^^^^^^^^^^^^^^^^^^^^^
@@ -37,7 +38,7 @@ To start the CDS Client CLI execute the Docker command as below:
 Manual Build & Run
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To manually build the CLI using Maven, run run:
+To manually build the CLI using Maven, run:
 
 .. code-block:: bash
 

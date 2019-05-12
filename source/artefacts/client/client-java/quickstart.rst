@@ -6,9 +6,10 @@ Client Library Quick Start
 Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Building the API client library requires:
-1. Java 1.8+
-2. Maven/Gradle
+Using the CDS Java based Client Library requires:
+
+    1. Java 1.8+
+    2. Maven/Gradle
 
 Installation
 ^^^^^^^^^^^^^^^^^^^^^^^

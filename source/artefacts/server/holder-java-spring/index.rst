@@ -21,5 +21,9 @@ Model Holder (Java+Spring Boot)
 |                     | * Java Hibernate                                                                      |
 +---------------------+---------------------------------------------------------------------------------------+
 
+Quick Start
+----------------------------
 
+.. include:: quickstart.rst
+   :start-after: start-content
 
