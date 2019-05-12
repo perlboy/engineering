@@ -9,7 +9,7 @@ Model Holder (Java+Spring Boot)
 |                     | :term:`Consumer Data Standards` from a :term:`Data Holder` ("server") perspective     |
 +---------------------+---------------------------------------------------------------------------------------+
 | Repositories        | `GitHub`_                                                                             |
-|                     |                                                                                       |
+|                     | `DockerHub`_                                                                          |
 +---------------------+---------------------------------------------------------------------------------------+
 | Release Status      | Beta                                                                                  |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -27,6 +27,7 @@ Model Holder (Java+Spring Boot)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/support/samples/cds-holder-java-springhttps://github.com/ConsumerDataStandardsAustralia/cds-stubs-java>
+.. _DockerHub: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-holder-java
 
 Quick Start
 ----------------------------

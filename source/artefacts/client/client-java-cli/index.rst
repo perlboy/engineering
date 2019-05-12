@@ -13,7 +13,7 @@ CDS Client CLI (cds-client-java-cli)
 |                     | :ref:`cds-client-java-cli`                                                            |
 +---------------------+---------------------------------------------------------------------------------------+
 | Repositories        | `GitHub`_                                                                             |
-|                     |                                                                                       |
+|                     | `DockerHub`_                                                                          |
 +---------------------+---------------------------------------------------------------------------------------+
 | Release Status      | Beta                                                                                  |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -31,6 +31,7 @@ CDS Client CLI (cds-client-java-cli)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-client-java-cli
+.. _DockerHub: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-client-java-cli
 
 Quick Start
 ----------------------------
