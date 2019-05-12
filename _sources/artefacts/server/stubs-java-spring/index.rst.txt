@@ -8,9 +8,9 @@ Server Stubs (Java+Spring Boot)
 +---------------------+---------------------------------------------------------------------------------------+
 | Release Status      | Beta                                                                                  |
 +---------------------+---------------------------------------------------------------------------------------+
-| Generation Status   | Automatic from swagger-codegen_, intended to be converted to :ref:`cds-codegen`       |
+| Generation Status   | Automatic from :ref:`cds-codegen`                                                     |
 +---------------------+---------------------------------------------------------------------------------------+
-| Verified Snapshot   | 0.0.2-SNAPSHOT                                                                        |
+| Verified Snapshot   | 0.0.1-SNAPSHOT                                                                        |
 | Version             |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Technologies Used   | * Java                                                                                |
@@ -20,4 +20,8 @@ Server Stubs (Java+Spring Boot)
 |                     | * Spring Framework                                                                    |
 +---------------------+---------------------------------------------------------------------------------------+
 
-.. _swagger-codegen: The Swagger Codegen Project (https://github.com/swagger-api/swagger-codegen)
+Quick Start
+----------------------------
+
+.. include:: quickstart.rst
+   :start-after: start-content
