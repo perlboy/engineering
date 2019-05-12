@@ -6,6 +6,9 @@ Server Stubs (Java+Spring Boot)
 |                     | to develop their own :term:`Data Holder` endpoints in line with the                   |
 |                     | :term:`Consumer Data Standards`                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
+| Repositories        | `GitHub`_                                                                             |
+|                     |                                                                                       |
++---------------------+---------------------------------------------------------------------------------------+
 | Release Status      | Beta                                                                                  |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Automatic from :ref:`cds-codegen`                                                     |
@@ -19,6 +22,8 @@ Server Stubs (Java+Spring Boot)
 |                     | * Spring Boot                                                                         |
 |                     | * Spring Framework                                                                    |
 +---------------------+---------------------------------------------------------------------------------------+
+
+.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-stubs-java
 
 Quick Start
 ----------------------------
