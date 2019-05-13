@@ -2,6 +2,7 @@ BankingProductRateCondition
 =============================
 
 
+
 Properties
 ------------
 

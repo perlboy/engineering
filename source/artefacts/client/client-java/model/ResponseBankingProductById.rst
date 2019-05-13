@@ -1,7 +1,8 @@
 ResponseBankingProductById
 ============================
 
-ResponseBankingProductById extends `BaseResponse <BaseResponse>`__ 
+ResponseBankingProductById extends `BaseResponse <BaseResponse.html>`__ 
+
 Properties
 ------------
 

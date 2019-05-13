@@ -13,7 +13,7 @@ CDS Client CLI (cds-client-java-cli)
 |                     | :ref:`cds-client-java-cli`                                                            |
 +---------------------+---------------------------------------------------------------------------------------+
 | Repositories        | `GitHub`_                                                                             |
-|                     | `DockerHub`_                                                                          |
+|                     |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Release Status      | Beta                                                                                  |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -31,10 +31,41 @@ CDS Client CLI (cds-client-java-cli)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-client-java-cli
-.. _DockerHub: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-client-java-cli
 
 Quick Start
 ----------------------------
 
 .. include:: quickstart.rst
    :start-after: start-content
+   
+Commands
+------------------------------
+
+.. list-table::
+    :widths: 10 20 45 25
+    :header-rows: 1
+
+    * - Group
+      - Command
+      - Arguments
+      - Description
+    * - N/A
+      - server
+      - * --url <target-cds-endpoint>
+      - Define the server endpoint to be used by the CLI
+    * - Products API
+      - list-products
+      - 
+            * --brand *<String>*
+            * --effective *<ParamEffective>*
+            * --page *<Integer>*
+            * --page-size *<Integer>*
+            * --product-category *<ParamProductCategory>*
+            * --updated-since *<String>*
+      - Get Products
+    * - Products API
+      - get-product-detail
+      - 
+            * --productId *<String>*
+      - Get Product Detail
+   

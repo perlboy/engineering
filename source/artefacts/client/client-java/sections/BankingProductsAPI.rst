@@ -100,30 +100,37 @@ Parameters
 ^^^^^^^^^^^^^^^
 
 .. list-table::
-    :widths: 10 40 50
+    :widths: 10 40 40 10
     :header-rows: 1
 
     * - Name
       - Type
       - Description
+      - Default
     * - brand
       - String
       - Filter results based on a specific brand
+      - 
     * - effective
       - `ParamEffective <../model/ParamEffective.html>`__ 
       - Allows for the filtering of products based on whether the current time is within the period of time defined as effective by the effectiveFrom and effectiveTo fields. Valid values are ‘CURRENT’, ‘FUTURE’ and ‘ALL’. If absent defaults to &#39;CURRENT&#39;
+      - CURRENT
     * - page
       - Integer
       - Page of results to request (standard pagination)
+      - 1
     * - page-size
       - Integer
       - Page size to request. Default is 25 (standard pagination)
+      - 25
     * - product-category
       - `ParamProductCategory <../model/ParamProductCategory.html>`__ 
       - Used to filter results on the productCategory field applicable to accounts. Any one of the valid values for this field can be supplied. If absent then all accounts returned.
+      - 
     * - updated-since
       - String
       - Only include products that have been updated after the specified date and time. If absent defaults to include all products
+      - 
 
 Return Type
 ^^^^^^^^^^^^^^^^
@@ -195,15 +202,17 @@ Parameters
 ^^^^^^^^^^^^^^^
 
 .. list-table::
-    :widths: 10 40 50
+    :widths: 10 40 40 10
     :header-rows: 1
 
     * - Name
       - Type
       - Description
+      - Default
     * - productId
       - String
       - ID of the specific product requested
+      - 
 
 Return Type
 ^^^^^^^^^^^^^^^^

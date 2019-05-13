@@ -1,7 +1,8 @@
 ResponseBankingProductList
 ============================
 
-ResponseBankingProductList extends `PaginatedResponse <PaginatedResponse>`__ 
+ResponseBankingProductList extends `PaginatedResponse <PaginatedResponse.html>`__ 
+
 Properties
 ------------
 
