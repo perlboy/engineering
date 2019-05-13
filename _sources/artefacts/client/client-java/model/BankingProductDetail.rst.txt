@@ -1,7 +1,8 @@
 BankingProductDetail
 ======================
 
-BankingProductDetail extends `BankingProduct <BankingProduct>`__ 
+BankingProductDetail extends `BankingProduct <BankingProduct.html>`__ 
+
 Properties
 ------------
 

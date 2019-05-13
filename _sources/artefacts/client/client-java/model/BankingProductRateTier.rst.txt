@@ -2,6 +2,7 @@ BankingProductRateTier
 ========================
 
 
+
 Properties
 ------------
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Code Generator &mdash; CDS Engineering 0.1-alpha documentation</title>
+  <title>Definitions &amp; Attributes &mdash; CDS Engineering 0.1-alpha documentation</title>
   
 
   
@@ -37,6 +37,8 @@
     <link rel="author" title="About these documents" href="../../../about.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="CDS Engineering Swagger Specification" href="../swagger/index.html" />
+    <link rel="prev" title="Endpoints" href="endpoints.html" />
    
   
   <link rel="alternate" type="application/atom+xml"  href="../../../blog/atom.xml" title="Blog">
@@ -475,7 +477,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../sandbox/desktop-sandbox/index.html">Desktop Sandbox</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Support Artefacts</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#code-generator">Code Generator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#requirements">Requirements</a></li>
@@ -485,25 +487,25 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Code Generator</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="index.html#quick-start">Quick Start</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="index.html#requirements">Requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#execution-with-docker">Execution with Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="index.html#manual-build-run">Manual Build &amp; Run</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../codegen/index.html">Code Generator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../codegen/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../codegen/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../codegen/index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../codegen/index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../models/index.html">Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../models/index.html#overview">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../models/endpoints.html">Endpoints</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../models/endpoints.html#endpoint-definition">Endpoint Definition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../models/endpoints.html#endpoint-response">Endpoint Response</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../models/endpoints.html#endpoint-auth">Endpoint Auth</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Models</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#overview">Overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="endpoints.html">Endpoints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="endpoints.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="endpoints.html#endpoint-response">Endpoint Response</a></li>
+<li class="toctree-l4"><a class="reference internal" href="endpoints.html#endpoint-auth">Endpoint Auth</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../models/definitions_attributes.html">Data Definitions &amp; Attributes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../models/definitions_attributes.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Data Definitions &amp; Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#endpoint-definition">Endpoint Definition</a></li>
 </ul>
 </li>
 </ul>
@@ -559,19 +561,30 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li>Code Generator</li>
+          <li><a href="index.html">CDS Models (cds-models)</a> &raquo;</li>
+        
+      <li>Definitions &amp; Attributes</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/artefacts/support/codegen/quickstart.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/artefacts/support/models/definitions_attributes.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
     
   </ul>
 
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../swagger/index.html" class="btn btn-neutral float-right" title="CDS Engineering Swagger Specification" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoints.html" class="btn btn-neutral float-left" title="Endpoints" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
   
   <hr/>
 </div>
@@ -580,48 +593,72 @@
     
      <div itemprop="articleBody">
       
-  <div class="section" id="code-generator">
-<h1>Code Generator<a class="headerlink" href="#code-generator" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
-<p>If you wish to simply run the CDS Code Generator you only require Docker.</p>
-<p>If you wish to build CDS Codegen this requires:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li><p>Java 1.8+</p></li>
-<li><p>Maven</p></li>
-</ol>
-</div></blockquote>
-</div>
-<div class="section" id="execution-with-docker">
-<h2>Execution with Docker<a class="headerlink" href="#execution-with-docker" title="Permalink to this headline">¶</a></h2>
-<p>To start the CDS Codegen execute the Docker command as below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -it consumerdatastandardsaustralia/cds-codegen-core:0.0.3-SNAPSHOT -h
-Usage: &lt;main class&gt; <span class="o">[</span>options<span class="o">]</span>
-  Options:
-    --generator, -g
-      Class name of cds-codegen generator
-      Default: au.org.consumerdatastandards.codegen.generator.openapi.SwaggerGenerator
-    --included, -i
-      Include Section <span class="o">(</span>comma separated<span class="o">)</span>
-    --excluded, -e
-      Exclude Section <span class="o">(</span>comma separated<span class="o">)</span>
-    --help, -?, -h
-
-    --output-file, -o
-      Output file to place generated swagger
-</pre></div>
-</div>
-</div>
-<div class="section" id="manual-build-run">
-<h2>Manual Build &amp; Run<a class="headerlink" href="#manual-build-run" title="Permalink to this headline">¶</a></h2>
-<p>To manually build and run the CDS Code Generator using Maven, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-codegen
-user@cds:~/git$ <span class="nb">cd</span> cds-codegen/modules/cds-codegen-core
-user@cds:~/git/cds-codegen/modules/cds-codegen-core$ mvn clean package
-user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.0.3-SNAPSHOT.jar  -h
-</pre></div>
-</div>
+  <div class="section" id="definitions-attributes">
+<h1>Definitions &amp; Attributes<a class="headerlink" href="#definitions-attributes" title="Permalink to this headline">¶</a></h1>
+<p>For each <em>Endpoint</em> defined within <cite>cds-models</cite> it is necessary to describe the response data. Within <cite>cds-models</cite> this is described as Data Definitions.</p>
+<p>Side by Side with this is a requirement to clearly outline attribute values and types.</p>
+<div class="section" id="endpoint-definition">
+<h2>Endpoint Definition<a class="headerlink" href="#endpoint-definition" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Annotation Class</p></td>
+<td><p>&#64;au.org.consumerdatastandards.support.Endpoint</p></td>
+</tr>
+<tr class="row-even"><td><p>Summary</p></td>
+<td><p>The &#64;Endpoint annotation provides the primary location to define an <em>Endpoint</em> for the
+<a class="reference internal" href="../../../glossary.html#term-consumer-data-standards"><span class="xref std std-term">Consumer Data Standards</span></a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Input Parameters</p></td>
+<td><table class="docutils align-center">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 82%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>operationId</p></td>
+<td><p>A camel case and globally unique operation identifier</p></td>
+</tr>
+<tr class="row-odd"><td><p>summary</p></td>
+<td><p>A short summary of the Endpoint purpose</p></td>
+</tr>
+<tr class="row-even"><td><p>description</p></td>
+<td><p>A long description of the Endpoint operation</p></td>
+</tr>
+<tr class="row-odd"><td><p>requestMethod</p></td>
+<td><p>What type of HTTP Request Method to use</p></td>
+</tr>
+<tr class="row-even"><td><p>path</p></td>
+<td><p>The path from which this Endpoint should be accessible</p></td>
+</tr>
+<tr class="row-odd"><td><p>responses</p></td>
+<td><p>An array of EndpointResponse</p></td>
+</tr>
+<tr class="row-even"><td><p>requiredAuth</p></td>
+<td><p>An array of EndpointAuth objects describing security patterns</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Related Annotations</p></td>
+<td><ul class="simple">
+<li><p>&#64;EndpointResponse</p></li>
+<li><p>&#64;EndpointAuth</p></li>
+<li><p>&#64;RequestMethod</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -633,9 +670,9 @@ user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codege
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'cds-engineering';
-        var disqus_identifier = '/artefacts/support/codegen/quickstart/';
-        var disqus_title = 'Code Generator';
-        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/support/codegen/quickstart';
+        var disqus_identifier = '/artefacts/support/models/definitions_attributes/';
+        var disqus_title = 'Definitions &amp;amp; Attributes';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/support/models/definitions_attributes';
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -654,6 +691,15 @@ user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codege
     </div>
     
     <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../swagger/index.html" class="btn btn-neutral float-right" title="CDS Engineering Swagger Specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoints.html" class="btn btn-neutral float-left" title="Endpoints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

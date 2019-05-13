@@ -20,4 +20,16 @@ CDS Models (cds-models)
 |                     | * :ref:`cds-client-java-cli`                                                          |
 +---------------------+---------------------------------------------------------------------------------------+
 
+Overview
+---------------
 
+The `cds-models` library is intended to provide a single source of truth for the :term:`CDS Engineering` artefacts to be built from.
+
+The `cds-models` approach is to define a number of :term:`CDS Engineering` specific Java annotations and then describe the emerging Standards using them.
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Annotation Catalogue
+   
+   Endpoints <endpoints>
+   Data Definitions & Attributes <definitions_attributes>
