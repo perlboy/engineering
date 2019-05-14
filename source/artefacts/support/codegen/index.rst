@@ -37,11 +37,12 @@ CDS Code Generator (cds-codegen)
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-codegen
 
-Table of Contents
-----------------------
 
- - :ref:`cds-codegen-architecture`: Software Architecture of CDS Codegen
-
+.. toctree::
+   :hidden:
+   :glob:
+  
+   Software Architecture <architecture>    
 
 Quick Start
 ----------------------------

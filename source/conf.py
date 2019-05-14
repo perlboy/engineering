@@ -45,6 +45,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
+    'sphinxcontrib.mermaid',
     'ablog'
 ]
 
