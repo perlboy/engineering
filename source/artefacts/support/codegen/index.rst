@@ -21,6 +21,11 @@ CDS Code Generator (cds-codegen)
 | Related Artefacts   |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 
+Table of Contents
+----------------------
+
+ - :ref:`cds-codegen-architecture`: Software Architecture of CDS Codegen
+
 Quick Start
 ----------------------------
 
