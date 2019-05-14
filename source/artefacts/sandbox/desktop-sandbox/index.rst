@@ -1,6 +1,8 @@
 Desktop Sandbox (desktop-sandbox)
 ================================================
 
+.. note:: Development of this documentation is in progress.
+
 +---------------------+---------------------------------------------------------------------------------------+
 | Summary             | The Desktop Sandbox is intended to be a self contained but complete representation    |
 |                     | of the emerging :term:`Consumer Data Standards` ecosystem. It achieves this goal      |

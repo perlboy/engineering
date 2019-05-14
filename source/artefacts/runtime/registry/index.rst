@@ -3,6 +3,8 @@
 Registry Runtime (cds-registry)
 ================================================
 
+.. note:: Development of this documentation is in progress.
+
 +---------------------+---------------------------------------------------------------------------------------+
 | Summary             | The Registry Runtime is an executable localised example of the emerging               |
 |                     | :term:`CDR Registry` specification. It is intended to be a representation of the      |
