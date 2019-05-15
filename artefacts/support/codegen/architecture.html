@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Registry Quick Start &mdash; CDS Engineering 0.1-alpha documentation</title>
+  <title>CDS Codegen Architecture &mdash; CDS Engineering 0.1-alpha documentation</title>
   
 
   
@@ -25,6 +25,7 @@
         <script type="text/javascript" src="../../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../../_static/doctools.js"></script>
         <script type="text/javascript" src="../../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
@@ -37,6 +38,8 @@
     <link rel="author" title="About these documents" href="../../../about.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="CDS Models (cds-models)" href="../models/index.html" />
+    <link rel="prev" title="CDS Code Generator (cds-codegen)" href="index.html" />
    
   
   <link rel="alternate" type="application/atom+xml"  href="../../../blog/atom.xml" title="Blog">
@@ -458,13 +461,13 @@
 </ul>
 <p class="caption"><span class="caption-text">Runtime</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#conformance-quick-start">Conformance Quick Start</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../runtime/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#conformance-quick-start">Conformance Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Registry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../conformance/index.html">Conformance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../runtime/conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
 <ul>
@@ -475,43 +478,43 @@
 <li class="toctree-l1"><a class="reference internal" href="../../sandbox/desktop-sandbox/index.html">Desktop Sandbox</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Support Artefacts</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../support/index.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../support/index.html#code-generator">Code Generator</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../support/index.html#requirements">Requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../support/index.html#execution-with-docker">Execution with Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../support/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#code-generator">Code Generator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../support/codegen/index.html">Code Generator</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../support/codegen/architecture.html">Software Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../support/codegen/index.html#quick-start">Quick Start</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../support/codegen/index.html#requirements">Requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../support/codegen/index.html#execution-with-docker">Execution with Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../support/codegen/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Code Generator</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Software Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../support/models/index.html">Models</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../support/models/index.html#overview">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../support/models/endpoints.html">Endpoints</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../support/models/endpoints.html#endpoint-definition">Endpoint Definition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../support/models/endpoints.html#endpoint-response">Endpoint Response</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../support/models/endpoints.html#endpoint-auth">Endpoint Auth</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../models/index.html">Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../models/index.html#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../models/endpoints.html">Endpoints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../models/endpoints.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../models/endpoints.html#endpoint-response">Endpoint Response</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../models/endpoints.html#endpoint-auth">Endpoint Auth</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../support/models/definitions_attributes.html">Data Definitions &amp; Attributes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../support/models/definitions_attributes.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../models/definitions_attributes.html">Data Definitions &amp; Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../models/definitions_attributes.html#endpoint-definition">Endpoint Definition</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../support/swagger/index.html">Swagger Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../swagger/index.html">Swagger Specification</a></li>
 </ul>
 
             
@@ -560,19 +563,30 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li>Registry Quick Start</li>
+          <li><a href="index.html">CDS Code Generator (cds-codegen)</a> &raquo;</li>
+        
+      <li>CDS Codegen Architecture</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/artefacts/runtime/registry/quickstart.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/artefacts/support/codegen/architecture.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
     
   </ul>
 
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../models/index.html" class="btn btn-neutral float-right" title="CDS Models (cds-models)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="CDS Code Generator (cds-codegen)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
   
   <hr/>
 </div>
@@ -581,10 +595,60 @@
     
      <div itemprop="articleBody">
       
-  <div class="section" id="registry-quick-start">
-<h1>Registry Quick Start<a class="headerlink" href="#registry-quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Placeholder for registry quickstart</p>
-</div>
+  <div class="section" id="cds-codegen-architecture">
+<span id="id1"></span><h1>CDS Codegen Architecture<a class="headerlink" href="#cds-codegen-architecture" title="Permalink to this headline">¶</a></h1>
+
+            <style>
+            /* mermaid issue 527 workaround */
+            .section {
+                opacity: 1.0 !important;
+            }
+            </style>
+            <script>mermaid.initialize({startOnLoad:true});</script><div class="mermaid">
+            graph TD
+subgraph CodegenCLI
+    CLI[main] --&gt;| args| MB[Model Builder]
+    MB --&gt;|APIModel + -g Generator|AG{AbstractGenerator Selection}
+end
+subgraph SwaggerGenerator
+    AG--&gt;|APIModel + SwaggerGeneratorOptions|SG[&quot;generateSwagger()&quot;]
+    subgraph ModelSwaggerConverter
+         SG--&gt;|APIModel|MSC[&quot;convert()&quot;]
+    end
+    subgraph Swagger.io Core Library
+        NSC--&gt;|Swagger Object|WS[&quot;writeSwagger()&quot;]
+        MSC--&gt;|Convert APIModel to Swagger Native|NSC[Pin APIModel to Swagger Object]
+    end
+    WS--&gt;|write swagger.json|SJSON[swagger.json]
+end
+subgraph CodeGenerator
+    AG--&gt;|APIModel + CodeGeneratorOptions|CG[&quot;generate()&quot;]
+    subgraph ModelCodegenConverter
+        CG--&gt;|APIModel|MCC[&quot;convert()&quot;]
+    end
+    subgraph AbstractHandler
+        MCC--&gt;|load -t template config.json|TGCM[Target Config Model]
+        TGCM--&gt;|for AbstractHandler in 'handlers'|AHS{AbstractHandler }
+        AHS--&gt;|DataDefinitionHandler|DDH[DataDefinition Handler]
+        AHS--&gt;|SectionHandler|SH[Section Handler]
+        AHS--&gt;|GenericHandler|GH[Generic Handler]
+       subgraph DataDefinitionHandler
+            DDH--&gt;|$cg = DataDefinition|DDHVC[Data Definition Velocity Context]
+       end
+       subgraph SectionHandler
+           SH--&gt;|$cg = SectionDefinition|SHVC[Generic Velocity Context]
+       end
+       subgraph GenericHandler
+           GH--&gt;|$cg = CodeGenModel|GHVC[Generic Velocity Context]
+       end
+       DDHVC--&gt;|$cg = Each DataDefinition|VF[VelocityFile]
+       SHVC--&gt;|$cg = Each Section|VF[VelocityFile]
+       GHVC--&gt;|$cg = CodegenModel|VF[VelocityFile]
+       VF--&gt;|populateVelocityFiles|VH[Velocity File Collection]
+       VH--&gt;|fill context, StringUtils,WordUtils,MathTool|VHWF[VelocityHelper:writeFiles]
+       end
+end
+        </div></div>
 
   <div class="section">
   
@@ -594,9 +658,9 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'cds-engineering';
-        var disqus_identifier = '/artefacts/runtime/registry/quickstart/';
-        var disqus_title = 'Registry Quick Start';
-        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/runtime/registry/quickstart';
+        var disqus_identifier = '/artefacts/support/codegen/architecture/';
+        var disqus_title = 'CDS Codegen Architecture';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/support/codegen/architecture';
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -615,6 +679,15 @@
     </div>
     
     <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../models/index.html" class="btn btn-neutral float-right" title="CDS Models (cds-models)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="CDS Code Generator (cds-codegen)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
