@@ -18,6 +18,7 @@
    :caption: Engineering Artefacts
      
    Overview<artefacts/index>
+   Architecture<artefacts/architecture>
    Quick Start<artefacts/quickstart>
    
    

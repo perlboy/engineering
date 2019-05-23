@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CDS Engineering Swagger Specification &mdash; CDS Engineering 0.1-alpha documentation</title>
+  <title>CDS Swagger Artefacts &mdash; CDS Engineering 0.1-alpha documentation</title>
   
 
   
@@ -34,10 +34,12 @@
   
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
     <link rel="author" title="About these documents" href="../../../about.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="CDS Engineering Swagger Specification" href="engineering-swagger.html" />
     <link rel="prev" title="Definitions &amp; Attributes" href="../models/definitions_attributes.html" />
    
   
@@ -183,6 +185,7 @@
 <p class="caption"><span class="caption-text">Engineering Artefacts</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture.html">Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quick Start</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart.html#client-cli">Client CLI</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#requirements">Requirements</a></li>
@@ -474,7 +477,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../sandbox/index.html#desktop-sandbox-quick-start">Desktop Sandbox Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../sandbox/desktop-sandbox/index.html">Desktop Sandbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sandbox/desktop-sandbox/index.html">Desktop Sandbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../sandbox/desktop-sandbox/index.html#high-level-architecture-diagram">High Level Architecture Diagram</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Support Artefacts</span></p>
 <ul class="current">
@@ -513,7 +519,17 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Swagger Specification</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Swagger Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="engineering-swagger.html">Engineering Swagger</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="engineering-swagger.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="draft-standards.html">Draft Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="draft-standards.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -562,7 +578,7 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li>CDS Engineering Swagger Specification</li>
+      <li>CDS Swagger Artefacts</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -578,6 +594,8 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
+        <a href="engineering-swagger.html" class="btn btn-neutral float-right" title="CDS Engineering Swagger Specification" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
       
         <a href="../models/definitions_attributes.html" class="btn btn-neutral float-left" title="Definitions &amp; Attributes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
@@ -590,38 +608,21 @@
     
      <div itemprop="articleBody">
       
-  <div class="section" id="cds-engineering-swagger-specification">
-<span id="cds-engineering-swagger"></span><h1>CDS Engineering Swagger Specification<a class="headerlink" href="#cds-engineering-swagger-specification" title="Permalink to this headline">¶</a></h1>
-<table class="docutils align-center">
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 81%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Summary</p></td>
-<td><p>The CDS Engineering Swagger specification is an OpenAPI 2 specification created by
-<em>cds-codegen</em> using <em>cds-models</em>. This specification represents the latest ratified
-version of the <a class="reference internal" href="../../../glossary.html#term-consumer-data-standards"><span class="xref std std-term">Consumer Data Standards</span></a> from the CDS Engineering team.</p></td>
-</tr>
-<tr class="row-even"><td><p>Release Status</p></td>
-<td><p>Product API specification released</p></td>
-</tr>
-<tr class="row-odd"><td><p>Generation Status</p></td>
-<td><p>Managed by <a class="reference internal" href="../../../glossary.html#term-cds-engineering"><span class="xref std std-term">CDS Engineering</span></a>, generated using <em>cds-codegen</em></p></td>
-</tr>
-<tr class="row-even"><td><p>Current Verified
-Snapshot</p></td>
-<td><p>0.0.5</p></td>
-</tr>
-<tr class="row-odd"><td><p>Related Artefacts</p></td>
-<td><ul class="simple">
-<li><p><a class="reference internal" href="../codegen/index.html#cds-codegen"><span class="std std-ref">CDS Code Generator (cds-codegen)</span></a></p></li>
-<li><p><a class="reference internal" href="../models/index.html#cds-models"><span class="std std-ref">CDS Models (cds-models)</span></a></p></li>
+  <div class="section" id="cds-swagger-artefacts">
+<span id="id1"></span><h1>CDS Swagger Artefacts<a class="headerlink" href="#cds-swagger-artefacts" title="Permalink to this headline">¶</a></h1>
+<p>There are a number of swagger artefacts and visualisations related to the Consumer Data Standards.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="engineering-swagger.html">Engineering Swagger</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="engineering-swagger.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="draft-standards.html">Draft Standards</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="draft-standards.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 
   <div class="section">
@@ -633,7 +634,7 @@ Snapshot</p></td>
     <script type="text/javascript">
         var disqus_shortname = 'cds-engineering';
         var disqus_identifier = '/artefacts/support/swagger/';
-        var disqus_title = 'CDS Engineering Swagger Specification';
+        var disqus_title = 'CDS Swagger Artefacts';
         var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/support/swagger/';
 
         (function() {
@@ -655,6 +656,8 @@ Snapshot</p></td>
     <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="engineering-swagger.html" class="btn btn-neutral float-right" title="CDS Engineering Swagger Specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../models/definitions_attributes.html" class="btn btn-neutral float-left" title="Definitions &amp; Attributes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

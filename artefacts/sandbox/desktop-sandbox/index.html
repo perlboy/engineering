@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
     <link rel="author" title="About these documents" href="../../../about.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -183,6 +184,7 @@
 <p class="caption"><span class="caption-text">Engineering Artefacts</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture.html">Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quick Start</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart.html#client-cli">Client CLI</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#requirements">Requirements</a></li>
@@ -474,7 +476,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#desktop-sandbox-quick-start">Desktop Sandbox Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Desktop Sandbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Desktop Sandbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#high-level-architecture-diagram">High Level Architecture Diagram</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Support Artefacts</span></p>
 <ul>
@@ -513,7 +518,17 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../support/swagger/index.html">Swagger Specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support/swagger/index.html">Swagger Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../support/swagger/engineering-swagger.html">Engineering Swagger</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../support/swagger/engineering-swagger.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/swagger/draft-standards.html">Draft Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../support/swagger/draft-standards.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             
@@ -625,6 +640,40 @@ Version</p></td>
 </tr>
 </tbody>
 </table>
+<div class="section" id="high-level-architecture-diagram">
+<h2>High Level Architecture Diagram<a class="headerlink" href="#high-level-architecture-diagram" title="Permalink to this headline">¶</a></h2>
+<p class="plantuml">
+<img src="../../../_images/plantuml-b9e0daef1a9eecccf3f98fd3c1d060dccb0de0d6.png" alt="skinparam linetype ortho
+
+package &quot;Desktop Sandbox&quot; {
+  interface &quot;Sandbox Generation&quot;
+  [Sample Holder (cds-holder-java)]
+  database &quot;Ephemeral Database&quot;
+  [OpenID Auth Server]
+  [Registry Simulation]
+}
+
+package &quot;Developer Tools&quot; {
+  [CLI (cds-java-client-cli)]
+  [Sandbox Data Loader]
+  [Conformance Tool]
+}
+
+package &quot;Client Artefacts&quot; {
+  [Client Library (cds-java-client)]
+}
+
+[Conformance Tool] --&gt; [Sample Holder (cds-holder-java)]: &lt;&lt; verify &gt;&gt;
+[Sample Holder (cds-holder-java)] --&gt; [Ephemeral Database]: &lt;&lt; stores data &gt;&gt;
+[Sample Holder (cds-holder-java)] --&gt; [OpenID Auth Server]: &lt;&lt; authorises via &gt;&gt;
+[Sandbox Data Loader] --&gt; [Sample Holder (cds-holder-java)]: &lt;&lt; modifies &gt;&gt;
+[CLI (cds-java-client-cli)]   --&gt; [Sample Holder (cds-holder-java)]: &lt;&lt; accesses &gt;&gt;
+[CLI (cds-java-client-cli)]   --&gt; [OpenID Auth Server]: &lt;&lt; authenticates &gt;&gt;
+[CLI (cds-java-client-cli)]   --&gt; [Client Library (cds-java-client)]: &lt;&lt; utilises &gt;&gt;
+[CLI (cds-java-client-cli)] --&gt; [Registry Simulation]: &lt;&lt; accesses &gt;&gt;
+[Sample Holder (cds-holder-java)] --&gt; [Registry Simulation]: &lt;&lt; accesses &gt;&gt;"/>
+</p>
+</div>
 </div>
 
   <div class="section">

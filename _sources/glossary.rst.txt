@@ -64,6 +64,9 @@ Glossary
    Engineering Working Group
       A reference to the Engineering working group, one of `4 working groups <https://consumerdatastandards.org.au/workinggroups/>`_ within the :term:`project team`
 
+   Standards Working Group
+      A reference to the Standards working group, one of `4 working groups <https://consumerdatastandards.org.au/workinggroups/>`_ within the :term:`project team`
+
    CDR Bill
       A reference to the `Treasury Laws Amendment (Consumer Data Right) 2019 Bill <https://www.legislation.gov.au/Details/C2019B00025>`_. A proposed piece of legislation to enable the delivery of the :term:`CDR`.
 
