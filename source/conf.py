@@ -46,7 +46,9 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
     'sphinxcontrib.mermaid',
-    'ablog'
+    'ablog',
+    'sphinx.ext.graphviz',
+    'sphinxcontrib.plantuml'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
