@@ -4,7 +4,7 @@ FROM nginx
 RUN apt-get update
 
 # Deploy dependencies
-RUN apt-get install -y make python3-pip git
+RUN apt-get install -y make python3-pip git graphviz default-jre plantuml
 
 # Transfer the sphinx over
 COPY . /opt/engineering
@@ -22,9 +22,3 @@ RUN make clean html
 RUN rm -fr /usr/share/nginx/html
 RUN cp -R /opt/engineering/build/html /usr/share/nginx/html
 
-# Now uninstall python3-pip and make
-RUN apt-get remove -y make python3-pip git
-RUN apt-get autoremove -y
-
-# Clean up APT when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
