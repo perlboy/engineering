@@ -11,15 +11,16 @@ $| = 1;
 # No warranty implied!
 #####
 my $orgName           = 'ConsumerDataStandardsAustralia';
-my $topUserCount      = 10;
+my $topUserCount      = 20;
 #my @excludedUsersList = ();
 my @excludedUsersList = (
     'csirostu',   'perlboy',   'JamesMBligh', 'ajmcmiddlin',
     'nghamilton', 'benkolera', 'enemeth79',   'lukepopp',
-    'ellenbroad', 'csirocdr', 'tonymorris'
+    'ellenbroad', 'csirocdr', 'tonymorris', 'fyang1024', 'kirky61', 'sendhilkumarg', 'kirkee'
 );
 my @repositoryList = ( 'standards', 'infosec' );
 my $specificRepositories = 0;
+my @excludedRepositoryList = ('swagger-codegen', 'perl-net-github');
 
 die "Must supply TOKEN variable" if !$ENV{'TOKEN'};
 
@@ -36,6 +37,10 @@ foreach my $oneRepo (@repos) {
     my $repoName = $oneRepo->{'name'};
 
     if ( $specificRepositories && !grep( /^$repoName$/i, @repositoryList ) ) {
+        next;
+    }
+
+    if( grep( /^$repoName$/i, @excludedRepositoryList ) ) {
         next;
     }
 
