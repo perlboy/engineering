@@ -4,7 +4,7 @@ FROM nginx
 RUN apt-get update
 
 # Deploy dependencies
-RUN apt-get install -y make python3-pip git graphviz plantuml
+RUN apt-get install -y make python3-pip git graphviz plantuml openjdk-11-jdk
 
 # Transfer the sphinx over
 COPY . /opt/engineering
