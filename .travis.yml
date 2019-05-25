@@ -5,8 +5,7 @@ env:
   - IMAGE_NAME=consumerdatastandardsaustralia/engineering
 services:
 - docker
-script:
-- docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
+
 addons:
   sonarcloud:
     organization: "consumerdatastandardsaustralia"
@@ -14,6 +13,7 @@ addons:
       secure: "$SONARCLOUD_LOGIN"
       
 script:
+  - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
   - sonar-scanner
 
 after_success:
