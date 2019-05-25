@@ -7,6 +7,14 @@ services:
 - docker
 script:
 - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
+addons:
+  sonarcloud:
+    organization: "consumerdatastandardsaustralia"
+    token:
+      secure: "$SONARCLOUD_LOGIN"
+      
+script:
+  - sonar-scanner
+
 after_success:
-  - sonar-scanner -Dsonar.projectKey=ConsumerDataStandardsAustralia_engineering  -Dsonar.organization=consumerdatastandardsaustralia  -Dsonar.sources=.  -Dsonar.host.url=https://sonarcloud.io  -Dsonar.login="$SONARCLOUD_LOGIN"
   - ".travis/push.sh"
