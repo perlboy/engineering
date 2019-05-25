@@ -1,0 +1,825 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Client Artefacts &mdash; CDS Engineering 0.1-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CDS Client CLI (cds-client-java-cli)" href="client-java-cli/index.html" />
+    <link rel="prev" title="Artefact Quick Start" href="../quickstart.html" />
+   
+  
+  <link rel="alternate" type="application/atom+xml"  href="../../blog/atom.xml" title="Blog">
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributing.html#software-contributions">Software Contributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#mailing-list">Mailing List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#current-staff">Current Staff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#external-contributors">External Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../activities.html">Planning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../engineering_workshops/index.html">Engineering Workshops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../engineering_workshops/index.html#purpose-of-the-workshops">Purpose of the Workshops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../engineering_workshops/index.html#workshops">Workshops</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../engineering_workshops/round1/index.html">Workshop Round 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../sprints/index.html">Sprint Planning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint0.html">Sprint #0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint0.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint1.html">Sprint #1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint1.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint2.html">Sprint #2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint2.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint3.html">Sprint #3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint3.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint4.html">Sprint #4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint4.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint5.html">Sprint #5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint5.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint5.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint5.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../sprints/sprint6.html">Sprint #6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint6.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint6.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../sprints/sprint6.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Engineering Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html#client-cli">Client CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html#client-library">Client Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#code-example">Code Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html#model-holder">Model Holder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id2">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id3">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id4">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html#server-stubs">Server Stubs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id5">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#starting-a-project">Starting a Project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html#code-generator">Code Generator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id6">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../quickstart.html#id7">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Client Artefacts</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#client-library-quick-start">Client Library Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-example">Code Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#client-cli-quick-start">Client CLI Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client-java-cli/index.html">Client CLI (Java+Spring Boot)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client-java-cli/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client-java-cli/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="client-java-cli/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="client-java-cli/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client-java-cli/index.html#commands">Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client-java/index.html">Client Library (Java)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client-java/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client-java/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/index.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/index.html#code-example">Code Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client-java/index.html#endpoints">Endpoints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client-java/sections/BankingProductsAPI.html">BankingProductsAPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/sections/BankingProductsAPI.html#listproducts">listProducts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="client-java/sections/BankingProductsAPI.html#getproductdetail">getProductDetail</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client-java/index.html#models">Models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/ResponseBankingProductList.html">ResponseBankingProductList</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/ResponseBankingProductList.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/PaginatedResponse.html">PaginatedResponse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/PaginatedResponse.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/LinksPaginated.html">LinksPaginated</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/LinksPaginated.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/MetaPaginated.html">MetaPaginated</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/MetaPaginated.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/ResponseBankingProductListData.html">ResponseBankingProductListData</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/ResponseBankingProductListData.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProduct.html">BankingProduct</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProduct.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingEnumProductCategory.html">BankingEnumProductCategory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingEnumProductCategory.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductAdditionalInformation.html">BankingProductAdditionalInformation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductAdditionalInformation.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/ParamEffective.html">ParamEffective</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/ParamEffective.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/ParamProductCategory.html">ParamProductCategory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/ParamProductCategory.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/ResponseBankingProductById.html">ResponseBankingProductById</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/ResponseBankingProductById.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BaseResponse.html">BaseResponse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BaseResponse.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/Links.html">Links</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/Links.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/Meta.html">Meta</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/Meta.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductDetail.html">BankingProductDetail</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductDetail.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductBundle.html">BankingProductBundle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductBundle.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductFeature.html">BankingProductFeature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductFeature.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/FeatureType.html">FeatureType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/FeatureType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductConstraint.html">BankingProductConstraint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductConstraint.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/ConstraintType.html">ConstraintType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/ConstraintType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductEligibility.html">BankingProductEligibility</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductEligibility.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/EligibilityType.html">EligibilityType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/EligibilityType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductFee.html">BankingProductFee</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductFee.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/FeeType.html">FeeType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/FeeType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductDiscount.html">BankingProductDiscount</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductDiscount.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/DiscountType.html">DiscountType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/DiscountType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductDiscountEligibility.html">BankingProductDiscountEligibility</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductDiscountEligibility.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/DiscountEligibilityType.html">DiscountEligibilityType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/DiscountEligibilityType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductDepositRate.html">BankingProductDepositRate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductDepositRate.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/DepositRateType.html">DepositRateType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/DepositRateType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductRateTier.html">BankingProductRateTier</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductRateTier.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/UnitOfMeasure.html">UnitOfMeasure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/UnitOfMeasure.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/RateApplicationMethod.html">RateApplicationMethod</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/RateApplicationMethod.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductRateCondition.html">BankingProductRateCondition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductRateCondition.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductRateTierSubTier.html">BankingProductRateTierSubTier</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductRateTierSubTier.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/UnitOfMeasure.html">UnitOfMeasure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/UnitOfMeasure.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/RateApplicationMethod.html">RateApplicationMethod</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/RateApplicationMethod.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/BankingProductLendingRate.html">BankingProductLendingRate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/BankingProductLendingRate.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/LendingRateType.html">LendingRateType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/LendingRateType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="client-java/model/InterestPaymentDue.html">InterestPaymentDue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client-java/model/InterestPaymentDue.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Server Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../server/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../server/index.html#model-holder-quick-start">Model Holder Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../server/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../server/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../server/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../server/index.html#java-spring-stubs-quick-start">Java+Spring Stubs Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../server/index.html#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../server/index.html#starting-a-project">Starting a Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../server/holder-java-spring/index.html">Model Holder (cds-holder-java-spring)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../server/holder-java-spring/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../server/holder-java-spring/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../server/holder-java-spring/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../server/holder-java-spring/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../server/stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../server/stubs-java-spring/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../server/stubs-java-spring/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../server/stubs-java-spring/index.html#starting-a-project">Starting a Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Runtime</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../runtime/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../runtime/index.html#conformance-quick-start">Conformance Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../runtime/conformance/index.html">Conformance</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Sandbox</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sandbox/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sandbox/index.html#desktop-sandbox-quick-start">Desktop Sandbox Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../sandbox/desktop-sandbox/index.html">Desktop Sandbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sandbox/desktop-sandbox/index.html#high-level-architecture-diagram">High Level Architecture Diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Support Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../support/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../support/index.html#code-generator">Code Generator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../support/codegen/index.html">Code Generator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../support/codegen/architecture.html">Software Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../support/codegen/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support/codegen/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/codegen/index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support/codegen/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../support/models/index.html">Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../support/models/index.html#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support/models/endpoints.html">Endpoints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../support/models/endpoints.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support/models/endpoints.html#endpoint-response">Endpoint Response</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support/models/endpoints.html#endpoint-auth">Endpoint Auth</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../support/models/definitions_attributes.html">Data Definitions &amp; Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../support/models/definitions_attributes.html#endpoint-definition">Endpoint Definition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../support/swagger/index.html">Swagger Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../support/swagger/engineering-swagger.html">Engineering Swagger</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support/swagger/engineering-swagger.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../support/swagger/draft-standards.html">Draft Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support/swagger/draft-standards.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CDS Engineering</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+    
+  <div class="rst-content style-external-links">
+    
+    
+    <div class="normal-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Client Artefacts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/artefacts/client/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="client-java-cli/index.html" class="btn btn-neutral float-right" title="CDS Client CLI (cds-client-java-cli)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../quickstart.html" class="btn btn-neutral float-left" title="Artefact Quick Start" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+    </div>
+    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+     <div itemprop="articleBody">
+      
+  <div class="section" id="client-artefacts">
+<h1>Client Artefacts<a class="headerlink" href="#client-artefacts" title="Permalink to this headline">¶</a></h1>
+<img alt="../../_images/artefacts-client-highlight.png" src="../../_images/artefacts-client-highlight.png" />
+<p>Primarily intended for use by <a class="reference internal" href="../../glossary.html#term-data-recipient"><span class="xref std std-term">Data Recipient</span></a>’s, the <em>Client Artefacts</em> are focused on the accessing and consumption of <a class="reference internal" href="../../glossary.html#term-cds"><span class="xref std std-term">CDS</span></a> compliant <a class="reference internal" href="../../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a> resources.</p>
+<p>The <a class="reference internal" href="../../glossary.html#term-cds-engineering"><span class="xref std std-term">CDS Engineering</span></a> team is actively creating and maintaining two such artefacts notably:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="client-java/index.html#cds-client-java"><span class="std std-ref">CDS Java Client Library (cds-client-java)</span></a>: A Command Line interface for Developers to consume target APIs</p></li>
+<li><p><a class="reference internal" href="client-java-cli/index.html#cds-client-java-cli"><span class="std std-ref">CDS Client CLI (cds-client-java-cli)</span></a>: A reference implementation, written in Java, of the functions available to <a class="reference internal" href="../../glossary.html#term-data-recipient"><span class="xref std std-term">Data Recipient</span></a>’s within the <a class="reference internal" href="../../glossary.html#term-cdr"><span class="xref std std-term">CDR</span></a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="client-library-quick-start">
+<h2>Client Library Quick Start<a class="headerlink" href="#client-library-quick-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<p>Using the CDS Java based Client Library requires:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Java 1.8+</p></li>
+<li><p>Maven/Gradle</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>To deploy the client library into your local Maven cache from source run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-client-java
+user@cds:~/git$ <span class="nb">cd</span> cds-client-java
+user@cds:~/git/cds-client-java$ mvn clean install
+</pre></div>
+</div>
+<p>To integrate into your Maven project add this dependency to your project’s POM:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;dependency&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>au.org.consumerdatastandards<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>cds-client-java<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.2-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;scope&gt;</span>compile<span class="nt">&lt;/scope&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre></div>
+</div>
+<p>To integrate into your Gradle project, add this dependency to your project’s build file:</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span> <span class="n">repositories</span> <span class="o">{</span>
+     <span class="n">mavenCentral</span><span class="o">()</span>
+ <span class="o">}</span>
+
+<span class="n">compile</span> <span class="s2">&quot;au.org.consumerdatastandards:cds-client-java:0.0.2-SNAPSHOT&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="code-example">
+<h3>Code Example<a class="headerlink" href="#code-example" title="Permalink to this headline">¶</a></h3>
+<p>Please follow the installation instructions then, within your Java project create your code as follows:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.UUID</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">au.org.consumerdatastandards.client.ApiClient</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">au.org.consumerdatastandards.client.ApiException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">au.org.consumerdatastandards.client.api.BankingProductsAPI</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">au.org.consumerdatastandards.client.model.ResponseBankingProductById</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">au.org.consumerdatastandards.client.model.ResponseBankingProductList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClientApiProductTest</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">BankingProductsAPI</span> <span class="n">api</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankingProductsAPI</span><span class="o">();</span>
+
+        <span class="n">ApiClient</span> <span class="n">client</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ApiClient</span><span class="o">();</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">setBasePath</span><span class="o">(</span><span class="s">&quot;http://localhost:8080/cds-au/v1&quot;</span><span class="o">);</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">addDefaultHeader</span><span class="o">(</span><span class="s">&quot;x-v&quot;</span><span class="o">,</span> <span class="s">&quot;1&quot;</span><span class="o">);</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">addDefaultHeader</span><span class="o">(</span><span class="s">&quot;x-min-v&quot;</span><span class="o">,</span> <span class="s">&quot;1&quot;</span><span class="o">);</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">addDefaultHeader</span><span class="o">(</span><span class="s">&quot;x-fapi-financial-id&quot;</span><span class="o">,</span> <span class="s">&quot;cds&quot;</span><span class="o">);</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">addDefaultHeader</span><span class="o">(</span><span class="s">&quot;x-fapi-customer-last-logged-time&quot;</span><span class="o">,</span> <span class="s">&quot;&quot;</span><span class="o">);</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">addDefaultHeader</span><span class="o">(</span><span class="s">&quot;x-fapi-customer-ip-address&quot;</span><span class="o">,</span> <span class="s">&quot;192.168.1.2&quot;</span><span class="o">);</span>
+        <span class="n">client</span><span class="o">.</span><span class="na">addDefaultHeader</span><span class="o">(</span><span class="s">&quot;x-fapi-interaction-id&quot;</span><span class="o">,</span> <span class="n">UUID</span><span class="o">.</span><span class="na">randomUUID</span><span class="o">().</span><span class="na">toString</span><span class="o">());</span>
+
+        <span class="n">api</span><span class="o">.</span><span class="na">setApiClient</span><span class="o">(</span><span class="n">client</span><span class="o">);</span>
+
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="n">ResponseBankingProductList</span> <span class="n">result</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="na">listProducts</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+
+            <span class="n">result</span><span class="o">.</span><span class="na">getData</span><span class="o">().</span><span class="na">getProducts</span><span class="o">().</span><span class="na">forEach</span><span class="o">(</span><span class="n">oneProduct</span> <span class="o">-&gt;</span> <span class="o">{</span>
+                <span class="k">try</span> <span class="o">{</span>
+                    <span class="n">ResponseBankingProductById</span> <span class="n">productDetail</span> <span class="o">=</span> <span class="n">api</span><span class="o">.</span><span class="na">getProductDetail</span><span class="o">(</span><span class="n">oneProduct</span><span class="o">.</span><span class="na">getProductId</span><span class="o">());</span>
+                    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">productDetail</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ApiException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">System</span><span class="o">.</span><span class="na">err</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">String</span><span class="o">.</span><span class="na">format</span><span class="o">(</span><span class="s">&quot;Exception when calling BankingProductsAPI#getProductDetail({})&quot;</span><span class="o">,</span> <span class="n">oneProduct</span><span class="o">.</span><span class="na">getProductId</span><span class="o">()));</span>
+                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+            <span class="o">}</span>
+
+            <span class="o">});</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ApiException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">err</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Exception when calling BankingProductsAPI#listProducts&quot;</span><span class="o">);</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="client-cli-quick-start">
+<h2>Client CLI Quick Start<a class="headerlink" href="#client-cli-quick-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Requirements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to simply run the CDS Java Client CLI you only require Docker.</p>
+<p>If you wish to build CDS Java Client CLI this requires:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Java 1.8+</p></li>
+<li><p>Maven</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="execution">
+<h3>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h3>
+<p>To start the CDS Client CLI execute the Docker command as below:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.0.2-SNAPSHOT
+
+<span class="c1">#     ___     ___     ___</span>
+<span class="c1">#    / __|   |   \   / __|</span>
+<span class="c1">#   | (__    | |) |  \__ \</span>
+<span class="c1">#    \___|   |___/   |___/</span>
+<span class="c1">#  _|&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;|</span>
+<span class="c1">#  &quot;`-0-0-&#39;&quot;`-0-0-&#39;&quot;`-0-0-&#39;</span>
+
+<span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.066  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : Starting CdsClientShell v0.0.2-SNAPSHOT on b78c5f91f96d with PID <span class="m">1</span> <span class="o">(</span>/opt/cds-client-java-cli/cli.jar started by root in /<span class="o">)</span>
+<span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.068  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : No active profile set, falling back to default profiles: default
+<span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.913  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : Started CdsClientShell in <span class="m">1</span>.061 seconds <span class="o">(</span>JVM running <span class="k">for</span> <span class="m">1</span>.314<span class="o">)</span>
+cds-shell:&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="manual-build-run">
+<h3>Manual Build &amp; Run<a class="headerlink" href="#manual-build-run" title="Permalink to this headline">¶</a></h3>
+<p>To manually build the CLI using Maven, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-client-java-cli
+user@cds:~/git$ <span class="nb">cd</span> cds-client-java-cli
+user@cds:~/git/cds-client-java$ mvn clean spring-boot
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="section">
+  
+  
+    <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'cds-engineering';
+        var disqus_identifier = '/artefacts/client/';
+        var disqus_title = 'Client Artefacts';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/client/';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+  </div>
+
+     </div>
+     
+    </div>
+    
+    <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="client-java-cli/index.html" class="btn btn-neutral float-right" title="CDS Client CLI (cds-client-java-cli)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../quickstart.html" class="btn btn-neutral float-left" title="Artefact Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, CSIRO Data61
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+    
+  </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

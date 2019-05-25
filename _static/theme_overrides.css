@@ -1,0 +1,101 @@
+.wy-table-responsive table td, .wy-table-responsive table th {
+  white-space: normal !important;
+  font-size: 90%;
+}
+
+.wy-nav-content {
+  max-width: 1440px;
+  padding: 0;
+}
+
+.wy-nav-side {
+  background: #000000;
+}
+
+.wy-menu-vertical {
+  background: #000000;
+}
+
+.wy-menu-vertical a {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-menu-vertical li ul li a {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-menu-vertical li.current a {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-menu-vertical li.current a {
+  background: #000000 !important;
+
+}
+
+.wy-menu-vertical li.toctree-l1.current>a {
+  border-bottom: #000000;
+  border-top: #000000;
+}
+
+.wy-nav-top {
+  color: #2FB787;
+  background: #000000;
+}
+
+.wy-nav-side.shift {
+  width: auto !important;
+}
+
+.fixed-header {
+    width: 100%;
+    position: fixed;        
+    background: #000000;
+    padding: 10px 0 !important;
+    color: #fff;
+    top: 0;
+    height: 100px;
+}
+
+.normal-header {
+    width: 100%;
+    top: 0;
+    height: 125px;
+    padding: 1.618em 3.236em !important;
+}
+
+.header-container{
+    width: 100%;
+    height: 100% !important;
+    display: table;
+}
+
+.document-home {
+    padding: 1.618em 3.236em !important;
+    padding-top: 125px !important;
+}
+
+.document {
+    padding: 1.618em 3.236em !important;
+}
+
+footer {
+    padding: 1.618em 3.236em !important;
+}
+
+.header-centered {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    font-size: 175%;
+    padding-left: 20px;
+}
+
+
+.wy-plain-list-disc li p:last-child, .rst-content .section ul li p:last-child, .rst-content .toctree-wrapper ul li p:last-child, article ul li p:last-child {
+    margin-bottom: 10px !important;
+}

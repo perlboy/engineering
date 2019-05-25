@@ -1,0 +1,736 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sprint #1 Completed &mdash; CDS Engineering 0.1-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  
+  <link rel="alternate" type="application/atom+xml"  href="../blog/atom.xml" title="Blog">
+  
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <style type="text/css">
+    ul.ablog-archive {list-style: none; overflow: auto; margin-left: 0px}
+    ul.ablog-archive li {float: left; margin-right: 5px; font-size: 80%}
+    ul.postlist a {font-style: italic;}
+    ul.postlist-style-disc {list-style-type: disc;}
+    ul.postlist-style-none {list-style-type: none;}
+    ul.postlist-style-circle {list-style-type: circle;}
+  </style>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: black" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing.html">Contributing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contributing.html#software-contributions">Software Contributions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#mailing-list">Mailing List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#current-staff">Current Staff</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about.html#external-contributors">External Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../activities.html">Planning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../engineering_workshops/index.html">Engineering Workshops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../engineering_workshops/index.html#purpose-of-the-workshops">Purpose of the Workshops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../engineering_workshops/index.html#workshops">Workshops</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../engineering_workshops/round1/index.html">Workshop Round 1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sprints/index.html">Sprint Planning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint0.html">Sprint #0</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint0.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint1.html">Sprint #1</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint1.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint2.html">Sprint #2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint2.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint3.html">Sprint #3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint3.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint4.html">Sprint #4</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#goals">Goals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#deliverables">Deliverables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint4.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint5.html">Sprint #5</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint5.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint5.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint5.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint6.html">Sprint #6</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint6.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint6.html#achievements">Achievements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint6.html#retrospective">Retrospective</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Engineering Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/quickstart.html">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/quickstart.html#client-cli">Client CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/quickstart.html#client-library">Client Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#code-example">Code Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/quickstart.html#model-holder">Model Holder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id2">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id3">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id4">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/quickstart.html#server-stubs">Server Stubs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id5">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#starting-a-project">Starting a Project</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/quickstart.html#code-generator">Code Generator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id6">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/quickstart.html#id7">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Client Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/client/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/index.html#client-library-quick-start">Client Library Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/index.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/index.html#code-example">Code Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/index.html#client-cli-quick-start">Client CLI Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/index.html#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/client/client-java-cli/index.html">Client CLI (Java+Spring Boot)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/client-java-cli/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java-cli/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java-cli/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java-cli/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/client-java-cli/index.html#commands">Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/client/client-java/index.html">Client Library (Java)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/client-java/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/index.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/index.html#code-example">Code Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/client-java/index.html#endpoints">Endpoints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/sections/BankingProductsAPI.html">BankingProductsAPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/sections/BankingProductsAPI.html#listproducts">listProducts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/sections/BankingProductsAPI.html#getproductdetail">getProductDetail</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/client/client-java/index.html#models">Models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/ResponseBankingProductList.html">ResponseBankingProductList</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/ResponseBankingProductList.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/PaginatedResponse.html">PaginatedResponse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/PaginatedResponse.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/LinksPaginated.html">LinksPaginated</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/LinksPaginated.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/MetaPaginated.html">MetaPaginated</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/MetaPaginated.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/ResponseBankingProductListData.html">ResponseBankingProductListData</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/ResponseBankingProductListData.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProduct.html">BankingProduct</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProduct.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingEnumProductCategory.html">BankingEnumProductCategory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingEnumProductCategory.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductAdditionalInformation.html">BankingProductAdditionalInformation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductAdditionalInformation.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/ParamEffective.html">ParamEffective</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/ParamEffective.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/ParamProductCategory.html">ParamProductCategory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/ParamProductCategory.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/ResponseBankingProductById.html">ResponseBankingProductById</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/ResponseBankingProductById.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BaseResponse.html">BaseResponse</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BaseResponse.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/Links.html">Links</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/Links.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/Meta.html">Meta</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/Meta.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDetail.html">BankingProductDetail</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDetail.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductBundle.html">BankingProductBundle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductBundle.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductFeature.html">BankingProductFeature</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductFeature.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/FeatureType.html">FeatureType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/FeatureType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductConstraint.html">BankingProductConstraint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductConstraint.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/ConstraintType.html">ConstraintType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/ConstraintType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductEligibility.html">BankingProductEligibility</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductEligibility.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/EligibilityType.html">EligibilityType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/EligibilityType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductFee.html">BankingProductFee</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductFee.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/FeeType.html">FeeType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/FeeType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDiscount.html">BankingProductDiscount</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDiscount.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/DiscountType.html">DiscountType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/DiscountType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDiscountEligibility.html">BankingProductDiscountEligibility</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDiscountEligibility.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/DiscountEligibilityType.html">DiscountEligibilityType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/DiscountEligibilityType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDepositRate.html">BankingProductDepositRate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductDepositRate.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/DepositRateType.html">DepositRateType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/DepositRateType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductRateTier.html">BankingProductRateTier</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductRateTier.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/UnitOfMeasure.html">UnitOfMeasure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/UnitOfMeasure.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/RateApplicationMethod.html">RateApplicationMethod</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/RateApplicationMethod.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductRateCondition.html">BankingProductRateCondition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductRateCondition.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductRateTierSubTier.html">BankingProductRateTierSubTier</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductRateTierSubTier.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/UnitOfMeasure.html">UnitOfMeasure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/UnitOfMeasure.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/RateApplicationMethod.html">RateApplicationMethod</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/RateApplicationMethod.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductLendingRate.html">BankingProductLendingRate</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/BankingProductLendingRate.html#properties">Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/LendingRateType.html">LendingRateType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/LendingRateType.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/client/client-java/model/InterestPaymentDue.html">InterestPaymentDue</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/client/client-java/model/InterestPaymentDue.html#enum-options">Enum Options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Server Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/server/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/server/index.html#model-holder-quick-start">Model Holder Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/server/index.html#java-spring-stubs-quick-start">Java+Spring Stubs Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/index.html#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/index.html#starting-a-project">Starting a Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/server/holder-java-spring/index.html">Model Holder (cds-holder-java-spring)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/server/holder-java-spring/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/holder-java-spring/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/holder-java-spring/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/holder-java-spring/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/server/stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/server/stubs-java-spring/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/stubs-java-spring/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/server/stubs-java-spring/index.html#starting-a-project">Starting a Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Runtime</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/runtime/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/runtime/index.html#conformance-quick-start">Conformance Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/runtime/conformance/index.html">Conformance</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Sandbox</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/sandbox/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/sandbox/index.html#desktop-sandbox-quick-start">Desktop Sandbox Quick Start</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/sandbox/desktop-sandbox/index.html">Desktop Sandbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/sandbox/desktop-sandbox/index.html#high-level-architecture-diagram">High Level Architecture Diagram</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Support Artefacts</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/support/index.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/support/index.html#code-generator">Code Generator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/support/codegen/index.html">Code Generator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/support/codegen/architecture.html">Software Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/support/codegen/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/codegen/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/codegen/index.html#execution-with-docker">Execution with Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/codegen/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/support/models/index.html">Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/support/models/index.html#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/models/endpoints.html">Endpoints</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/support/models/endpoints.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/support/models/endpoints.html#endpoint-response">Endpoint Response</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/support/models/endpoints.html#endpoint-auth">Endpoint Auth</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/models/definitions_attributes.html">Data Definitions &amp; Attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../artefacts/support/models/definitions_attributes.html#endpoint-definition">Endpoint Definition</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../artefacts/support/swagger/index.html">Swagger Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/support/swagger/engineering-swagger.html">Engineering Swagger</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/swagger/engineering-swagger.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../artefacts/support/swagger/draft-standards.html">Draft Standards</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../artefacts/support/swagger/draft-standards.html#swagger-uml-diagram">Swagger UML Diagram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CDS Engineering</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+    
+  <div class="rst-content style-external-links">
+    
+    
+    <div class="normal-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Sprint #1 Completed</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/updates/20190405_sprint1_completed.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+    </div>
+    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+     <div itemprop="articleBody">
+      
+  <div class="section" id="sprint-1-completed">
+<h1>Sprint #1 Completed<a class="headerlink" href="#sprint-1-completed" title="Permalink to this headline">¶</a></h1>
+<p>Well it has been a pretty full on fortnight as we did our first major sprint but we are happy to report that after quite a few long days we achieved our major target of defining the Standards in Java Models and generating a swagger specification that is mostly identical to the Standards swagger. We completed a retrospective and the final report is available in the <a class="reference internal" href="../sprints/sprint1.html#sprint-1"><span class="std std-ref">Sprint #1</span></a> documentation, we will look to finalise <a class="reference internal" href="../sprints/sprint2.html#sprint-2"><span class="std std-ref">Sprint #2</span></a> planning on Monday.</p>
+<p><strong>CDS Models</strong></p>
+<p>The <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-models">CDS Models library</a> has now been fully populated with a complete set of definitions matching the Standards specification.  This includes:</p>
+<ul class="simple">
+<li><p>All Endpoint’s defined in separated submodule paths</p></li>
+<li><p>All input parameters, all Response parameters</p></li>
+<li><p>Initial Authorisation response definitions</p></li>
+<li><p>Strong typing of data formats to assist in providing validation</p></li>
+</ul>
+<p><strong>CDS Codegen</strong></p>
+<p>After an epic effort (thanks Fei!) the first major release of the <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/modules/cds-codegen-core">CDS Codegen (Core)</a> package was made today. This effectively processes the CDS Models and, using the official swagger-core library, produces a complete and syntactically precise swagger specification. We are in the process of feeding this back to the Standards work stream so that incremental changes to the Standards can be incorporated in a way that results in the Engineering artefacts aligning with the Standards documentation.</p>
+<p>In <a class="reference internal" href="../sprints/sprint2.html#sprint-2"><span class="std std-ref">Sprint #2</span></a> we will build on this work to introduce our own CDS specific templates. With this capability we can now rapidly iterate on specification updates and have multiple components dynamically created in an efficient way (ie. Java Client, Server Stubs, CLI tools and eventually the Sandbox itself).</p>
+<p>Finally, work is still in progress but over the weekend you will start to see some of these individual artefacts being made available as part of our build pipeline. These are initially being created via the swagger-codegen library (using the aforementioned specification generator output). I will send a quick update once these are published for initial testing.</p>
+<p><strong>CDS Codegen Maven Plugin</strong></p>
+<p>Related to this generation, we have also built an initial <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/modules/cds-codegen-maven-plugin">CDS Codegen Maven Plugin</a>. While we are going to use this within our own pipelines, this approach allows anyone to utilise a standard Maven definition to perform code generation of their own requirements with access to the standardised CDS Models library.</p>
+<p>In essence this is the first step in integrating updates to the Standards into your business specific code bases. Over time we will start publishing “Getting Started” documentation so that developers can rapidly deploy CDS connectivity without needing to each do their own implementation. This is particularly relevant for Data Recipients who, without these tools, would be in a situation where each of them must create their own implementation, thus avoiding a huge duplication of effort among industry participants.</p>
+<p><strong>Maven Repositories &amp; CI</strong></p>
+<p>After some deliberation Engineering made the decision to switch to <a class="reference external" href="https://travis-ci.com/ConsumerDataStandardsAustralia">Travis-CI</a> exclusively for builds. This includes using it for automatic publishing of all of our assets including the Engineering documentation <a class="reference internal" href="../sprints/sprint1.html#sprint-1"><span class="std std-ref">Sprint #1</span></a> and outputs from the various code generation executions.</p>
+<p>Directly related to these executions, we have started publishing our libraries on the <a class="reference external" href="https://oss.sonatype.org/#nexus-search;quick~consumerdatastandards">CDS Sonatype Maven repository</a> so that they can start being included within initial testing code bases among participants.</p>
+<p><strong>Engineering Workshop Feedback</strong></p>
+<p>You would have received notification of the first two Feedback items published. We would really appreciate your feedback on these items and will look to close these by April 12.</p>
+<p>In addition, we have published initial issues for comment on the Engineering GitHub:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/25">Feedback Request #1: Engineering Artefacts</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/26">Feedback Request #2: Shared Definition Approach</a></p></li>
+</ul>
+<p><strong>Upgradeability Roadmap</strong></p>
+<p>There have been a few comments regarding versioning releases and how this works in an environment where both Holder and Recipient are at varied stages of adopting various versions of the Standards. As you can probably imagine, Engineering must also implement a solution in order to achieve our deliverables and this is where the task named <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/engineering/issues/17">Upgradeability Roadmap</a> came from.</p>
+<p>We are still in discussions with the Standards work stream and hope to reach alignment soon. Versioning, Release Management, Backward Compatibility and Upgradeability are all related, interconnected and challenging topics to resolve when considered in the context of a national standard like what is being embarked on as part of the Consumer Data Right. I will provide further updates on this once internal consensus is reached regarding the path forward.</p>
+<p><strong>Sprint #2 Summary</strong>
+Live Sprint Status: <a class="reference internal" href="../sprints/sprint2.html#sprint-2"><span class="std std-ref">Sprint #2</span></a></p>
+<p>In <a class="reference internal" href="../sprints/sprint2.html#sprint-2"><span class="std std-ref">Sprint #2</span></a> our focus now evolves to automatically generating various components with a specific focus on the Product API endpoints. While we are still working through the specific work tasks we have identified the following key deliverables:</p>
+<ol class="arabic simple">
+<li><p>Authless cds-codegen Java Client with CLI</p></li>
+<li><p>Authless cds-codegen Java Server with Payload</p></li>
+<li><p>Initial Product API Payload Structural Conformance</p></li>
+</ol>
+<p>In essence we are focused on delivering a functional demonstration of the Product APIs from both a Data Holder and Data Recipient perspective. In addition we will be bootstrapping some initial structural conformance testing tools to allow Data Holders to start verifying their payloads against the Standards.</p>
+<p>Our intention will be to produce an “alpha pre-release” of the Desktop Sandbox with a specific focus on showing the Product API’s at work for both Holder and Recipient alike. Since Product Information was always intended to be published first we feel the best idea is to get a functional demonstration of these out as quickly as possible.</p>
+<p><strong>On Our Way</strong></p>
+<p>The rubber has now hit the road and our internal momentum is picking up. We’ve managed to validate our models approach for the Standards and in doing so have produced some tangible results regarding software components that can be used by ourselves and the community at large. As always we encourage feedback from the community on how we can help all participants to adopt the Consumer Data Standards.</p>
+</div>
+
+  <div class="section">
+  
+    
+
+
+<div class="section">
+  <span style="float: left;">
+  
+  
+  <a href="20190328_feedback_round1.html">
+    <i class="fa fa-arrow-circle-left"></i>
+    Feedback Requests Round #1
+  </a>
+  
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right;">
+  
+  
+  <a href="20190418_sprint2_closed.html">
+    Sprint #2 Closed
+    <i class="fa fa-arrow-circle-right"></i>
+  </a>
+  </span>
+  
+</div>
+
+  
+  
+    <div class="section">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'cds-engineering';
+        var disqus_identifier = '/updates/20190405_sprint1_completed/';
+        var disqus_title = 'Sprint #1 Completed';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/updates/20190405_sprint1_completed';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  
+  </div>
+
+     </div>
+     
+    </div>
+    
+    <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, CSIRO Data61
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+    
+  </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
