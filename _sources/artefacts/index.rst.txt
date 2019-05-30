@@ -3,7 +3,9 @@ Artefact Overview
 
 The Engineering Working Group is producing a number of artefacts to demonstrate the emerging :term:`CDR` ecosystem. The primary aim of these artefacts is to allow interested parties to create simulations of the target environment which closely represent the implementation of the :term:`Consumer Data Standards` and it's associated components.
 
-.. image:: engineering-artefacts.png
+.. raw:: html
+
+    <object data="../_static/engineering-artefacts.svg" type="image/svg+xml"></object>
 
 The following is an explanation of the high level sections included in the above diagram.
 

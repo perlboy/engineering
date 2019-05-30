@@ -12,8 +12,8 @@ CDS Engineering Swagger Specification
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Managed by :term:`CDS Engineering`, generated using *cds-codegen*                     |
 +---------------------+---------------------------------------------------------------------------------------+
-| Current Verified    | 0.0.5                                                                                 |
-| Snapshot            |                                                                                       |
+| Verified Standards  | 0.2.1 (Update in Progress post May 30 release)                                        |
+| Version             |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Related Artefacts   | * :ref:`cds-codegen`                                                                  |
 |                     | * :ref:`cds-models`                                                                   |

@@ -11,7 +11,7 @@ Model Holder (Java+Spring Boot)
 | Repositories        | `GitHub`_                                                                             |
 |                     |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Beta                                                                                  |
+| Release Status      | Alpha                                                                                 |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Handed coded by :term:`CDS Engineering`                                               |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -26,7 +26,7 @@ Model Holder (Java+Spring Boot)
 |                     | * Java Hibernate                                                                      |
 +---------------------+---------------------------------------------------------------------------------------+
 
-.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-codegen/tree/master/support/samples/cds-holder-java-springhttps://github.com/ConsumerDataStandardsAustralia/cds-stubs-java>
+.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring
 
 Quick Start
 ----------------------------
