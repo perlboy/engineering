@@ -8,17 +8,24 @@ CDS Models (cds-models)
 |                     | :term:`Consumer Data Standards`. The CDS Models library uses a number of CDS specific |
 |                     | Java Annotations as Descriptors of the various functionality within the :term:`CDS`.  |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Utilised by all automatically generated product outputs                               |
+| Repositories        | `GitHub`_                                                                             |
+|                     | `Sonatype`_                                                                           |
++---------------------+---------------------------------------------------------------------------------------+
+| Release Status      | Alpha update in Progress                                                              |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Managed & Maintained by :term:`CDS Engineering`                                       |
 +---------------------+---------------------------------------------------------------------------------------+
-| Current Verified    | 0.0.2-SNAPSHOT                                                                        |
-| Snapshot            |                                                                                       |
+| Verified Standards  | 0.2.1 (Update in Progress post May 30 release)                                        |
+| Version             |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Related Artefacts   | * :ref:`cds-codegen`                                                                  |
 |                     | * :ref:`cds-client-java`                                                              |
 |                     | * :ref:`cds-client-java-cli`                                                          |
 +---------------------+---------------------------------------------------------------------------------------+
+
+.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-models
+.. _Sonatype: https://oss.sonatype.org/#nexus-search;quick~cds-models
+
 
 Overview
 ---------------

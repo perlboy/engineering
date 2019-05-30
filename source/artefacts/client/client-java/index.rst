@@ -11,9 +11,9 @@ CDS Java Client Library (cds-client-java)
 |                     | :term:`Data Recipient` ("client") perspective.                                        |
 +---------------------+---------------------------------------------------------------------------------------+
 | Repositories        | `GitHub`_                                                                             |
-|                     |                                                                                       |
+|                     | `Sonatype`_                                                                           |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Beta                                                                                  |
+| Release Status      | Alpha                                                                                 |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Automatic from :ref:`cds-codegen`                                                     |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -25,6 +25,7 @@ CDS Java Client Library (cds-client-java)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-client-java
+.. _Sonatype: https://oss.sonatype.org/#nexus-search;quick~cds-client-java
 
 Quick Start
 -----------------

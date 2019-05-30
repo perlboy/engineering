@@ -1,23 +1,34 @@
 .. _cds-registry:
 
-Registry Runtime (cds-registry)
+Registry Runtime (cds-discovery) 
 ================================================
 
 .. note:: Development of this documentation is in progress.
 
 +---------------------+---------------------------------------------------------------------------------------+
-| Summary             | The Registry Runtime is an executable localised example of the emerging               |
+| Summary             | The Discovery Runtime is an executable localised example of the emerging              |
 |                     | :term:`CDR Registry` specification. It is intended to be a representation of the      |
 |                     | Registry for use by the :term:`Reference Implementation`\'s during Development and    |
 |                     | Testing.                                                                              |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Not Started                                                                           |
+| Repositories        | `GitHub`_                                                                             |
+|                     | `Sonatype`_                                                                           |
+|                     | `Docker`_                                                                             |
 +---------------------+---------------------------------------------------------------------------------------+
-| Current Snapshot    | N/A                                                                                   |
+| Release Status      | Alpha                                                                                 |
++---------------------+---------------------------------------------------------------------------------------+
+| Generation Status   | Handed coded by :term:`CDS Engineering`                                               |
++---------------------+---------------------------------------------------------------------------------------+
+| Current Snapshot    | 0.0.2                                                                                 |
 | Version             |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
-| Technologies Used   | * (Likely) Java                                                                       |
+| Technologies Used   | * Java                                                                                |
+|                     | * Spring                                                                              |
+|                     | * Hashicorp Consul                                                                    |
 +---------------------+---------------------------------------------------------------------------------------+
 | Related Artefacts   |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 
+.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-discovery
+.. _Sonatype: https://oss.sonatype.org/#nexus-search;quick~cds-discovery
+.. _Docker: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-discovery

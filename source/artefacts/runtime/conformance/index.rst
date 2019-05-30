@@ -8,9 +8,14 @@ CDS Conformance Suite (cds-conformance)
 |                     | to provide a computational validation of inbound and outbound payload data according  | 
 |                     | to the :term:`Consumer Data Standards`.                                               |
 +---------------------+---------------------------------------------------------------------------------------+
+| Repositories        | `GitHub`_                                                                             |
+|                     | `Docker`_                                                                             |
++---------------------+---------------------------------------------------------------------------------------+
 | Release Status      | Alpha                                                                                 |
 +---------------------+---------------------------------------------------------------------------------------+
-| Current Snapshot    | N/A                                                                                   |
+| Generation Status   | Handed coded by :term:`CDS Engineering`                                               |
++---------------------+---------------------------------------------------------------------------------------+
+| Current Snapshot    | 0.0.2-SNAPSHOT                                                                        |
 | Version             |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Current Hand Coded by :term:`CDS Engineering`                                         |
@@ -23,3 +28,5 @@ CDS Conformance Suite (cds-conformance)
 | Related Artefacts   |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 
+.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-conformance
+.. _Docker: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-discovery

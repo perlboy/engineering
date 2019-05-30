@@ -9,7 +9,10 @@ Desktop Sandbox (desktop-sandbox)
 |                     | through the programmatic coordination of multiple subservices combining the various   |
 |                     | other :term:`CDS Engineering` artefacts.                                              |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Not Started                                                                           |
+| Release Status      | Initial Work Started                                                                  |
++---------------------+---------------------------------------------------------------------------------------+
+| Repositories        | `GitHub`_                                                                             |
+|                     |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Handed coded by :term:`CDS Engineering`                                               |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -18,6 +21,11 @@ Desktop Sandbox (desktop-sandbox)
 +---------------------+---------------------------------------------------------------------------------------+
 | Related Artefacts   |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
+| Technologies Used   | * Docker Compose                                                                      |
+|                     | * Vagrant                                                                             |
++---------------------+---------------------------------------------------------------------------------------+
+
+.. _GitHub: https://github.com/ConsumerDataStandardsAustralia/desktop-sandbox
 
 
 High Level Architecture Diagram

@@ -15,9 +15,9 @@ CDS Code Generator (cds-codegen)
 |                     | A significant portion of this documentation is generated using :ref:`cds-codegen`.    |
 +---------------------+---------------------------------------------------------------------------------------+
 | Repositories        | `GitHub`_                                                                             |
-|                     |                                                                                       |
+|                     | `Docker`_                                                                             |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Beta Available                                                                        |
+| Release Status      | Alpha                                                                                 |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Managed & Maintained by :term:`CDS Engineering`                                       |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -36,7 +36,7 @@ CDS Code Generator (cds-codegen)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-codegen
-
+.. _Docker: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-codegen-core
 
 .. toctree::
    :hidden:

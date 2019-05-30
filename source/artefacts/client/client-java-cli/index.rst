@@ -13,9 +13,10 @@ CDS Client CLI (cds-client-java-cli)
 |                     | :ref:`cds-client-java-cli`                                                            |
 +---------------------+---------------------------------------------------------------------------------------+
 | Repositories        | `GitHub`_                                                                             |
-|                     |                                                                                       |
+|                     | `Sonatype`_                                                                           |
+|                     | `Docker`_                                                                             |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Beta                                                                                  |
+| Release Status      | Alpha                                                                                 |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Automatic from :ref:`cds-codegen`                                                     |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -31,6 +32,8 @@ CDS Client CLI (cds-client-java-cli)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-client-java-cli
+.. _Sonatype: https://oss.sonatype.org/#nexus-search;quick~cds-client-java-cli
+.. _Docker: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-client-java-cli
 
 Quick Start
 ----------------------------
