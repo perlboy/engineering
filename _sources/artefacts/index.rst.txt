@@ -5,7 +5,7 @@ The Engineering Working Group is producing a number of artefacts to demonstrate 
 
 .. raw:: html
 
-    <object data="../_static/engineering-artefacts.svg" type="image/svg+xml"></object>
+   <object style="width:100%" data="../_static/engineering-artefacts.svg" type="image/svg+xml"></object>
 
 The following is an explanation of the high level sections included in the above diagram.
 
