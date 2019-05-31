@@ -16,6 +16,11 @@ Sprint Planning
    sprint4.rst
    sprint5.rst
    sprint6.rst
+   sprint7.rst
+   sprint8.rst
+   sprint9.rst
+   sprint10.rst
+   
 
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
 | Sprint #         | Goals                    | Key Deliverables                                                                                                                                 | Start Date           | Status     |
@@ -39,31 +44,31 @@ Sprint Planning
 |                  | - API 2 Code             | 2) Integrate templates into codegen (Client, Holder, Stubs)                                                                                      |                      |            |
 |                  |                          | 3) Initial Payload Conformance                                                                                                                   |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| :ref:`sprint-#4` | - Authentication and     | 1) Customer API Model Definition                                                                                                                 | 06 May 2019          | Started    |
-|                  |   Authorisation          | 2) OpenID/FAPI Server Stub Generation                                                                                                            |                      |            |
-|                  | - Code Review            | 3) OpenID/FAPI Client Generation                                                                                                                 |                      |            |
+| :ref:`sprint-#4` | - Standards Review       | 1) Review and Respond to Standards and InfoSec Proposals                                                                                         | 06 May 2019          | Completed  |
+|                  | - ACCC Co-design         | 2) Perform Code Review on the Artefacts                                                                                                          |                      |            |
+|                  | - Code Review            | 3) Work with ACCC on Registry Design                                                                                                             |                      |            |
 |                  |                          |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| :ref:`sprint-#5` | - Admin Enablement       | 1) Admin API Model Definition                                                                                                                    | 20 May 2019          | Planning   |
-|                  | - Conformance Harness    | 2) Conformance Harness for Test Execution                                                                                                        |                      |            |
-|                  |                          | 3) Absorb OBIE FAPI Conformance                                                                                                                  |                      |            |
+| :ref:`sprint-#5` | - InfoSec Review         | 1) Initial InfoSec Review and Issues highlight                                                                                                   | 20 May 2019          | Completed  |
+|                  | - Code Refactor          | 2) Refactor code based on internal discussions                                                                                                   |                      |            |
+|                  |                          | 3) Develop example ACCC Discovery server                                                                                                         |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| :ref:`sprint-#6` | - Accounts Enablement    |                                                                                                                                                  | 03 June 2019         | Planning   |
-|                  | - ACCC Directory         |                                                                                                                                                  |                      |            |
+| :ref:`sprint-#6` | - Strong PRD Conformance | 1) Product Reference Data Focus                                                                                                                  | 03 June 2019         | Started    |
+|                  | - PRD Sandbox Environment| 2) Runtime Sandbox example                                                                                                                       |                      |            |
+|                  |                          | 3) Workshop #2 prep and execution                                                                                                                |                      |            |
+|                  |                          | 4) PRD Conformance and Reports                                                                                                                   |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #7        | - Transaction Enablement |                                                                                                                                                  | 17 June 2019         | Planning   |
-|                  | - Conformance Round 1    |                                                                                                                                                  |                      |            |
+| :ref:`sprint-#7` |                          |                                                                                                                                                  | 17 June 2019         | Planning   |
+|                  |                          |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #8        | - Versioning             |                                                                                                                                                  | 01 July 2019         | Planning   |
-|                  | - Desktop Sandbox        |                                                                                                                                                  |                      |            |
-|                  |   Bootstrap #1           |                                                                                                                                                  |                      |            |
+| :ref:`sprint-#8` |                          |                                                                                                                                                  | 01 July 2019         | Planning   |
+|                  |                          |                                                                                                                                                  |                      |            |
+|                  |                          |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #9        | - Desktop Sandbox        |                                                                                                                                                  | 15 July 2019         | Planning   |
-|                  |   Bootstrap #2           |                                                                                                                                                  |                      |            |
+| :ref:`sprint-#9` |                          |                                                                                                                                                  | 15 July 2019         | Planning   |
+|                  |                          |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #10       | - Desktop Sandbox        |                                                                                                                                                  |                      |            |
-|                  |   Showtime               |                                                                                                                                                  | 29 July 2019         | Planning   |
-|                  | - Conformance Round 2    |                                                                                                                                                  |                      |            |
+| :ref:`sprint-#10`|                          |                                                                                                                                                  | 29 July 2019         | Planning   |
+|                  |                          |                                                                                                                                                  |                      |            |
 +------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
-| Sprint #11       | - Conformance Round 3    |                                                                                                                                                  | 12 August 2019       | Planning   |
-+------------------+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------+
+
