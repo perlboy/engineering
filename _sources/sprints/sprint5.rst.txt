@@ -78,7 +78,6 @@ Not too much:
     
 **Next steps?**
   
-  - Communication challenges raised with the Chair, 15 May 2019
   - Preparing for Engineering Workshop #2
   - Realignment of Sprint #6
 
