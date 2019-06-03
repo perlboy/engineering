@@ -19,4 +19,5 @@ Workshops
    :maxdepth: 1
 
    round1/index.rst
+   round2/index.rst
 
