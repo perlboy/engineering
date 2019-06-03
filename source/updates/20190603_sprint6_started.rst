@@ -12,6 +12,8 @@ It's been a few weeks since I last sent an update so I thought it was prudent bu
 
 Both Sprint 4 and Sprint 5 focused on internal code review with significant tweaks around ensuring the code developed for the artefacts had a high quality baseline. Following the result in Canberra, it is important that we realigned our work with the intended CDR delivery schedule so that we can ensure that the tools delivered are the most useful relative to the expectations of the government for Data Holder's.
 
+Consequently we are now focused on the July 1 target timeline for Product Reference Data and functionally demonstrating all of the components to make this a reality.
+
 **Sprint #6 Delivery** 
 
 With the version **0.9.3** of the Standards on Friday, Engineering has now realigned it's Sprint #6 deliverables as follows:
@@ -28,6 +30,11 @@ With the version **0.9.3** of the Standards on Friday, Engineering has now reali
   5) Prepare and Execute Engineering Workshop #2 scheduled for 13 June 2019
   6) Provide report generation of PRD's for Human Review
 
+**Updated Documentation**
+
+There has been a significant amount of time and effort has been spent on producing documentation for the artefacts we have been creating. While this is a continuous process you will now found *Quick Start* and function documentation for all artefacts. 
+
+We have also put together a clickable map of the artefacts here: :ref:`cds-artefact-overview`. 
 
 **Feedback Open**
 
