@@ -1,3 +1,5 @@
+.. _cds-desktop-sandbox:
+
 Desktop Sandbox (desktop-sandbox)
 ================================================
 
