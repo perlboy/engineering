@@ -1,3 +1,5 @@
+.. _cds-artefact-overview:
+
 Artefact Overview
 ================================================
 
