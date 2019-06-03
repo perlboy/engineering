@@ -1,3 +1,5 @@
+.. _cds-holder-java-spring:
+
 Model Holder (Java+Spring Boot) 
 ================================================
 

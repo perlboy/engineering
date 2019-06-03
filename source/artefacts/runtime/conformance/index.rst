@@ -1,3 +1,5 @@
+.. _cds-conformance:
+
 CDS Conformance Suite (cds-conformance)
 ================================================
 

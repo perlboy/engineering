@@ -97,7 +97,8 @@ html_theme_options = {
     'prev_next_buttons_location': 'both',
     'collapse_navigation': False,
     'sticky_navigation': False,
-    'style_nav_header_background': 'black'
+    'style_nav_header_background': 'black',
+    'analytics_id': 'UA-106758786-9'
 }
 
 # D61 Logo
