@@ -3,7 +3,7 @@
 Desktop Sandbox (desktop-sandbox)
 ================================================
 
-.. note:: Development of this documentation is in progress.
+.. note:: Sandbox has only recently been released. Please refer to the material in :ref:`workshop-2`
 
 +---------------------+---------------------------------------------------------------------------------------+
 | Summary             | The Desktop Sandbox is intended to be a self contained but complete representation    |
@@ -28,6 +28,12 @@ Desktop Sandbox (desktop-sandbox)
 +---------------------+---------------------------------------------------------------------------------------+
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/desktop-sandbox
+
+Quick Start
+-----------------
+
+.. include:: quickstart.rst
+   :start-after: start-content
 
 
 High Level Architecture Diagram

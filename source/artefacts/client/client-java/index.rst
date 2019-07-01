@@ -13,11 +13,11 @@ CDS Java Client Library (cds-client-java)
 | Repositories        | `GitHub`_                                                                             |
 |                     | `Sonatype`_                                                                           |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Alpha                                                                                 |
+| Release Status      | Pre-Release - 0.9.3 Product APIs                                                      |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Automatic from :ref:`cds-codegen`                                                     |
 +---------------------+---------------------------------------------------------------------------------------+
-| Verified Snapshot   | 0.0.2-SNAPSHOT                                                                        |
+| Verified Snapshot   | 0.9.3-SNAPSHOT                                                                        |
 | Snapshot            |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Technologies Used   | * Java                                                                                |

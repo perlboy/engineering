@@ -10,6 +10,36 @@ To enable this a number of annotations have been defined to provide sufficient d
 Endpoint Definition
 --------------------------
 
+.. code-block:: java
+
+
+    @Endpoint(
+        path = "/banking/products/{productId}",
+        summary = "Get Product Detail",
+        description = "Obtain detailed information on a single product offered openly to the market",
+        requestMethod = RequestMethod.GET,
+        operationId = "getProductDetail",
+        responses = {
+            @EndpointResponse(
+                responseCode = ResponseCode.OK,
+                description = "Success",
+                content = ResponseBankingProductById.class
+            )
+        }
+    )
+    @CustomAttributes({
+        @CustomAttribute(name = "x-version", value = "1")
+    })
+    ResponseBankingProductById getProductDetail(
+        @Param(
+            name = "productId",
+            description = "ID of the specific product requested",
+            in = ParamLocation.PATH
+        )
+        @CDSDataType(CustomDataType.ASCII)
+        String productId
+    );
+
 +---------------------+---------------------------------------------------------------------------------------+
 | Annotation Class    | @au.org.consumerdatastandards.support.Endpoint                                        |
 +---------------------+---------------------------------------------------------------------------------------+
@@ -25,42 +55,82 @@ Endpoint Definition
 |                     | +---------------+--------------------------------------------------------------------+|
 |                     | | description   | A long description of the Endpoint operation                       ||
 |                     | +---------------+--------------------------------------------------------------------+|
-|                     | | requestMethod | What type of HTTP Request Method to use                            ||
+|                     | | requestMethod | What type of HTTP Request Method to use (@RequestMethod)           ||
 |                     | +---------------+--------------------------------------------------------------------+|
 |                     | | path          | The path from which this Endpoint should be accessible             ||
 |                     | +---------------+--------------------------------------------------------------------+|
 |                     | | responses     | An array of EndpointResponse                                       ||
 |                     | +---------------+--------------------------------------------------------------------+|
-|                     | | requiredAuth  | An array of EndpointAuth objects describing security patterns      ||
-|                     | +---------------+--------------------------------------------------------------------+|
 +---------------------+---------------------------------------------------------------------------------------+
 | Related Annotations | * @EndpointResponse                                                                   |
-| and Enums           | * @EndpointAuth                                                                       |
 |                     | * @RequestMethod                                                                      |
 +---------------------+---------------------------------------------------------------------------------------+
 
-Endpoint Response
-------------------------
+Endpoint Response Definitions    
+--------------------------------
+
+.. code-block:: java
+
+    responses = {
+        @EndpointResponse(
+            responseCode = ResponseCode.OK,
+            description = "Success",
+            content = ResponseBankingProductById.class
+        )
+    }
+        
 
 +---------------------+---------------------------------------------------------------------------------------+
 | Annotation Class    | @au.org.consumerdatastandards.support.EndpointResponse                                |
 +---------------------+---------------------------------------------------------------------------------------+
-| Summary             | The @EndpointResponse annotation defines the types of responses expected from an      |
-|                     | individual *Endpoint*. Specifically this includes the HTTP Response Code and          |
-|                     | Response class data intended for use in the response                                  |
+| Summary             | The @EndpointResponse annotation is used as an array to define responseCodes,         |
+|                     | description and content pertinent to an individual response.                          |
 +---------------------+---------------------------------------------------------------------------------------+
 | Input Parameters    | +---------------+--------------------------------------------------------------------+|
 |                     | | Attribute     | Description                                                        ||
 |                     | +===============+====================================================================+|
-|                     | | description   | A long description of the Endpoint responsen                       ||
+|                     | | responseCode  | A unique response code associated with the defined Endpoint        ||
 |                     | +---------------+--------------------------------------------------------------------+|
-|                     | | responseCode  | A specific ResponseCode defined within the ResponseCode Enum       ||
+|                     | | description   | Describer for the response                                         ||
 |                     | +---------------+--------------------------------------------------------------------+|
-|                     | | content       | A class (ie. a POJO) to determine a serialisable structure from    ||
+|                     | | content       | A class reference to a Java Object (POJO) defining endpoint struct ||
 |                     | +---------------+--------------------------------------------------------------------+|
 +---------------------+---------------------------------------------------------------------------------------+
-| Related Annotations | * @EndpointResponse                                                                   |
-| and Enums           | * ResponseCode                                                                        |
+| Related Annotations | * @ResponseCode                                                                       |
+|                     | * All classes in au.org.consumerdatastandards.api.<type>.models                       |
++---------------------+---------------------------------------------------------------------------------------+
+
+Default Response Definition
+-------------------------------
+
+.. code-block:: java
+
+    ResponseBankingProductById getProductDetail(
+        @Param(
+            name = "productId",
+            description = "ID of the specific product requested",
+            in = ParamLocation.PATH
+        )
+        @CDSDataType(CustomDataType.ASCII)
+        String productId
+    );
+    
+
++---------------------+---------------------------------------------------------------------------------------+
+| Annotation Class    | None, this is a Java compiler link which includes method name containing sub          |
+|                     | annotations                                                                           |
++---------------------+---------------------------------------------------------------------------------------+
+| Summary             | The Default Response definition provides guidance on the accepted parameters for this |
+|                     | Endpoint call. This is used as the function definition between client/server during   |
+|                     | codegen operations.                                                                   |
++---------------------+---------------------------------------------------------------------------------------+
+| Input Parameters    | A set of input parameters annotated by @Param and @CDSDataType which provide name,    |
+|                     | description & location (in) components. This is paired with a @CDSDataType overlaid   |
+|                     | format definition specific to the implementation of the Consumer Data Standards.      |
+|                     |                                                                                       |
++---------------------+---------------------------------------------------------------------------------------+
+| Related Annotations | * @Param                                                                              |
+|                     | * @CDSDataType                                                                        |
 +---------------------+---------------------------------------------------------------------------------------+
 
 Endpoint Auth

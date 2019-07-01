@@ -29,7 +29,7 @@ To integrate into your Maven project add this dependency to your project's POM:
     <dependency>
       <groupId>au.org.consumerdatastandards</groupId>
       <artifactId>cds-client-java</artifactId>
-      <version>0.0.2-SNAPSHOT</version>
+      <version>0.9.3-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
 
@@ -41,7 +41,7 @@ To integrate into your Gradle project, add this dependency to your project's bui
         mavenCentral()
     }
 
-   compile "au.org.consumerdatastandards:cds-client-java:0.0.2-SNAPSHOT"
+   compile "au.org.consumerdatastandards:cds-client-java:0.9.3-SNAPSHOT"
 
 Code Example
 ^^^^^^^^^^^^^^^^^^^^^^^

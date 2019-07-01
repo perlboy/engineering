@@ -2,7 +2,13 @@
 Artefact Quick Start
 ===========================
 
-Placeholder
+CDS Engineering has produced a number of artefacts that meet the requirements of the Product APIs outlined in Standards 0.9.3.
+
+Desktop Sandbox
+-----------------
+
+.. include:: sandbox/desktop-sandbox/quickstart.rst
+   :start-after: start-content
 
 Client CLI
 ----------------------------
@@ -27,6 +33,12 @@ Server Stubs
 ----------------------------
 
 .. include:: server/stubs-java-spring/quickstart.rst
+   :start-after: start-content
+
+Product Summariser
+----------------------------
+
+.. include:: support/product-summariser/quickstart.rst
    :start-after: start-content
 
 Code Generator

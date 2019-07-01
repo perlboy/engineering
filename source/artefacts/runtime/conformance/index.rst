@@ -13,11 +13,11 @@ CDS Conformance Suite (cds-conformance)
 | Repositories        | `GitHub`_                                                                             |
 |                     | `Docker`_                                                                             |
 +---------------------+---------------------------------------------------------------------------------------+
-| Release Status      | Alpha                                                                                 |
+| Release Status      | Pre Release compliant to Standards Product API Specification version 0.9.3            |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Handed coded by :term:`CDS Engineering`                                               |
 +---------------------+---------------------------------------------------------------------------------------+
-| Current Snapshot    | 0.0.2-SNAPSHOT                                                                        |
+| Current Snapshot    | 0.9.3-SNAPSHOT                                                                        |
 | Version             |                                                                                       |
 +---------------------+---------------------------------------------------------------------------------------+
 | Generation Status   | Current Hand Coded by :term:`CDS Engineering`                                         |
