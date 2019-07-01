@@ -1,0 +1,32 @@
+0.9.3 Documentation Updated
+================================================
+
+.. post:: July 1, 2019
+   :tags: sprint, engineering
+   :category: sprint-updates
+   :author: csirostu
+   :language: en
+   :excerpt: 3
+
+Hi there,
+
+It's been a little while but I have now published updated documentation for the 0.9.3 artefacts.
+
+In addition I've uploaded and linked the :ref:`workshop-2` material.
+
+With this documentation you should now be able to get up and running with the various components of the CDS Engineering suite including:
+    
+    * Client Java Library
+    * Client Java CLI
+    * Conformance Suite
+    * Register Simulation
+    * Model Holder in Java
+    * Model Stubs in Java
+    * Code Generation for Swagger & Librariez
+    * Product Summarisation
+
+As always, feedback is welcome, just open an issue on GitHub.
+
+Thanks,
+
+Stuart

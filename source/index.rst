@@ -46,7 +46,7 @@
    :caption: Runtime
    
    Overview <artefacts/runtime/index>
-   Registry <artefacts/runtime/registry/index>
+   Register <artefacts/runtime/register/index>
    Conformance <artefacts/runtime/conformance/index>
    
 .. toctree::

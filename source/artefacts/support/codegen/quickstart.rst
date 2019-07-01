@@ -55,6 +55,7 @@ Swagger Generation
 ^^^^^^^^^^^^^^^^^^^^^
 
 To generate a swagger file based on ``cds-models`` for Banking product APIs you can use the SwaggerGenerator implementation as follows:
+``java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i "BankingProducts" -o /tmp/swagger.json``
 
 .. code-block::
 
@@ -63,6 +64,7 @@ To generate a swagger file based on ``cds-models`` for Banking product APIs you 
      2019-07-01 18:21:32.727  INFO   --- [           main] a.o.c.c.g.openapi.SwaggerGenerator       : Successfully wrote swagger to /tmp/swagger.json
        
 To generate a Java Client Library output you can use the CodeGenerator implementation as follows:
+``java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i "BankingProducts" -g au.org.consumerdatastandards.codegen.generator.code.CodeGenerator -t cds-client-java -o /tmp/outputgen``
 
 .. code-block::
 
