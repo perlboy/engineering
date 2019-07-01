@@ -38,7 +38,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Registry Runtime (cds-discovery)" href="registry/index.html" />
+    <link rel="next" title="Register Runtime (cds-discovery)" href="register/index.html" />
     <link rel="prev" title="Server Stubs (Java+Spring Boot)" href="../server/stubs-java-spring/index.html" />
    
   
@@ -502,10 +502,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#register-quick-start">Register Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="register/index.html">Register</a></li>
 <li class="toctree-l1"><a class="reference internal" href="conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
@@ -660,7 +660,7 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
-        <a href="registry/index.html" class="btn btn-neutral float-right" title="Registry Runtime (cds-discovery)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="register/index.html" class="btn btn-neutral float-right" title="Register Runtime (cds-discovery)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../server/stubs-java-spring/index.html" class="btn btn-neutral float-left" title="Server Stubs (Java+Spring Boot)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -693,14 +693,10 @@
 <div class="section" id="execution">
 <h3>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h3>
 <p>To start the CDS Conformance execute the Docker command as below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -p <span class="m">8000</span>:8000 consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT -b<span class="o">=</span>http://localhost:8080/cds-au/v1 -s
-</pre></div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-p</span> <span class="pre">8000:8000</span> <span class="pre">consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT</span> <span class="pre">-b=http://localhost:8080/cds-au/v1</span> <span class="pre">-s</span></code></p>
 <p>This will complete a Conformance Suite test then execute a python SimpleServer install available at <code class="docutils literal notranslate"><span class="pre">http://localhost:8000</span></code>.</p>
 <p>Alternatively you can write out a HTML report output by ommitting the -s command line argument as follows</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/conformance-result:/opt/cds-conformance/target consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT -b<span class="o">=</span>http://localhost:8080/cds-au/v1
-</pre></div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-v</span> <span class="pre">`pwd`/conformance-result:/opt/cds-conformance/target</span> <span class="pre">consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT</span> <span class="pre">-b=http://localhost:8080/cds-au/v1</span></code></p>
 <p>This will output a HTML report at: <code class="docutils literal notranslate"><span class="pre">conformance-result/site/serenity/index.html</span></code></p>
 </div>
 <div class="section" id="manual-build-run">
@@ -720,8 +716,8 @@ user@cds:~/git/cds-conformance$ mvn clean install -DskipTests<span class="o">=</
 </div>
 </div>
 </div>
-<div class="section" id="registry-quick-start">
-<h2>Registry Quick Start<a class="headerlink" href="#registry-quick-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="register-quick-start">
+<h2>Register Quick Start<a class="headerlink" href="#register-quick-start" title="Permalink to this headline">¶</a></h2>
 <p>Placeholder for registry quickstart</p>
 </div>
 </div>
@@ -758,7 +754,7 @@ user@cds:~/git/cds-conformance$ mvn clean install -DskipTests<span class="o">=</
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="registry/index.html" class="btn btn-neutral float-right" title="Registry Runtime (cds-discovery)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="register/index.html" class="btn btn-neutral float-right" title="Register Runtime (cds-discovery)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../server/stubs-java-spring/index.html" class="btn btn-neutral float-left" title="Server Stubs (Java+Spring Boot)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Registry Quick Start &mdash; CDS Engineering 0.1-alpha documentation</title>
+  <title>Register Runtime (cds-discovery) &mdash; CDS Engineering 0.1-alpha documentation</title>
   
 
   
@@ -38,6 +38,8 @@
     <link rel="author" title="About these documents" href="../../../about.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="CDS Conformance Suite (cds-conformance)" href="../conformance/index.html" />
+    <link rel="prev" title="Runtime Artefacts" href="../index.html" />
    
   
   <link rel="alternate" type="application/atom+xml"  href="../../../blog/atom.xml" title="Blog">
@@ -492,7 +494,7 @@
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Runtime</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#conformance-quick-start">Conformance Quick Start</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#requirements">Requirements</a></li>
@@ -500,10 +502,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#register-quick-start">Register Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="index.html">Registry</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Register</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
@@ -642,19 +644,28 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li>Registry Quick Start</li>
+      <li>Register Runtime (cds-discovery)</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/artefacts/runtime/registry/quickstart.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/artefacts/runtime/register/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
     
   </ul>
 
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../conformance/index.html" class="btn btn-neutral float-right" title="CDS Conformance Suite (cds-conformance)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Runtime Artefacts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
   
   <hr/>
 </div>
@@ -663,9 +674,52 @@
     
      <div itemprop="articleBody">
       
-  <div class="section" id="registry-quick-start">
-<h1>Registry Quick Start<a class="headerlink" href="#registry-quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Placeholder for registry quickstart</p>
+  <div class="section" id="register-runtime-cds-discovery">
+<span id="cds-registry"></span><h1>Register Runtime (cds-discovery)<a class="headerlink" href="#register-runtime-cds-discovery" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Development of this documentation is in progress.</p>
+</div>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Summary</p></td>
+<td><p>The Discovery Runtime is an executable localised example of the emerging
+<a class="reference internal" href="../../../glossary.html#term-cdr-register"><span class="xref std std-term">CDR Register</span></a> specification. It is intended to be a representation of the
+Registry for use by the <a class="reference internal" href="../../../glossary.html#term-reference-implementation"><span class="xref std std-term">Reference Implementation</span></a>’s during Development and
+Testing.</p></td>
+</tr>
+<tr class="row-even"><td><p>Repositories</p></td>
+<td><p><a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-discovery">GitHub</a>
+<a class="reference external" href="https://oss.sonatype.org/#nexus-search;quick~cds-discovery">Sonatype</a>
+<a class="reference external" href="https://hub.docker.com/r/consumerdatastandardsaustralia/cds-discovery">Docker</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Release Status</p></td>
+<td><p>Alpha</p></td>
+</tr>
+<tr class="row-even"><td><p>Generation Status</p></td>
+<td><p>Handed coded by <a class="reference internal" href="../../../glossary.html#term-cds-engineering"><span class="xref std std-term">CDS Engineering</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Current Snapshot
+Version</p></td>
+<td><p>0.9.3</p></td>
+</tr>
+<tr class="row-even"><td><p>Technologies Used</p></td>
+<td><ul class="simple">
+<li><p>Java</p></li>
+<li><p>Spring</p></li>
+<li><p>Hashicorp Consul</p></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Related Artefacts</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
 
   <div class="section">
@@ -676,9 +730,9 @@
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'cds-engineering';
-        var disqus_identifier = '/artefacts/runtime/registry/quickstart/';
-        var disqus_title = 'Registry Quick Start';
-        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/runtime/registry/quickstart';
+        var disqus_identifier = '/artefacts/runtime/register/';
+        var disqus_title = 'Register Runtime (cds-discovery)';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/artefacts/runtime/register/';
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -697,6 +751,15 @@
     </div>
     
     <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../conformance/index.html" class="btn btn-neutral float-right" title="CDS Conformance Suite (cds-conformance)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Runtime Artefacts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

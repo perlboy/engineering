@@ -18,6 +18,8 @@ Execution
 
 To start the CDS Client CLI execute the Docker command as below:
 
+``docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT``
+
 .. code-block:: bash
 
     docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT

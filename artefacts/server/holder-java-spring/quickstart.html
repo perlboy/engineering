@@ -500,10 +500,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../runtime/index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#register-quick-start">Register Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../runtime/register/index.html">Register</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../runtime/conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
@@ -679,6 +679,7 @@
 <div class="section" id="execution">
 <h2>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h2>
 <p>To start the CDS Client CLI execute the Docker command as below (this will load payloads from  your local ./custom-payloads directory on boot):</p>
+<p>`` docker run -p 8080:8080 -v “./custom-payloads:/opt/payloads” consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT``</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -p <span class="m">8080</span>:8080 -v <span class="s2">&quot;./custom-payloads:/opt/payloads&quot;</span> consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT
 
 <span class="c1">#     ___     ___     ___</span>
@@ -731,14 +732,13 @@
 <div class="section" id="manual-build-run">
 <h2>Manual Build &amp; Run<a class="headerlink" href="#manual-build-run" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring</span></code> project is a modularised Maven build. This includes <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-server</span></code> and <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code>.</p>
-<p>As <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code> is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.
-.. code-block:: bash</p>
-<blockquote>
-<div><p><a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git$ git clone <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring">https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring</a>
-<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git$ cd cds-holder-java-spring
-<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git/cds-holder-java-spring$ mvn clean install
-<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git/cds-holder-java-spring/modules/cds-holder-java-spring-server$ mvn clean spring-boot:run</p>
-</div></blockquote>
+<p>As <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code> is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring
+user@cds:~/git$ <span class="nb">cd</span> cds-holder-java-spring
+user@cds:~/git/cds-holder-java-spring$ mvn clean install
+user@cds:~/git/cds-holder-java-spring/modules/cds-holder-java-spring-server$ mvn clean spring-boot:run
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -16,8 +16,8 @@ Glossary
    CLI
      Command Line Interface. A tool intended for execution from a terminal or shell.
      
-   CDR Registry
-     The Production Registry operated by the :term:`ACCC` as the government endorsed platform for the efficient communication of Data Recipient accreditation and Data Holder membership information. :ref:`cds-registry` is intended to be a simulation for Development purposes of this platform.      
+   CDR Register
+     The Production Register operated by the :term:`ACCC` as the government endorsed platform for the efficient communication of Data Recipient accreditation and Data Holder membership information. :ref:`cds-registry` is intended to be a simulation for Development purposes of this platform.      
 
    CDR
       The Consumer Data Right

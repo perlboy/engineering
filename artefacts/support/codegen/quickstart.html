@@ -501,10 +501,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../runtime/index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#register-quick-start">Register Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../runtime/register/index.html">Register</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../runtime/conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
@@ -711,13 +711,15 @@ user@cds:~/git/cds-codegen/modules/cds-codegen-core$ mvn clean package
 </div>
 <div class="section" id="swagger-generation">
 <h2>Swagger Generation<a class="headerlink" href="#swagger-generation" title="Permalink to this headline">¶</a></h2>
-<p>To generate a swagger file based on <code class="docutils literal notranslate"><span class="pre">cds-models</span></code> for Banking product APIs you can use the SwaggerGenerator implementation as follows:</p>
+<p>To generate a swagger file based on <code class="docutils literal notranslate"><span class="pre">cds-models</span></code> for Banking product APIs you can use the SwaggerGenerator implementation as follows:
+<code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">target/cds-codegen-core-0.9.3-SNAPSHOT.jar</span> <span class="pre">-i</span> <span class="pre">&quot;BankingProducts&quot;</span> <span class="pre">-o</span> <span class="pre">/tmp/swagger.json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i &quot;BankingProducts&quot; -o /tmp/swagger.json
  2019-07-01 18:21:32.380  INFO   --- [           main] org.reflections.Reflections              : Reflections took 75 ms to scan 1 urls, producing 6 keys and 187 values
  2019-07-01 18:21:32.727  INFO   --- [           main] a.o.c.c.g.openapi.SwaggerGenerator       : Successfully wrote swagger to /tmp/swagger.json
 </pre></div>
 </div>
-<p>To generate a Java Client Library output you can use the CodeGenerator implementation as follows:</p>
+<p>To generate a Java Client Library output you can use the CodeGenerator implementation as follows:
+<code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">target/cds-codegen-core-0.9.3-SNAPSHOT.jar</span> <span class="pre">-i</span> <span class="pre">&quot;BankingProducts&quot;</span> <span class="pre">-g</span> <span class="pre">au.org.consumerdatastandards.codegen.generator.code.CodeGenerator</span> <span class="pre">-t</span> <span class="pre">cds-client-java</span> <span class="pre">-o</span> <span class="pre">/tmp/outputgen</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i &quot;BankingProducts&quot; -g au.org.consumerdatastandards.codegen.generator.code.CodeGenerator -t cds-client-java -o /tmp/outputgen
 2019-07-01 18:22:58.296  INFO   --- [           main] org.reflections.Reflections              : Reflections took 84 ms to scan 1 urls, producing 6 keys and 187 values
 2019-07-01 18:22:58.564  INFO   --- [           main] org.reflections.Reflections              : Reflections took 49 ms to scan 1 urls, producing 20 keys and 304 values

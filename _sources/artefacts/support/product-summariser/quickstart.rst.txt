@@ -12,6 +12,7 @@ Native Execution
 ^^^^^^^^^^^^^^^^^^^^^
 
 To start the CDS Client CLI execute the Docker command as below:
+``docker run -v `pwd`/reporting-outputs:/opt/sphinx consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT -b=http://localhost:8080/cds-au/v1``
 
 .. code-block:: bash
 
@@ -48,7 +49,8 @@ The report will then be available in ``reporting-outputs/build/html/index.html``
 Execution In Sandbox
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To access the Desktop Sandbox network additional parameters are required.
+To access the Desktop Sandbox network additional parameters are required:
+``docker run --network desktop-sandbox_cdsdevnet -v `pwd`/reporting-outputs:/opt/sphinx consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT -b=http://holder1:8081/cds-au/v1 --consul.enabled=true --consulmaster=10.252.252.2``
 
 .. code-block:: bash
 

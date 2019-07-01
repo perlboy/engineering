@@ -18,17 +18,13 @@ Execution
 
 To start the CDS Conformance execute the Docker command as below:
 
-.. code-block:: bash
-
-    docker run -p 8000:8000 consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT -b=http://localhost:8080/cds-au/v1 -s
+``docker run -p 8000:8000 consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT -b=http://localhost:8080/cds-au/v1 -s``
     
 This will complete a Conformance Suite test then execute a python SimpleServer install available at ``http://localhost:8000``.
 
 Alternatively you can write out a HTML report output by ommitting the -s command line argument as follows
 
-.. code-block:: bash
-
-    docker run -v `pwd`/conformance-result:/opt/cds-conformance/target consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT -b=http://localhost:8080/cds-au/v1
+``docker run -v `pwd`/conformance-result:/opt/cds-conformance/target consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT -b=http://localhost:8080/cds-au/v1``
     
 This will output a HTML report at: ``conformance-result/site/serenity/index.html``    
 

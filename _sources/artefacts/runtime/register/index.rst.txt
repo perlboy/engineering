@@ -1,13 +1,13 @@
 .. _cds-registry:
 
-Registry Runtime (cds-discovery) 
+Register Runtime (cds-discovery) 
 ================================================
 
 .. note:: Development of this documentation is in progress.
 
 +---------------------+---------------------------------------------------------------------------------------+
 | Summary             | The Discovery Runtime is an executable localised example of the emerging              |
-|                     | :term:`CDR Registry` specification. It is intended to be a representation of the      |
+|                     | :term:`CDR Register` specification. It is intended to be a representation of the      |
 |                     | Registry for use by the :term:`Reference Implementation`\'s during Development and    |
 |                     | Testing.                                                                              |
 +---------------------+---------------------------------------------------------------------------------------+

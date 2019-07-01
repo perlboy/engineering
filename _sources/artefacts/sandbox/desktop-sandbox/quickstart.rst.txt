@@ -65,6 +65,7 @@ Sandbox CLI Access
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Once the Sandbox is up and running you can initiate connectivity within the private Sandbox network by executing the CLI container:
+``docker run --network desktop-sandbox_cdsdevnet -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT --consul.enabled=true --consulmaster=10.252.252.2``
 
 .. code-block:: bash
 
@@ -109,6 +110,8 @@ Custom Holder Launcher
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you would like to launch your own Holder (with it's own payloads) into the Sandbox environment you can do so by launching another Docker container with the appropriate parameters.
+
+``docker run -h holder3 -p 8083:8080 --network desktop-sandbox_cdsdevnet -v `pwd`/runtime/holder3:/opt/payloads -it consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT --consul.enabled=true --consulmaster=10.252.252.2 --id=holder3 --registry.providerId=NH1``
 
 .. code-block:: bash
 

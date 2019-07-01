@@ -1,4 +1,4 @@
-Registry Quick Start
+Register Quick Start
 ---------------------------------
 
 .. start-content

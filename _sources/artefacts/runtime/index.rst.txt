@@ -5,5 +5,5 @@ Runtime Artefacts
 
 .. include:: conformance/quickstart.rst
 
-.. include:: registry/quickstart.rst
+.. include:: register/quickstart.rst
 

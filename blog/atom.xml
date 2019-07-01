@@ -2,10 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Blog</title>
   <id>https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml</id>
-  <updated>2019-06-03T00:00:00Z</updated>
+  <updated>2019-07-01T00:00:00Z</updated>
   <link href="https://consumerdatastandardsaustralia.github.io/engineering/" />
   <link href="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.4">ABlog</generator>
+  <entry xml:base="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml">
+    <title type="text">0.9.3 Documentation Updated</title>
+    <id>https://consumerdatastandardsaustralia.github.io/engineering/updates/20190701_0.9.6_documentation_updated.html</id>
+    <updated>2019-07-01T00:00:00Z</updated>
+    <published>2019-07-01T00:00:00Z</published>
+    <link href="https://consumerdatastandardsaustralia.github.io/engineering/updates/20190701_0.9.6_documentation_updated.html" />
+    <author>
+      <name>Stuart Low</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there,&lt;/p&gt;
+&lt;p&gt;It’s been a little while but I have now published updated documentation for the 0.9.3 artefacts.&lt;/p&gt;
+&lt;p&gt;In addition I’ve uploaded and linked the &lt;a class=&quot;reference internal&quot; href=&quot;engineering_workshops/round2/index.html#workshop-2&quot;&gt;&lt;span class=&quot;std std-ref&quot;&gt;Workshop Round 2&lt;/span&gt;&lt;/a&gt; material.&lt;/p&gt;
+</content>
+  </entry>
   <entry xml:base="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml">
     <title type="text">Sprint #6 Started</title>
     <id>https://consumerdatastandardsaustralia.github.io/engineering/updates/20190603_sprint6_started.html</id>

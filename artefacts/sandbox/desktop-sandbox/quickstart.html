@@ -500,10 +500,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../runtime/index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../runtime/index.html#register-quick-start">Register Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../runtime/register/index.html">Register</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../runtime/conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
@@ -726,7 +726,8 @@ holder2_1    <span class="p">|</span>     <span class="m">2019</span>/07/01 <spa
 </div>
 <div class="section" id="sandbox-cli-access">
 <h2>Sandbox CLI Access<a class="headerlink" href="#sandbox-cli-access" title="Permalink to this headline">¶</a></h2>
-<p>Once the Sandbox is up and running you can initiate connectivity within the private Sandbox network by executing the CLI container:</p>
+<p>Once the Sandbox is up and running you can initiate connectivity within the private Sandbox network by executing the CLI container:
+<code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">--network</span> <span class="pre">desktop-sandbox_cdsdevnet</span> <span class="pre">-it</span> <span class="pre">consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT</span> <span class="pre">--consul.enabled=true</span> <span class="pre">--consulmaster=10.252.252.2</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~/$ docker run --network desktop-sandbox_cdsdevnet -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2
  <span class="o">==</span>&gt; Starting Consul agent...
  &lt;snip&gt;
@@ -767,6 +768,7 @@ cds-shell:&gt;
 <div class="section" id="custom-holder-launcher">
 <h2>Custom Holder Launcher<a class="headerlink" href="#custom-holder-launcher" title="Permalink to this headline">¶</a></h2>
 <p>If you would like to launch your own Holder (with it’s own payloads) into the Sandbox environment you can do so by launching another Docker container with the appropriate parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-h</span> <span class="pre">holder3</span> <span class="pre">-p</span> <span class="pre">8083:8080</span> <span class="pre">--network</span> <span class="pre">desktop-sandbox_cdsdevnet</span> <span class="pre">-v</span> <span class="pre">`pwd`/runtime/holder3:/opt/payloads</span> <span class="pre">-it</span> <span class="pre">consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT</span> <span class="pre">--consul.enabled=true</span> <span class="pre">--consulmaster=10.252.252.2</span> <span class="pre">--id=holder3</span> <span class="pre">--registry.providerId=NH1</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~$ docker run -h holder3 -p <span class="m">8083</span>:8080 --network desktop-sandbox_cdsdevnet -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/runtime/holder3:/opt/payloads -it consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2 --id<span class="o">=</span>holder3 --registry.providerId<span class="o">=</span><span class="nv">NH1</span>
  <span class="o">==</span>&gt; Starting Consul agent...
  <span class="o">==</span>&gt; Joining cluster...

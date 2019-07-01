@@ -17,6 +17,8 @@ Execution
 
 To start the CDS Client CLI execute the Docker command as below (this will load payloads from  your local ./custom-payloads directory on boot):
 
+`` docker run -p 8080:8080 -v "./custom-payloads:/opt/payloads" consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT``
+
 .. code-block:: bash
 
     user@cds:~$ docker run -p 8080:8080 -v "./custom-payloads:/opt/payloads" consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT
@@ -73,6 +75,7 @@ Manual Build & Run
 The ``cds-holder-java-spring`` project is a modularised Maven build. This includes ``cds-holder-java-spring-server`` and ``cds-holder-java-spring-models``.
 
 As ``cds-holder-java-spring-models`` is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.
+
 .. code-block:: bash
 
    user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring

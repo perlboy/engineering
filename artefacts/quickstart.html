@@ -502,10 +502,10 @@
 <li class="toctree-l3"><a class="reference internal" href="runtime/index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="runtime/index.html#register-quick-start">Register Quick Start</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="runtime/registry/index.html">Registry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="runtime/register/index.html">Register</a></li>
 <li class="toctree-l1"><a class="reference internal" href="runtime/conformance/index.html">Conformance</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
@@ -740,7 +740,8 @@ holder2_1    <span class="p">|</span>     <span class="m">2019</span>/07/01 <spa
 </div>
 <div class="section" id="sandbox-cli-access">
 <h3>Sandbox CLI Access<a class="headerlink" href="#sandbox-cli-access" title="Permalink to this headline">¶</a></h3>
-<p>Once the Sandbox is up and running you can initiate connectivity within the private Sandbox network by executing the CLI container:</p>
+<p>Once the Sandbox is up and running you can initiate connectivity within the private Sandbox network by executing the CLI container:
+<code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">--network</span> <span class="pre">desktop-sandbox_cdsdevnet</span> <span class="pre">-it</span> <span class="pre">consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT</span> <span class="pre">--consul.enabled=true</span> <span class="pre">--consulmaster=10.252.252.2</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~/$ docker run --network desktop-sandbox_cdsdevnet -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2
  <span class="o">==</span>&gt; Starting Consul agent...
  &lt;snip&gt;
@@ -781,6 +782,7 @@ cds-shell:&gt;
 <div class="section" id="custom-holder-launcher">
 <h3>Custom Holder Launcher<a class="headerlink" href="#custom-holder-launcher" title="Permalink to this headline">¶</a></h3>
 <p>If you would like to launch your own Holder (with it’s own payloads) into the Sandbox environment you can do so by launching another Docker container with the appropriate parameters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-h</span> <span class="pre">holder3</span> <span class="pre">-p</span> <span class="pre">8083:8080</span> <span class="pre">--network</span> <span class="pre">desktop-sandbox_cdsdevnet</span> <span class="pre">-v</span> <span class="pre">`pwd`/runtime/holder3:/opt/payloads</span> <span class="pre">-it</span> <span class="pre">consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT</span> <span class="pre">--consul.enabled=true</span> <span class="pre">--consulmaster=10.252.252.2</span> <span class="pre">--id=holder3</span> <span class="pre">--registry.providerId=NH1</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~$ docker run -h holder3 -p <span class="m">8083</span>:8080 --network desktop-sandbox_cdsdevnet -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/runtime/holder3:/opt/payloads -it consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2 --id<span class="o">=</span>holder3 --registry.providerId<span class="o">=</span><span class="nv">NH1</span>
  <span class="o">==</span>&gt; Starting Consul agent...
  <span class="o">==</span>&gt; Joining cluster...
@@ -856,6 +858,7 @@ cds-shell:&gt;
 <div class="section" id="execution">
 <h3>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h3>
 <p>To start the CDS Client CLI execute the Docker command as below:</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-it</span> <span class="pre">consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT
 
 <span class="c1">#     ___     ___     ___</span>
@@ -984,6 +987,7 @@ user@cds:~/git/cds-client-java$ mvn clean install
 <div class="section" id="id4">
 <h3>Execution<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>To start the CDS Client CLI execute the Docker command as below (this will load payloads from  your local ./custom-payloads directory on boot):</p>
+<p>`` docker run -p 8080:8080 -v “./custom-payloads:/opt/payloads” consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT``</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -p <span class="m">8080</span>:8080 -v <span class="s2">&quot;./custom-payloads:/opt/payloads&quot;</span> consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT
 
 <span class="c1">#     ___     ___     ___</span>
@@ -1036,14 +1040,13 @@ user@cds:~/git/cds-client-java$ mvn clean install
 <div class="section" id="id5">
 <h3>Manual Build &amp; Run<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring</span></code> project is a modularised Maven build. This includes <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-server</span></code> and <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code>.</p>
-<p>As <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code> is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.
-.. code-block:: bash</p>
-<blockquote>
-<div><p><a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git$ git clone <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring">https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring</a>
-<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git$ cd cds-holder-java-spring
-<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git/cds-holder-java-spring$ mvn clean install
-<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git/cds-holder-java-spring/modules/cds-holder-java-spring-server$ mvn clean spring-boot:run</p>
-</div></blockquote>
+<p>As <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code> is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring
+user@cds:~/git$ <span class="nb">cd</span> cds-holder-java-spring
+user@cds:~/git/cds-holder-java-spring$ mvn clean install
+user@cds:~/git/cds-holder-java-spring/modules/cds-holder-java-spring-server$ mvn clean spring-boot:run
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="server-stubs">
@@ -1153,7 +1156,8 @@ user@cds:~/git/cds-stubs-java$ mvn clean spring-boot:run
 </div>
 <div class="section" id="native-execution">
 <h3>Native Execution<a class="headerlink" href="#native-execution" title="Permalink to this headline">¶</a></h3>
-<p>To start the CDS Client CLI execute the Docker command as below:</p>
+<p>To start the CDS Client CLI execute the Docker command as below:
+<code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-v</span> <span class="pre">`pwd`/reporting-outputs:/opt/sphinx</span> <span class="pre">consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT</span> <span class="pre">-b=http://localhost:8080/cds-au/v1</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> user@host:~/$ docker run -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/reporting-outputs:/opt/sphinx consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT -b<span class="o">=</span>http://localhost:8080/cds-au/v1
  Finished: An initial directory structure has been created.
 
@@ -1187,7 +1191,8 @@ user@cds:~/git/cds-stubs-java$ mvn clean spring-boot:run
 </div>
 <div class="section" id="execution-in-sandbox">
 <h3>Execution In Sandbox<a class="headerlink" href="#execution-in-sandbox" title="Permalink to this headline">¶</a></h3>
-<p>To access the Desktop Sandbox network additional parameters are required.</p>
+<p>To access the Desktop Sandbox network additional parameters are required:
+<code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">--network</span> <span class="pre">desktop-sandbox_cdsdevnet</span> <span class="pre">-v</span> <span class="pre">`pwd`/reporting-outputs:/opt/sphinx</span> <span class="pre">consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT</span> <span class="pre">-b=http://holder1:8081/cds-au/v1</span> <span class="pre">--consul.enabled=true</span> <span class="pre">--consulmaster=10.252.252.2</span></code></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> user@host:~/$ docker run --network desktop-sandbox_cdsdevnet -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/reporting-outputs:/opt/sphinx consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT -b<span class="o">=</span>http://holder1:8081/cds-au/v1 --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2
  <span class="o">==</span>&gt; Starting Consul agent...
  <span class="o">==</span>&gt; Joining cluster...
@@ -1256,13 +1261,15 @@ user@cds:~/git/cds-codegen/modules/cds-codegen-core$ mvn clean package
 </div>
 <div class="section" id="swagger-generation">
 <h3>Swagger Generation<a class="headerlink" href="#swagger-generation" title="Permalink to this headline">¶</a></h3>
-<p>To generate a swagger file based on <code class="docutils literal notranslate"><span class="pre">cds-models</span></code> for Banking product APIs you can use the SwaggerGenerator implementation as follows:</p>
+<p>To generate a swagger file based on <code class="docutils literal notranslate"><span class="pre">cds-models</span></code> for Banking product APIs you can use the SwaggerGenerator implementation as follows:
+<code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">target/cds-codegen-core-0.9.3-SNAPSHOT.jar</span> <span class="pre">-i</span> <span class="pre">&quot;BankingProducts&quot;</span> <span class="pre">-o</span> <span class="pre">/tmp/swagger.json</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i &quot;BankingProducts&quot; -o /tmp/swagger.json
  2019-07-01 18:21:32.380  INFO   --- [           main] org.reflections.Reflections              : Reflections took 75 ms to scan 1 urls, producing 6 keys and 187 values
  2019-07-01 18:21:32.727  INFO   --- [           main] a.o.c.c.g.openapi.SwaggerGenerator       : Successfully wrote swagger to /tmp/swagger.json
 </pre></div>
 </div>
-<p>To generate a Java Client Library output you can use the CodeGenerator implementation as follows:</p>
+<p>To generate a Java Client Library output you can use the CodeGenerator implementation as follows:
+<code class="docutils literal notranslate"><span class="pre">java</span> <span class="pre">-jar</span> <span class="pre">target/cds-codegen-core-0.9.3-SNAPSHOT.jar</span> <span class="pre">-i</span> <span class="pre">&quot;BankingProducts&quot;</span> <span class="pre">-g</span> <span class="pre">au.org.consumerdatastandards.codegen.generator.code.CodeGenerator</span> <span class="pre">-t</span> <span class="pre">cds-client-java</span> <span class="pre">-o</span> <span class="pre">/tmp/outputgen</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i &quot;BankingProducts&quot; -g au.org.consumerdatastandards.codegen.generator.code.CodeGenerator -t cds-client-java -o /tmp/outputgen
 2019-07-01 18:22:58.296  INFO   --- [           main] org.reflections.Reflections              : Reflections took 84 ms to scan 1 urls, producing 6 keys and 187 values
 2019-07-01 18:22:58.564  INFO   --- [           main] org.reflections.Reflections              : Reflections took 49 ms to scan 1 urls, producing 20 keys and 304 values
