@@ -1,3 +1,5 @@
+.. _workshop-2:
+
 Workshop Round 2
 =======================================================
 
@@ -14,15 +16,16 @@ Timetable
 +---------------------------+-------------------------------------+--------------------------+----------------+--------------------------------------+
 | Title                     | Location                            | Target Audience          | Date/Time      | Status                               |
 +===========================+=====================================+==========================+================+======================================+
-| API Standards Workshop    | Data61                              | * Technical Architects   | 13 June 2019   | Scheduled                            |
+| API Standards Workshop    | Data61                              | * Technical Architects   | 13 June 2019   | Completed                            |
 | (Sydney)                  | Level 4, 13 Garden Street, Eveleigh |                          | 09:00 - 12:30  |                                      |
 |                           |                                     |                          |                |                                      |
 +---------------------------+-------------------------------------+--------------------------+----------------+--------------------------------------+
-| Engineering Workshop      | Data61                              | * Technical Architects   | 13 June 2019   | Scheduled                            |
-| (Sydney)                  | Level 4, 13 Garden Street, Eveleigh | * Software Developers    | 13:00 - 16:30  |                                      |
+| Engineering Workshop      | Data61                              | * Technical Architects   | 13 June 2019   | Completed                            |
+| (Sydney)                  | Level 4, 13 Garden Street, Eveleigh | * Software Developers    | 13:00 - 16:30  | "Workshop Material"_                 |
 |                           |                                     | * Technical Team Leads   |                |                                      |
 +---------------------------+-------------------------------------+--------------------------+----------------+--------------------------------------+
 
+.. _Workshop Matrial: ../../_static/workshop2.pdf
 .. note:: We are limiting the number of attendees to 3 per company
 
 
@@ -58,5 +61,8 @@ Agenda
 Related Links
 --------------------
 
+| A list of related links:
+
 - `Engineering Working Group Mailing List <http://eepurl.com/gh1P7L>`_
+- `Access Workshop Material <../../_static/workshop2.pdf>`_
 

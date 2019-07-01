@@ -192,18 +192,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../sprints/sprint8.html#retrospective">Retrospective</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint9.html">Sprint #9</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint9.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint9.html#achievements">Achievements</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint9.html#retrospective">Retrospective</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../sprints/sprint10.html">Sprint #10</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint10.html#sprint-issue-breakdown">Sprint Issue Breakdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint10.html#achievements">Achievements</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../sprints/sprint10.html#retrospective">Retrospective</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -215,33 +203,48 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#client-cli">Client CLI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#desktop-sandbox">Desktop Sandbox</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#startup">Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sandbox-cli-access">Sandbox CLI Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sandbox-register-connection">Sandbox Register Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-holder-launcher">Custom Holder Launcher</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#client-cli">Client CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#execution">Execution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#client-library">Client Library</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#code-example">Code Example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#model-holder">Model Holder</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Execution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">Manual Build &amp; Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Manual Build &amp; Run</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#server-stubs">Server Stubs</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#starting-a-project">Starting a Project</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#product-summariser">Product Summariser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#native-execution">Native Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execution-in-sandbox">Execution In Sandbox</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#code-generator">Code Generator</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#execution-with-docker">Execution with Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Manual Build &amp; Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Manual Build &amp; Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#swagger-generation">Swagger Generation</a></li>
 </ul>
 </li>
 </ul>
@@ -478,6 +481,7 @@
 <li class="toctree-l3"><a class="reference internal" href="server/holder-java-spring/index.html#manual-build-run">Manual Build &amp; Run</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="server/holder-java-spring/index.html#overview">Overview</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="server/stubs-java-spring/index.html">Server Stubs (cds-stubs-java-spring)</a><ul>
@@ -492,7 +496,12 @@
 <p class="caption"><span class="caption-text">Runtime</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="runtime/index.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="runtime/index.html#conformance-quick-start">Conformance Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="runtime/index.html#conformance-quick-start">Conformance Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="runtime/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="runtime/index.html#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="runtime/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="runtime/index.html#registry-quick-start">Registry Quick Start</a></li>
 </ul>
 </li>
@@ -502,10 +511,25 @@
 <p class="caption"><span class="caption-text">Sandbox</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="sandbox/index.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="sandbox/index.html#desktop-sandbox-quick-start">Desktop Sandbox Quick Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sandbox/index.html#desktop-sandbox-quick-start">Desktop Sandbox Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/index.html#startup">Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/index.html#sandbox-cli-access">Sandbox CLI Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/index.html#sandbox-register-connection">Sandbox Register Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/index.html#custom-holder-launcher">Custom Holder Launcher</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="sandbox/desktop-sandbox/index.html">Desktop Sandbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#startup">Startup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#sandbox-cli-access">Sandbox CLI Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#sandbox-register-connection">Sandbox Register Connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#custom-holder-launcher">Custom Holder Launcher</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="sandbox/desktop-sandbox/index.html#high-level-architecture-diagram">High Level Architecture Diagram</a></li>
 </ul>
 </li>
@@ -517,6 +541,16 @@
 <li class="toctree-l3"><a class="reference internal" href="support/index.html#requirements">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="support/index.html#execution-with-docker">Execution with Docker</a></li>
 <li class="toctree-l3"><a class="reference internal" href="support/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support/index.html#swagger-generation">Swagger Generation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="support/product-summariser/index.html">Product Summariser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="support/product-summariser/index.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="support/product-summariser/index.html#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support/product-summariser/index.html#native-execution">Native Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support/product-summariser/index.html#execution-in-sandbox">Execution In Sandbox</a></li>
 </ul>
 </li>
 </ul>
@@ -527,6 +561,7 @@
 <li class="toctree-l3"><a class="reference internal" href="support/codegen/index.html#requirements">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="support/codegen/index.html#execution-with-docker">Execution with Docker</a></li>
 <li class="toctree-l3"><a class="reference internal" href="support/codegen/index.html#manual-build-run">Manual Build &amp; Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support/codegen/index.html#swagger-generation">Swagger Generation</a></li>
 </ul>
 </li>
 </ul>
@@ -535,12 +570,15 @@
 <li class="toctree-l2"><a class="reference internal" href="support/models/index.html#overview">Overview</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="support/models/endpoints.html">Endpoints</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="support/models/endpoints.html#endpoint-definition">Endpoint Definition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="support/models/endpoints.html#endpoint-response">Endpoint Response</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support/models/endpoints.html#endpoint-response-definitions">Endpoint Response Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support/models/endpoints.html#default-response-definition">Default Response Definition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="support/models/endpoints.html#endpoint-auth">Endpoint Auth</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="support/models/definitions_attributes.html">Data Definitions &amp; Attributes</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="support/models/definitions_attributes.html#endpoint-definition">Endpoint Definition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support/models/definitions_attributes.html#cds-data-types">CDS Data Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support/models/definitions_attributes.html#custom-attributes">Custom Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -638,11 +676,174 @@
       
   <div class="section" id="artefact-quick-start">
 <h1>Artefact Quick Start<a class="headerlink" href="#artefact-quick-start" title="Permalink to this headline">¶</a></h1>
-<p>Placeholder</p>
-<div class="section" id="client-cli">
-<h2>Client CLI<a class="headerlink" href="#client-cli" title="Permalink to this headline">¶</a></h2>
+<p>CDS Engineering has produced a number of artefacts that meet the requirements of the Product APIs outlined in Standards 0.9.3.</p>
+<div class="section" id="desktop-sandbox">
+<h2>Desktop Sandbox<a class="headerlink" href="#desktop-sandbox" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="requirements">
 <h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<p>The Desktop Sandbox is an amalgamation of Docker containers orchestrated using Docker Compose.</p>
+<dl class="simple">
+<dt>To get up and running with the Sandbox you require:</dt><dd><ol class="arabic simple">
+<li><p>Docker</p></li>
+<li><p>Docker Compose</p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="startup">
+<h3>Startup<a class="headerlink" href="#startup" title="Permalink to this headline">¶</a></h3>
+<p>The following command starts up the Desktop Sandbox environment:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~/git$ git clone https://github.com/consumerdatastandardsaustralia/desktop-sandbox
+Cloning into <span class="s1">&#39;desktop-sandbox&#39;</span>...
+remote: Enumerating objects: <span class="m">73</span>, <span class="k">done</span>.
+remote: Counting objects: <span class="m">100</span>% <span class="o">(</span><span class="m">73</span>/73<span class="o">)</span>, <span class="k">done</span>.
+remote: Compressing objects: <span class="m">100</span>% <span class="o">(</span><span class="m">34</span>/34<span class="o">)</span>, <span class="k">done</span>.
+remote: Total <span class="m">73</span> <span class="o">(</span>delta <span class="m">21</span><span class="o">)</span>, reused <span class="m">62</span> <span class="o">(</span>delta <span class="m">15</span><span class="o">)</span>, pack-reused <span class="m">0</span>
+Unpacking objects: <span class="m">100</span>% <span class="o">(</span><span class="m">73</span>/73<span class="o">)</span>, <span class="k">done</span>.
+user@host:~/git$ <span class="nb">cd</span> desktop-sandbox
+user@host:~/git/desktop-sandbox$ docker-compose up
+Creating network <span class="s2">&quot;desktop-sandbox_cdsdevnet&quot;</span> with the default driver
+Creating volume <span class="s2">&quot;desktop-sandbox_consul-data&quot;</span> with default driver
+Creating desktop-sandbox_consul_1 ... <span class="k">done</span>
+Creating desktop-sandbox_holder2_1   ... <span class="k">done</span>
+Creating desktop-sandbox_discovery_1 ... <span class="k">done</span>
+Creating desktop-sandbox_holder1_1   ... <span class="k">done</span>
+Attaching to desktop-sandbox_consul_1, desktop-sandbox_discovery_1, desktop-sandbox_holder2_1, desktop-sandbox_holder1_1
+consul_1     <span class="p">|</span> <span class="nv">bootstrap</span> <span class="o">=</span> true: <span class="k">do</span> not <span class="nb">enable</span> unless necessary
+consul_1     <span class="p">|</span> <span class="o">==</span>&gt; Starting Consul agent...
+consul_1     <span class="p">|</span> <span class="o">==</span>&gt; Consul agent running!
+consul_1     <span class="p">|</span>            Version: <span class="s1">&#39;v1.5.1&#39;</span>
+consul_1     <span class="p">|</span>            Node ID: <span class="s1">&#39;e6617bee-9196-21e6-686a-8652d36c3958&#39;</span>
+consul_1     <span class="p">|</span>          Node name: <span class="s1">&#39;70308f18d0dc&#39;</span>
+consul_1     <span class="p">|</span>         Datacenter: <span class="s1">&#39;dc1&#39;</span> <span class="o">(</span>Segment: <span class="s1">&#39;&lt;all&gt;&#39;</span><span class="o">)</span>
+consul_1     <span class="p">|</span>             Server: <span class="nb">true</span> <span class="o">(</span>Bootstrap: <span class="nb">true</span><span class="o">)</span>
+&lt;snip&gt;
+holder1_1    <span class="p">|</span> <span class="m">2019</span>-07-01 <span class="m">07</span>:54:52.862  INFO <span class="m">44</span> --- <span class="o">[</span><span class="m">0</span>.0-8081-exec-1<span class="o">]</span> o.a.c.c.C.<span class="o">[</span>Tomcat<span class="o">]</span>.<span class="o">[</span>localhost<span class="o">]</span>.<span class="o">[</span>/<span class="o">]</span>       : Initializing Spring DispatcherServlet <span class="s1">&#39;dispatcherServlet&#39;</span>
+holder1_1    <span class="p">|</span> <span class="m">2019</span>-07-01 <span class="m">07</span>:54:52.862  INFO <span class="m">44</span> --- <span class="o">[</span><span class="m">0</span>.0-8081-exec-1<span class="o">]</span> o.s.web.servlet.DispatcherServlet        : Initializing Servlet <span class="s1">&#39;dispatcherServlet&#39;</span>
+holder1_1    <span class="p">|</span> <span class="m">2019</span>-07-01 <span class="m">07</span>:54:52.882  INFO <span class="m">44</span> --- <span class="o">[</span><span class="m">0</span>.0-8081-exec-1<span class="o">]</span> o.s.web.servlet.DispatcherServlet        : Completed initialization in <span class="m">20</span> ms
+holder1_1    <span class="p">|</span>     <span class="m">2019</span>/07/01 <span class="m">07</span>:54:53 <span class="o">[</span>INFO<span class="o">]</span> agent: Synced check <span class="s2">&quot;service:holder1&quot;</span>
+holder2_1    <span class="p">|</span> <span class="m">2019</span>-07-01 <span class="m">07</span>:54:55.319  INFO <span class="m">44</span> --- <span class="o">[</span><span class="m">0</span>.0-8082-exec-1<span class="o">]</span> o.a.c.c.C.<span class="o">[</span>Tomcat<span class="o">]</span>.<span class="o">[</span>localhost<span class="o">]</span>.<span class="o">[</span>/<span class="o">]</span>       : Initializing Spring DispatcherServlet <span class="s1">&#39;dispatcherServlet&#39;</span>
+holder2_1    <span class="p">|</span> <span class="m">2019</span>-07-01 <span class="m">07</span>:54:55.319  INFO <span class="m">44</span> --- <span class="o">[</span><span class="m">0</span>.0-8082-exec-1<span class="o">]</span> o.s.web.servlet.DispatcherServlet        : Initializing Servlet <span class="s1">&#39;dispatcherServlet&#39;</span>
+holder2_1    <span class="p">|</span> <span class="m">2019</span>-07-01 <span class="m">07</span>:54:55.338  INFO <span class="m">44</span> --- <span class="o">[</span><span class="m">0</span>.0-8082-exec-1<span class="o">]</span> o.s.web.servlet.DispatcherServlet        : Completed initialization in <span class="m">18</span> ms
+holder2_1    <span class="p">|</span>     <span class="m">2019</span>/07/01 <span class="m">07</span>:54:55 <span class="o">[</span>INFO<span class="o">]</span> agent: Synced check <span class="s2">&quot;service:holder2&quot;</span>
+</pre></div>
+</div>
+<p>This will setup services as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Data Holder 1 (Good Payloads): <code class="docutils literal notranslate"><span class="pre">http://localhost:8081/cds-au/v1</span></code></p></li>
+<li><p>Data Holder 2 (Bad Payloads): <code class="docutils literal notranslate"><span class="pre">http://localhost:8082/cds-au/v1</span></code></p></li>
+<li><p>Sandbox Register: <code class="docutils literal notranslate"><span class="pre">http://localhost:9000/cds-register/v1</span></code></p></li>
+<li><p>Consul Config Service: <code class="docutils literal notranslate"><span class="pre">http://localhost:8500/ui/dc1/services</span></code></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="sandbox-cli-access">
+<h3>Sandbox CLI Access<a class="headerlink" href="#sandbox-cli-access" title="Permalink to this headline">¶</a></h3>
+<p>Once the Sandbox is up and running you can initiate connectivity within the private Sandbox network by executing the CLI container:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~/$ docker run --network desktop-sandbox_cdsdevnet -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2
+ <span class="o">==</span>&gt; Starting Consul agent...
+ &lt;snip&gt;
+
+ <span class="c1">#     ___     ___     ___</span>
+ <span class="c1">#    / __|   |   \   / __|</span>
+ <span class="c1">#   | (__    | |) |  \__ \</span>
+ <span class="c1">#    \___|   |___/   |___/</span>
+ <span class="c1">#  _|&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;|</span>
+ <span class="c1">#  &quot;`-0-0-&#39;&quot;`-0-0-&#39;&quot;`-0-0-&#39;</span>
+
+ Starting CdsClientShell v0.9.3-SNAPSHOT on d0b751a96b76 with PID <span class="m">44</span> <span class="o">(</span>/opt/cds-client-java-cli/cli.jar started by root in /opt<span class="o">)</span>
+ No active profile set, falling back to default profiles: default
+ Reflections took <span class="m">302</span> ms to scan <span class="m">2</span> urls, producing <span class="m">6</span> keys and <span class="m">187</span> values
+ Reflections took <span class="m">107</span> ms to scan <span class="m">2</span> urls, producing <span class="m">6</span> keys and <span class="m">187</span> values
+ Started CdsClientShell in <span class="m">6</span>.451 seconds <span class="o">(</span>JVM running <span class="k">for</span> <span class="m">8</span>.533<span class="o">)</span>
+ cds-shell:&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="sandbox-register-connection">
+<h3>Sandbox Register Connection<a class="headerlink" href="#sandbox-register-connection" title="Permalink to this headline">¶</a></h3>
+<p>So that the Sandbox CLI can discover the Holders alive in the Sandbox it is necessary to setup the <code class="docutils literal notranslate"><span class="pre">register-endpoint</span></code> within CLI as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cds-shell:&gt;set-register-endpoint --discovery-endpoint http://discovery:9000/cds-register/v1
+Discovery Endpoint URL is <span class="nb">set</span> to: http://discovery:9000/cds-register/v1
+cds-shell:&gt;list-holders --summary
++-------------+-------------------------------+
+<span class="p">|</span> Provider ID <span class="p">|</span> Endpoint Address              <span class="p">|</span>
++-------------+-------------------------------+
+<span class="p">|</span>         GH1 <span class="p">|</span> http://holder1:8081/cds-au/v1 <span class="p">|</span>
++-------------+-------------------------------+
+<span class="p">|</span>         BH1 <span class="p">|</span> http://holder2:8082/cds-au/v1 <span class="p">|</span>
++-------------+-------------------------------+
+cds-shell:&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-holder-launcher">
+<h3>Custom Holder Launcher<a class="headerlink" href="#custom-holder-launcher" title="Permalink to this headline">¶</a></h3>
+<p>If you would like to launch your own Holder (with it’s own payloads) into the Sandbox environment you can do so by launching another Docker container with the appropriate parameters.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@host:~$ docker run -h holder3 -p <span class="m">8083</span>:8080 --network desktop-sandbox_cdsdevnet -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/runtime/holder3:/opt/payloads -it consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2 --id<span class="o">=</span>holder3 --registry.providerId<span class="o">=</span><span class="nv">NH1</span>
+ <span class="o">==</span>&gt; Starting Consul agent...
+ <span class="o">==</span>&gt; Joining cluster...
+     Join completed. Synced with <span class="m">1</span> initial agents
+  &lt;snip&gt;
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:08.508  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:08.571  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> d.s.w.p.DocumentationPluginsBootstrapper : Found <span class="m">1</span> custom documentation plugin<span class="o">(</span>s<span class="o">)</span>
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:08.643  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> s.d.s.w.s.ApiListingReferenceScanner     : Scanning <span class="k">for</span> api listing references
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:09.199  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.holder.util.ContextEventListener   : Service setup in progress, performing boot <span class="nb">time</span> operations
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:09.202  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.holder.util.ContextEventListener   : Initiating data loader <span class="k">for</span> Products
+     <span class="m">2019</span>/07/01 <span class="m">08</span>:04:09 <span class="o">[</span>INFO<span class="o">]</span> agent: Synced service <span class="s2">&quot;holder3&quot;</span>
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:10.023  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.holder.util.HolderRegistrator      : Holder Service registered with Consul server with id of holder3 on port <span class="m">8080</span> with <span class="nb">type</span> HOLDER and service uri of http://holder3:8080
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:10.153  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.holder.util.HolderRegistrator      : Holder Service Discovery payload registered as key value pair with Consul server
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:10.235  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port<span class="o">(</span>s<span class="o">)</span>: <span class="m">8080</span> <span class="o">(</span>http<span class="o">)</span> with context path <span class="s1">&#39;&#39;</span>
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:04:10.242  INFO <span class="m">44</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.holder.HolderApplication           : Started HolderApplication in <span class="m">17</span>.08 seconds <span class="o">(</span>JVM running <span class="k">for</span> <span class="m">18</span>.471<span class="o">)</span>
+</pre></div>
+</div>
+<p>This Holder will now be available at <code class="docutils literal notranslate"><span class="pre">http://localhost:8083</span></code>. It will also be registered with the Sandbox Register:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cds-shell:&gt;list-holders --summary
++-------------+-------------------------------+
+<span class="p">|</span> Provider ID <span class="p">|</span> Endpoint Address              <span class="p">|</span>
++-------------+-------------------------------+
+<span class="p">|</span>         GH1 <span class="p">|</span> http://holder1:8081/cds-au/v1 <span class="p">|</span>
++-------------+-------------------------------+
+<span class="p">|</span>         BH1 <span class="p">|</span> http://holder2:8082/cds-au/v1 <span class="p">|</span>
++-------------+-------------------------------+
+<span class="p">|</span>         NH1 <span class="p">|</span> http://holder3:8080/cds-au/v1 <span class="p">|</span>
++-------------+-------------------------------+
+cds-shell:&gt;get-holder NH1
+Register Holder payload retrieved
+class RegisterDataHolder <span class="o">{</span>
+    providerId: NH1
+    accreditation: null
+    participant: class RegisterParticipant <span class="o">{</span>
+        name: ACME Bank
+        participantId: null
+        participantType: HOLDER
+        organisation: class class au.org.consumerdatastandards.holder.model.CommonOrganisationDetail <span class="o">{</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    endpointDetail: <span class="o">[</span>class RegisterDataHolderServiceEndpoint <span class="o">{</span>
+        acccDataStandardVersion: <span class="m">0</span>.9.3
+        cdrBaseUri: http://holder3:8080/cds-au/v1
+        cdrRevocationUri: null
+        cdrCacheRefreshUrl: null
+        cdrMetricsUrl: null
+        publicUrl: null
+        termsofServiceUrl: null
+        logoUrl: null
+        supportUrl: null
+        policyUrl: null
+    <span class="o">}]</span>
+    authDetail: <span class="o">[]</span>
+<span class="o">}</span>
+cds-shell:&gt;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="client-cli">
+<h2>Client CLI<a class="headerlink" href="#client-cli" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Requirements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>If you wish to simply run the CDS Java Client CLI you only require Docker.</p>
 <p>If you wish to build CDS Java Client CLI this requires:</p>
 <blockquote>
@@ -655,7 +856,7 @@
 <div class="section" id="execution">
 <h3>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h3>
 <p>To start the CDS Client CLI execute the Docker command as below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.0.2-SNAPSHOT
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT
 
 <span class="c1">#     ___     ___     ___</span>
 <span class="c1">#    / __|   |   \   / __|</span>
@@ -664,7 +865,7 @@
 <span class="c1">#  _|&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;|_|&quot;&quot;&quot;&quot;&quot;|</span>
 <span class="c1">#  &quot;`-0-0-&#39;&quot;`-0-0-&#39;&quot;`-0-0-&#39;</span>
 
-<span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.066  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : Starting CdsClientShell v0.0.2-SNAPSHOT on b78c5f91f96d with PID <span class="m">1</span> <span class="o">(</span>/opt/cds-client-java-cli/cli.jar started by root in /<span class="o">)</span>
+<span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.066  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : Starting CdsClientShell v0.9.3-SNAPSHOT on b78c5f91f96d with PID <span class="m">1</span> <span class="o">(</span>/opt/cds-client-java-cli/cli.jar started by root in /<span class="o">)</span>
 <span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.068  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : No active profile set, falling back to default profiles: default
 <span class="m">2019</span>-05-10 <span class="m">04</span>:59:15.913  INFO <span class="m">1</span> --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.client.cli.CdsClientShell          : Started CdsClientShell in <span class="m">1</span>.061 seconds <span class="o">(</span>JVM running <span class="k">for</span> <span class="m">1</span>.314<span class="o">)</span>
 cds-shell:&gt;
@@ -683,8 +884,8 @@ user@cds:~/git/cds-client-java$ mvn clean spring-boot
 </div>
 <div class="section" id="client-library">
 <h2>Client Library<a class="headerlink" href="#client-library" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3>Requirements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Requirements<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Using the CDS Java based Client Library requires:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -705,7 +906,7 @@ user@cds:~/git/cds-client-java$ mvn clean install
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;dependency&gt;</span>
   <span class="nt">&lt;groupId&gt;</span>au.org.consumerdatastandards<span class="nt">&lt;/groupId&gt;</span>
   <span class="nt">&lt;artifactId&gt;</span>cds-client-java<span class="nt">&lt;/artifactId&gt;</span>
-  <span class="nt">&lt;version&gt;</span>0.0.2-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.9.3-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
   <span class="nt">&lt;scope&gt;</span>compile<span class="nt">&lt;/scope&gt;</span>
 <span class="nt">&lt;/dependency&gt;</span>
 </pre></div>
@@ -715,7 +916,7 @@ user@cds:~/git/cds-client-java$ mvn clean install
      <span class="n">mavenCentral</span><span class="o">()</span>
  <span class="o">}</span>
 
-<span class="n">compile</span> <span class="s2">&quot;au.org.consumerdatastandards:cds-client-java:0.0.2-SNAPSHOT&quot;</span>
+<span class="n">compile</span> <span class="s2">&quot;au.org.consumerdatastandards:cds-client-java:0.9.3-SNAPSHOT&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -769,8 +970,8 @@ user@cds:~/git/cds-client-java$ mvn clean install
 </div>
 <div class="section" id="model-holder">
 <h2>Model Holder<a class="headerlink" href="#model-holder" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id2">
-<h3>Requirements<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Requirements<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>If you wish to simply run the Model Holder you only require Docker.</p>
 <p>If you wish to build the CDS Model Holder from source, this requires:</p>
 <blockquote>
@@ -780,10 +981,10 @@ user@cds:~/git/cds-client-java$ mvn clean install
 </ol>
 </div></blockquote>
 </div>
-<div class="section" id="id3">
-<h3>Execution<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>To start the CDS Client CLI execute the Docker command as below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -p <span class="m">8080</span>:8080 consumerdatastandardsaustralia/cds-holder-java:0.0.2-SNAPSHOT
+<div class="section" id="id4">
+<h3>Execution<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>To start the CDS Client CLI execute the Docker command as below (this will load payloads from  your local ./custom-payloads directory on boot):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -p <span class="m">8080</span>:8080 -v <span class="s2">&quot;./custom-payloads:/opt/payloads&quot;</span> consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT
 
 <span class="c1">#     ___     ___     ___</span>
 <span class="c1">#    / __|   |   \   / __|</span>
@@ -832,20 +1033,23 @@ user@cds:~/git/cds-client-java$ mvn clean install
 </pre></div>
 </div>
 </div>
-<div class="section" id="id4">
-<h3>Manual Build &amp; Run<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">holder-java-spring</span></code> project is currently located within the <code class="docutils literal notranslate"><span class="pre">cds-codegen</span></code> repository. To manually build and run the Model Holder with Maven, run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-codegen
-user@cds:~/git$ <span class="nb">cd</span> cds-codegen/support/samples/cds-holder-java-spring
-user@cds:~/git/cds-codegen/support/samples/cds-holder-java-spring$ mvn clean spring-boot
-</pre></div>
-</div>
+<div class="section" id="id5">
+<h3>Manual Build &amp; Run<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring</span></code> project is a modularised Maven build. This includes <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-server</span></code> and <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code>.</p>
+<p>As <code class="docutils literal notranslate"><span class="pre">cds-holder-java-spring-models</span></code> is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.
+.. code-block:: bash</p>
+<blockquote>
+<div><p><a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git$ git clone <a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring">https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring</a>
+<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git$ cd cds-holder-java-spring
+<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git/cds-holder-java-spring$ mvn clean install
+<a class="reference external" href="mailto:user&#37;&#52;&#48;cds">user<span>&#64;</span>cds</a>:~/git/cds-holder-java-spring/modules/cds-holder-java-spring-server$ mvn clean spring-boot:run</p>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="server-stubs">
 <h2>Server Stubs<a class="headerlink" href="#server-stubs" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>Requirements<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Requirements<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>The Stubs provide a starting point for anyone wishing to develop a <a class="reference internal" href="../glossary.html#term-data-holder"><span class="xref std std-term">Data Holder</span></a>.</p>
 <p>The Stubs are based on the following stack:</p>
 <blockquote>
@@ -864,12 +1068,11 @@ user@cds:~/git/cds-codegen/support/samples/cds-holder-java-spring$ mvn clean spr
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-stubs-java
 user@cds:~/git$ <span class="nb">cd</span> cds-stubs-java
 user@cds:~/git/cds-stubs-java$ rm -fr .git
-user@cds:~/git/cds-stubs-java$ mvn clean spring-boot
 user@cds:~/git/cds-stubs-java$ mvn clean spring-boot:run
  <span class="o">[</span>INFO<span class="o">]</span> Scanning <span class="k">for</span> projects...
  <span class="o">[</span>INFO<span class="o">]</span>
  <span class="o">[</span>INFO<span class="o">]</span> ------------&lt; au.org.consumerdatastandards:cds-stubs-java &gt;-------------
- <span class="o">[</span>INFO<span class="o">]</span> Building cds-stubs-java <span class="m">0</span>.0.1-SNAPSHOT
+ <span class="o">[</span>INFO<span class="o">]</span> Building cds-stubs-java <span class="m">0</span>.9.3-SNAPSHOT
  <span class="o">[</span>INFO<span class="o">]</span> --------------------------------<span class="o">[</span> jar <span class="o">]</span>---------------------------------
  <span class="o">[</span>INFO<span class="o">]</span>
  <span class="o">[</span>INFO<span class="o">]</span> --- maven-clean-plugin:3.1.0:clean <span class="o">(</span>default-clean<span class="o">)</span> @ cds-stubs-java ---
@@ -942,10 +1145,74 @@ user@cds:~/git/cds-stubs-java$ mvn clean spring-boot:run
 </div>
 </div>
 </div>
+<div class="section" id="product-summariser">
+<h2>Product Summariser<a class="headerlink" href="#product-summariser" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>Requirements<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>The Product Summariser is best run from it’s Docker container as it uses a number of pipeline techniques to perform data conversation after initial API consumption.</p>
+</div>
+<div class="section" id="native-execution">
+<h3>Native Execution<a class="headerlink" href="#native-execution" title="Permalink to this headline">¶</a></h3>
+<p>To start the CDS Client CLI execute the Docker command as below:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> user@host:~/$ docker run -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/reporting-outputs:/opt/sphinx consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT -b<span class="o">=</span>http://localhost:8080/cds-au/v1
+ Finished: An initial directory structure has been created.
+
+ You should now populate your master file /opt/sphinx/source/index.rst and create other documentation
+ <span class="nb">source</span> files. Use the Makefile to build the docs, like so:
+    make builder
+ where <span class="s2">&quot;builder&quot;</span> is one of the supported builders, e.g. html, latex or linkcheck.
+
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:51:30.495  INFO   --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.reporting.product.summary.ApiUtil  : Server URL is <span class="nb">set</span> to http://localhost:8080/cds-au/v1
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:51:30.518  INFO   --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.reporting.product.summary.ApiUtil  : Server URL is <span class="nb">set</span> to http://localhost:8080/cds-au/v1
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:51:31.167  INFO   --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.r.p.summary.ProductSummariser      : Collecting detailed product information <span class="k">for</span> ad22b1f0967349e8a5d586afe7f0d845
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:51:31.313  INFO   --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.r.p.summary.ProductSummariser      : Collecting detailed product information <span class="k">for</span> 7aff9e0e85e6450eb052d4ff2e953223
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:51:31.393  INFO   --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.r.p.summary.ProductSummariser      : Collecting detailed product information <span class="k">for</span> 72f214498c7f47a98fe59b794e7c01ab
+ <span class="m">2019</span>-07-01 <span class="m">08</span>:51:31.470  INFO   --- <span class="o">[</span>           main<span class="o">]</span> a.o.c.r.p.summary.ProductSummariser      : Collecting detailed product information <span class="k">for</span> 7375f63775b4489a890655e25395e12d
+&lt;snip&gt;
+ <span class="o">(</span>./cdsproductreport.ind<span class="o">)</span> <span class="o">[</span><span class="m">12</span><span class="o">]</span> <span class="o">(</span>./cdsproductreport.aux<span class="o">)</span> <span class="o">)</span>
+ <span class="o">(</span>see the transcript file <span class="k">for</span> additional information<span class="o">){</span>/usr/share/texlive/texmf-d
+ ist/fonts/enc/dvips/base/8r.enc<span class="o">}</span>&lt;/usr/share/texlive/texmf-dist/fonts/type1/urw/
+ helvetic/uhvb8a.pfb&gt;&lt;/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+ r8a.pfb&gt;&lt;/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb&gt;&lt;/usr/s
+ hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb&gt;
+ Output written on cdsproductreport.pdf <span class="o">(</span><span class="m">16</span> pages, <span class="m">82433</span> bytes<span class="o">)</span>.
+ Transcript written on cdsproductreport.log.
+ Latexmk: Index file <span class="s1">&#39;cdsproductreport.idx&#39;</span> was written
+ Latexmk: Log file says output to <span class="s1">&#39;cdsproductreport.pdf&#39;</span>
+ Latexmk: All targets <span class="o">(</span>cdsproductreport.pdf<span class="o">)</span> are up-to-date
+ make<span class="o">[</span><span class="m">1</span><span class="o">]</span>: Leaving directory <span class="s1">&#39;/opt/sphinx/build/latex&#39;</span>
+</pre></div>
+</div>
+<p>The report will then be available in <code class="docutils literal notranslate"><span class="pre">reporting-outputs/build/html/index.html</span></code> and the PDF version will be in <code class="docutils literal notranslate"><span class="pre">reporting-outputs/build/latex/cdsproductreport.pdf</span></code>.</p>
+</div>
+<div class="section" id="execution-in-sandbox">
+<h3>Execution In Sandbox<a class="headerlink" href="#execution-in-sandbox" title="Permalink to this headline">¶</a></h3>
+<p>To access the Desktop Sandbox network additional parameters are required.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span> user@host:~/$ docker run --network desktop-sandbox_cdsdevnet -v <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>/reporting-outputs:/opt/sphinx consumerdatastandardsaustralia/cds-product-summariser:0.9.3-SNAPSHOT -b<span class="o">=</span>http://holder1:8081/cds-au/v1 --consul.enabled<span class="o">=</span><span class="nb">true</span> --consulmaster<span class="o">=</span><span class="m">10</span>.252.252.2
+ <span class="o">==</span>&gt; Starting Consul agent...
+ <span class="o">==</span>&gt; Joining cluster...
+&lt;snip&gt;
+ <span class="o">(</span>./cdsproductreport.ind<span class="o">)</span> <span class="o">[</span><span class="m">12</span><span class="o">]</span> <span class="o">(</span>./cdsproductreport.aux<span class="o">)</span> <span class="o">)</span>
+ <span class="o">(</span>see the transcript file <span class="k">for</span> additional information<span class="o">){</span>/usr/share/texlive/texmf-d
+ ist/fonts/enc/dvips/base/8r.enc<span class="o">}</span>&lt;/usr/share/texlive/texmf-dist/fonts/type1/urw/
+ helvetic/uhvb8a.pfb&gt;&lt;/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhv
+ r8a.pfb&gt;&lt;/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb&gt;&lt;/usr/s
+ hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb&gt;
+ Output written on cdsproductreport.pdf <span class="o">(</span><span class="m">16</span> pages, <span class="m">82433</span> bytes<span class="o">)</span>.
+ Transcript written on cdsproductreport.log.
+ Latexmk: Index file <span class="s1">&#39;cdsproductreport.idx&#39;</span> was written
+ Latexmk: Log file says output to <span class="s1">&#39;cdsproductreport.pdf&#39;</span>
+ Latexmk: All targets <span class="o">(</span>cdsproductreport.pdf<span class="o">)</span> are up-to-date
+ make<span class="o">[</span><span class="m">1</span><span class="o">]</span>: Leaving directory <span class="s1">&#39;/opt/sphinx/build/latex&#39;</span>
+</pre></div>
+</div>
+<p>The report will then be available in <code class="docutils literal notranslate"><span class="pre">reporting-outputs/build/html/index.html</span></code> and the PDF version will be in <code class="docutils literal notranslate"><span class="pre">reporting-outputs/build/latex/cdsproductreport.pdf</span></code>.</p>
+</div>
+</div>
 <div class="section" id="code-generator">
 <h2>Code Generator<a class="headerlink" href="#code-generator" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id6">
-<h3>Requirements<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Requirements<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>If you wish to simply run the CDS Code Generator you only require Docker.</p>
 <p>If you wish to build CDS Codegen this requires:</p>
 <blockquote>
@@ -958,7 +1225,7 @@ user@cds:~/git/cds-stubs-java$ mvn clean spring-boot:run
 <div class="section" id="execution-with-docker">
 <h3>Execution with Docker<a class="headerlink" href="#execution-with-docker" title="Permalink to this headline">¶</a></h3>
 <p>To start the CDS Codegen execute the Docker command as below:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -it consumerdatastandardsaustralia/cds-codegen-core:0.0.3-SNAPSHOT -h
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~$ docker run -it consumerdatastandardsaustralia/cds-codegen-core:0.9.3-SNAPSHOT -h
 Usage: &lt;main class&gt; <span class="o">[</span>options<span class="o">]</span>
   Options:
     --generator, -g
@@ -975,13 +1242,73 @@ Usage: &lt;main class&gt; <span class="o">[</span>options<span class="o">]</span
 </pre></div>
 </div>
 </div>
-<div class="section" id="id7">
-<h3>Manual Build &amp; Run<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Manual Build &amp; Run<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>To manually build and run the CDS Code Generator using Maven, run:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-codegen
-user@cds:~/git$ <span class="nb">cd</span> cds-codegen/modules/cds-codegen-core
+user@cds:~/git$ <span class="nb">cd</span> cds-codegen
+user@cds:~/git/cds-codegen$ mvn clean install
+user@cds:~/git$ <span class="nb">cd</span> modules/cds-codegen-core
 user@cds:~/git/cds-codegen/modules/cds-codegen-core$ mvn clean package
-user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.0.3-SNAPSHOT.jar  -h
+</pre></div>
+</div>
+<p>Once this is completed you can use <code class="docutils literal notranslate"><span class="pre">cds-codegen</span></code> to produce a number of output types.</p>
+</div>
+<div class="section" id="swagger-generation">
+<h3>Swagger Generation<a class="headerlink" href="#swagger-generation" title="Permalink to this headline">¶</a></h3>
+<p>To generate a swagger file based on <code class="docutils literal notranslate"><span class="pre">cds-models</span></code> for Banking product APIs you can use the SwaggerGenerator implementation as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i &quot;BankingProducts&quot; -o /tmp/swagger.json
+ 2019-07-01 18:21:32.380  INFO   --- [           main] org.reflections.Reflections              : Reflections took 75 ms to scan 1 urls, producing 6 keys and 187 values
+ 2019-07-01 18:21:32.727  INFO   --- [           main] a.o.c.c.g.openapi.SwaggerGenerator       : Successfully wrote swagger to /tmp/swagger.json
+</pre></div>
+</div>
+<p>To generate a Java Client Library output you can use the CodeGenerator implementation as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>user@cds:~/git/cds-codegen/modules/cds-codegen-core$ java -jar target/cds-codegen-core-0.9.3-SNAPSHOT.jar -i &quot;BankingProducts&quot; -g au.org.consumerdatastandards.codegen.generator.code.CodeGenerator -t cds-client-java -o /tmp/outputgen
+2019-07-01 18:22:58.296  INFO   --- [           main] org.reflections.Reflections              : Reflections took 84 ms to scan 1 urls, producing 6 keys and 187 values
+2019-07-01 18:22:58.564  INFO   --- [           main] org.reflections.Reflections              : Reflections took 49 ms to scan 1 urls, producing 20 keys and 304 values
+2019-07-01 18:22:58.668  INFO   --- [           main] org.reflections.Reflections              : Reflections took 22 ms to scan 1 urls, producing 20 keys and 304 values
+2019-07-01 18:22:59.525  INFO   --- [           main] org.reflections.Reflections              : Reflections took 32 ms to scan 1 urls, producing 20 keys and 304 values
+2019-07-01 18:22:59.545  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/ApiCallback.java
+2019-07-01 18:22:59.672  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/ApiClient.java
+2019-07-01 18:22:59.682  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/ApiException.java
+2019-07-01 18:22:59.692  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/ApiResponse.java
+2019-07-01 18:22:59.696  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/Configuration.java
+2019-07-01 18:22:59.705  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/GzipRequestInterceptor.java
+2019-07-01 18:22:59.729  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/JSON.java
+2019-07-01 18:22:59.736  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/Pair.java
+2019-07-01 18:22:59.743  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/ProgressRequestBody.java
+2019-07-01 18:22:59.749  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/ProgressResponseBody.java
+2019-07-01 18:22:59.756  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/StringUtil.java
+2019-07-01 18:22:59.759  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/pom.xml
+2019-07-01 18:22:59.772  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/ResponseBankingProductList.java
+2019-07-01 18:22:59.788  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/PaginatedResponse.java
+2019-07-01 18:22:59.806  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/LinksPaginated.java
+2019-07-01 18:22:59.818  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/MetaPaginated.java
+2019-07-01 18:22:59.829  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/ResponseBankingProductListData.java
+2019-07-01 18:22:59.864  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProduct.java
+2019-07-01 18:22:59.881  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingEnumProductCategory.java
+2019-07-01 18:22:59.907  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductAdditionalInformation.java
+2019-07-01 18:22:59.919  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/ParamEffective.java
+2019-07-01 18:22:59.935  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/ParamProductCategory.java
+2019-07-01 18:22:59.950  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/ResponseBankingProductById.java
+2019-07-01 18:22:59.966  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BaseResponse.java
+2019-07-01 18:22:59.977  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/Links.java
+2019-07-01 18:22:59.986  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/Meta.java
+2019-07-01 18:23:00.046  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductDetail.java
+2019-07-01 18:23:00.061  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductBundle.java
+2019-07-01 18:23:00.076  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductFeature.java
+2019-07-01 18:23:00.092  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductConstraint.java
+2019-07-01 18:23:00.107  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductEligibility.java
+2019-07-01 18:23:00.134  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductFee.java
+2019-07-01 18:23:00.170  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductDiscount.java
+2019-07-01 18:23:00.190  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductDiscountEligibility.java
+2019-07-01 18:23:00.217  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductDepositRate.java
+2019-07-01 18:23:00.244  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductRateTier.java
+2019-07-01 18:23:00.255  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductRateCondition.java
+2019-07-01 18:23:00.278  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductRateTierSubTier.java
+2019-07-01 18:23:00.302  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/model/BankingProductLendingRate.java
+2019-07-01 18:23:00.362  INFO   --- [           main] a.o.c.c.generator.code.VelocityHelper    : Wrote file: /tmp/outputgen/src/main/java/au/org/consumerdatastandards/client/api/BankingProductsAPI.java
+2019-07-01 18:23:00.363  INFO   --- [           main] a.o.c.c.generator.code.CodeGenerator     : Code Generator output complete
 </pre></div>
 </div>
 </div>

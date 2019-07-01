@@ -26,12 +26,11 @@ Because the Stubs are intended to be a starter project we recommend cloning then
    user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-stubs-java
    user@cds:~/git$ cd cds-stubs-java
    user@cds:~/git/cds-stubs-java$ rm -fr .git
-   user@cds:~/git/cds-stubs-java$ mvn clean spring-boot
    user@cds:~/git/cds-stubs-java$ mvn clean spring-boot:run
     [INFO] Scanning for projects...
     [INFO] 
     [INFO] ------------< au.org.consumerdatastandards:cds-stubs-java >-------------
-    [INFO] Building cds-stubs-java 0.0.1-SNAPSHOT
+    [INFO] Building cds-stubs-java 0.9.3-SNAPSHOT
     [INFO] --------------------------------[ jar ]---------------------------------
     [INFO] 
     [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ cds-stubs-java ---

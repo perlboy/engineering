@@ -15,11 +15,11 @@ If you wish to build the CDS Model Holder from source, this requires:
 Execution
 ^^^^^^^^^^^^^^^^^^^^^
 
-To start the CDS Client CLI execute the Docker command as below:
+To start the CDS Client CLI execute the Docker command as below (this will load payloads from  your local ./custom-payloads directory on boot):
 
 .. code-block:: bash
 
-    user@cds:~$ docker run -p 8080:8080 consumerdatastandardsaustralia/cds-holder-java:0.0.2-SNAPSHOT
+    user@cds:~$ docker run -p 8080:8080 -v "./custom-payloads:/opt/payloads" consumerdatastandardsaustralia/cds-holder-java:0.9.3-SNAPSHOT
     
     #     ___     ___     ___
     #    / __|   |   \   / __|
@@ -70,12 +70,16 @@ To start the CDS Client CLI execute the Docker command as below:
 Manual Build & Run
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``holder-java-spring`` project is currently located within the ``cds-codegen`` repository. To manually build and run the Model Holder with Maven, run:
+The ``cds-holder-java-spring`` project is a modularised Maven build. This includes ``cds-holder-java-spring-server`` and ``cds-holder-java-spring-models``.
 
+As ``cds-holder-java-spring-models`` is used by other artefacts it is recommended to compile and install the modules then execute the spring-boot server.
 .. code-block:: bash
 
-   user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-codegen
-   user@cds:~/git$ cd cds-codegen/support/samples/cds-holder-java-spring
-   user@cds:~/git/cds-codegen/support/samples/cds-holder-java-spring$ mvn clean spring-boot
+   user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-holder-java-spring
+   user@cds:~/git$ cd cds-holder-java-spring
+   user@cds:~/git/cds-holder-java-spring$ mvn clean install
+   user@cds:~/git/cds-holder-java-spring/modules/cds-holder-java-spring-server$ mvn clean spring-boot:run
+
+
 
 

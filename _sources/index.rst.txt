@@ -63,6 +63,7 @@
    :caption: Support Artefacts
    
    Overview <artefacts/support/index>
+   Product Summariser <artefacts/support/product-summariser/index>
    Code Generator <artefacts/support/codegen/index>
    Models <artefacts/support/models/index>
    Swagger Specification <artefacts/support/swagger/index>

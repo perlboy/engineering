@@ -20,7 +20,7 @@ To start the CDS Client CLI execute the Docker command as below:
 
 .. code-block:: bash
 
-    docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.0.2-SNAPSHOT
+    docker run -it consumerdatastandardsaustralia/cds-client-java-cli:0.9.3-SNAPSHOT
     
     #     ___     ___     ___
     #    / __|   |   \   / __|
@@ -29,7 +29,7 @@ To start the CDS Client CLI execute the Docker command as below:
     #  _|"""""|_|"""""|_|"""""|
     #  "`-0-0-'"`-0-0-'"`-0-0-'
     
-    2019-05-10 04:59:15.066  INFO 1 --- [           main] a.o.c.client.cli.CdsClientShell          : Starting CdsClientShell v0.0.2-SNAPSHOT on b78c5f91f96d with PID 1 (/opt/cds-client-java-cli/cli.jar started by root in /)
+    2019-05-10 04:59:15.066  INFO 1 --- [           main] a.o.c.client.cli.CdsClientShell          : Starting CdsClientShell v0.9.3-SNAPSHOT on b78c5f91f96d with PID 1 (/opt/cds-client-java-cli/cli.jar started by root in /)
     2019-05-10 04:59:15.068  INFO 1 --- [           main] a.o.c.client.cli.CdsClientShell          : No active profile set, falling back to default profiles: default
     2019-05-10 04:59:15.913  INFO 1 --- [           main] a.o.c.client.cli.CdsClientShell          : Started CdsClientShell in 1.061 seconds (JVM running for 1.314)
     cds-shell:>
