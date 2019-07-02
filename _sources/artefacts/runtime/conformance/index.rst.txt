@@ -32,3 +32,10 @@ CDS Conformance Suite (cds-conformance)
 
 .. _GitHub: https://github.com/ConsumerDataStandardsAustralia/cds-conformance
 .. _Docker: https://hub.docker.com/r/consumerdatastandardsaustralia/cds-discovery
+
+
+Quick Start
+-----------------
+
+.. include:: quickstart.rst
+   :start-after: start-content

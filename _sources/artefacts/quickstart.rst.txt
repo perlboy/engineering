@@ -34,6 +34,12 @@ Server Stubs
 
 .. include:: server/stubs-java-spring/quickstart.rst
    :start-after: start-content
+   
+Conformance Suite
+----------------------------
+
+.. include:: runtime/conformance/quickstart.rst
+   :start-after: start-content
 
 Product Summariser
 ----------------------------

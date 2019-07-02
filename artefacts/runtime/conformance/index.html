@@ -234,16 +234,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#starting-a-project">Starting a Project</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../quickstart.html#product-summariser">Product Summariser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart.html#conformance-suite">Conformance Suite</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id7">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id8">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id9">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart.html#product-summariser">Product Summariser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id10">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#native-execution">Native Execution</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#execution-in-sandbox">Execution In Sandbox</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart.html#code-generator">Code Generator</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id8">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id11">Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#execution-with-docker">Execution with Docker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id9">Manual Build &amp; Run</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#id12">Manual Build &amp; Run</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../quickstart.html#swagger-generation">Swagger Generation</a></li>
 </ul>
 </li>
@@ -506,7 +512,15 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../register/index.html">Register</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Conformance</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conformance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#requirements">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execution">Execution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-build-run">Manual Build &amp; Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Sandbox</span></p>
 <ul>
@@ -722,6 +736,45 @@ Version</p></td>
 </tr>
 </tbody>
 </table>
+<div class="section" id="quick-start">
+<h2>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to simply run Conformance you only require Docker.</p>
+<p>If you wish to build CDS Conformance this requires:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Java 1.8+</p></li>
+<li><p>Maven</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="execution">
+<h3>Execution<a class="headerlink" href="#execution" title="Permalink to this headline">¶</a></h3>
+<p>To start the CDS Conformance execute the Docker command as below:</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-p</span> <span class="pre">8000:8000</span> <span class="pre">consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT</span> <span class="pre">-b=http://localhost:8080/cds-au/v1</span> <span class="pre">-s</span></code></p>
+<p>This will complete a Conformance Suite test then execute a python SimpleServer install available at <code class="docutils literal notranslate"><span class="pre">http://localhost:8000</span></code>.</p>
+<p>Alternatively you can write out a HTML report output by ommitting the -s command line argument as follows</p>
+<p><code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-v</span> <span class="pre">`pwd`/conformance-result:/opt/cds-conformance/target</span> <span class="pre">consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT</span> <span class="pre">-b=http://localhost:8080/cds-au/v1</span></code></p>
+<p>This will output a HTML report at: <code class="docutils literal notranslate"><span class="pre">conformance-result/site/serenity/index.html</span></code></p>
+</div>
+<div class="section" id="manual-build-run">
+<h3>Manual Build &amp; Run<a class="headerlink" href="#manual-build-run" title="Permalink to this headline">¶</a></h3>
+<p>To manually build and run the Conformance suite, run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-conformance
+user@cds:~/git$ <span class="nb">cd</span> cds-conformance
+user@cds:~/git/cds-conformance$ mvn clean verify -DapiBase<span class="o">=</span>http://localhost:8080/cds-au/v1
+</pre></div>
+</div>
+<p>This will output a Serenity test report in: <strong>target/site/serenity/</strong></p>
+<p>To compile and install without testing (for inclusion in cds-client-cli):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>user@cds:~/git$ git clone https://github.com/ConsumerDataStandardsAustralia/cds-conformance
+user@cds:~/git$ <span class="nb">cd</span> cds-conformance
+user@cds:~/git/cds-conformance$ mvn clean install -DskipTests<span class="o">=</span><span class="nb">true</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
   <div class="section">
