@@ -21,11 +21,11 @@ Timetable
 |                           |                                     |                          |                |                                      |
 +---------------------------+-------------------------------------+--------------------------+----------------+--------------------------------------+
 | Engineering Workshop      | Data61                              | * Technical Architects   | 13 June 2019   | Completed                            |
-| (Sydney)                  | Level 4, 13 Garden Street, Eveleigh | * Software Developers    | 13:00 - 16:30  | "Workshop Material"_                 |
+| (Sydney)                  | Level 4, 13 Garden Street, Eveleigh | * Software Developers    | 13:00 - 16:30  | Material_                            |
 |                           |                                     | * Technical Team Leads   |                |                                      |
 +---------------------------+-------------------------------------+--------------------------+----------------+--------------------------------------+
 
-.. _Workshop Matrial: ../../_static/workshop2.pdf
+.. _Material: ../../_static/workshop2.pdf
 .. note:: We are limiting the number of attendees to 3 per company
 
 
