@@ -26,7 +26,7 @@ author = 'CSIRO Data61'
 # The short X.Y version
 version = '0.1'
 # The full version, including alpha/beta/rc tags
-release = '0.1-alpha'
+release = '0.9.3-SNAPSHOT'
 
 
 # -- General configuration ---------------------------------------------------
