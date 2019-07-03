@@ -8,10 +8,10 @@
   <generator uri="http://ablog.readthedocs.org" version="0.9.4">ABlog</generator>
   <entry xml:base="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml">
     <title type="text">0.9.3 Documentation Updated</title>
-    <id>https://consumerdatastandardsaustralia.github.io/engineering/updates/20190701_0.9.6_documentation_updated.html</id>
+    <id>https://consumerdatastandardsaustralia.github.io/engineering/updates/20190701_0.9.3_documentation_updated.html</id>
     <updated>2019-07-01T00:00:00Z</updated>
     <published>2019-07-01T00:00:00Z</published>
-    <link href="https://consumerdatastandardsaustralia.github.io/engineering/updates/20190701_0.9.6_documentation_updated.html" />
+    <link href="https://consumerdatastandardsaustralia.github.io/engineering/updates/20190701_0.9.3_documentation_updated.html" />
     <author>
       <name>Stuart Low</name>
     </author>
