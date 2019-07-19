@@ -1,0 +1,25 @@
+0.9.3 Artefacts Updated
+================================================
+
+.. post:: July 19, 2019
+   :tags: sprint, engineering
+   :category: sprint-updates
+   :author: fyang1024
+   :language: en
+   :excerpt: 3
+
+Hi there,
+
+Recently I have updated some 0.9.3 artefacts.
+
+The updates are:
+
+    * Added unit tests for regular expressions of CDS data types such as Rate, Amount, Duration etc and fixed some bugs
+    * Added cds-reflection as a separate repo to be used by cds-codegen and cds-conformance
+    * Refactored APIModel and its related parts out of cds-codegen and put into cds-models so that cds-conformance does not need to depend on cds-codegen anymore.
+
+Any feedback is welcome, just open an issue on GitHub.
+
+Thanks,
+
+Fei
