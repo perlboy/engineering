@@ -1,7 +1,7 @@
 0.9.3 Artefacts Updated
 ================================================
 
-.. post:: July 22, 2019
+.. post:: July 19, 2019
    :tags: sprint, engineering
    :category: sprint-updates
    :author: fyang1024
