@@ -14,15 +14,15 @@ Recently I have updated some 0.9.3 artefacts.
 
 The updates are:
 
-    * Added unit tests for regular expressions of CDS data types such as Rate, Amount, Duration etc and fixed some bugs
-    * Added cds-reflection as a separate repo to be used by cds-codegen and cds-conformance
-    * Refactored APIModel and its related parts out of cds-codegen and put into cds-models so that cds-conformance does not need to depend on cds-codegen anymore.
+1. Added unit tests for regular expressions of CDS data types such as Rate, Amount, Duration etc and fixed some bugs
+2. Added cds-reflection as a separate repo to be used by cds-codegen and cds-conformance
+3. Refactored APIModel and its related parts out of cds-codegen and put into cds-models so that cds-conformance does not need to depend on cds-codegen anymore
 
 To get the latest conformance docker image, please run
 
 ``docker pull consumerdatastandardsaustralia/cds-conformance:0.9.3-SNAPSHOT``
 
-and then follow :ref:`_cds-conformance`
+and then follow :ref:`cds-conformance`
 
 Any feedback is welcome, just open an issue on GitHub.
 
