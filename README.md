@@ -1,4 +1,4 @@
-# CDR Engineering Working Group
+# CDR Engineering Working Group [![Build Status](https://travis-ci.com/ConsumerDataStandardsAustralia/engineering.svg?branch=master)](https://travis-ci.com/ConsumerDataStandardsAustralia/engineering)
 
 https://consumerdatastandards.org.au/
 
