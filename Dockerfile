@@ -1,13 +1,10 @@
 FROM nginx
 
-# Update apt
-RUN apt-get update
-
 # Debian has a bug
 RUN mkdir -p /usr/share/man/man1
 
 # Deploy dependencies
-RUN apt-get install -y make python3-pip git graphviz plantuml openjdk-8-jdk-headless
+RUN apt-get update & apt-get install -y make python3-pip git graphviz plantuml openjdk-8-jdk-headless
 
 # Transfer the sphinx over
 COPY . /opt/engineering
