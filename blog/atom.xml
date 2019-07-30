@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Blog</title>
   <id>https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml</id>
-  <updated>2019-07-19T00:00:00Z</updated>
+  <updated>2019-07-30T00:00:00Z</updated>
   <link href="https://consumerdatastandardsaustralia.github.io/engineering/" />
   <link href="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.9.4">ABlog</generator>
+  <entry xml:base="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml">
+    <title type="text">Stuart’s Farewell</title>
+    <id>https://consumerdatastandardsaustralia.github.io/engineering/updates/20190730_stuart_farewell.html</id>
+    <updated>2019-07-30T00:00:00Z</updated>
+    <published>2019-07-30T00:00:00Z</published>
+    <link href="https://consumerdatastandardsaustralia.github.io/engineering/updates/20190730_stuart_farewell.html" />
+    <author>
+      <name>Louis Taborda</name>
+    </author>
+    <content type="html">&lt;p&gt;Most of the CDR community already are aware that Stuart Low has left Data61 to pursue other interests.&lt;/p&gt;
+&lt;p&gt;We thank Stu for his passionate contribution to the CDS discussions and particularly for his work developing the related engineering outputs.&lt;/p&gt;
+&lt;p&gt;The return of Perlboy is already evident and we look forward to his constructive involvement to help make the CDR regime a success!&lt;/p&gt;
+&lt;p&gt;All the best going forward, Stu!&lt;/p&gt;
+</content>
+  </entry>
   <entry xml:base="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml">
     <title type="text">0.9.3 Artefacts Updated</title>
     <id>https://consumerdatastandardsaustralia.github.io/engineering/updates/20190719_0.9.3_artefacts_updated.html</id>
