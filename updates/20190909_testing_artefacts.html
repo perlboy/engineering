@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>All posts &mdash; CDS Engineering 0.9.3-SNAPSHOT documentation</title>
+  <title>Stuart’s Farewell &mdash; CDS Engineering 0.9.3-SNAPSHOT documentation</title>
   
 
   
@@ -657,10 +657,14 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>All posts</li>
+      <li>Stuart’s Farewell</li>
     
     
       <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/updates/20190909_testing_artefacts.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -674,139 +678,64 @@
     
      <div itemprop="articleBody">
       
-  
-  
-  <div class="section">
+  <div class="section" id="stuart-s-farewell">
+<h1>Stuart’s Farewell<a class="headerlink" href="#stuart-s-farewell" title="Permalink to this headline">¶</a></h1>
+<p>Hi All,</p>
+<p>It has been a while, but the CDS Engineering team can now give an update on our progress.</p>
+<p>Firstly, in our team Nick Hamilton is joining us as interim Lead Engineer. Nick will draw upon his previous project delivery experiences in the FinTech/banking sector and his work as an engineer on earlier versions of the CDR Standards and InfoSec to provide technical guidance as we continue to produce artefacts to support the CDR ecosystem. We are also pleased to announce that we are adding an additional Senior Engineer to the team who will supplement Fei’s good work on the Engineering artefacts.</p>
+<p>Over the last few weeks the Engineering team has been working on consolidating the existing 10 git repositories into a single repo. This will make it easier for the community to navigate through the artefacts and to better understand their relationships. It will also enable better dependency and version management and will simplify our continuous integration. The cds-models, api-model and cds-conformance repos have been renamed to reference-test, and it can be found in the java-artefacts repo (<a class="reference external" href="https://github.com/ConsumerDataStandardsAustralia/java-artefacts/">https://github.com/ConsumerDataStandardsAustralia/java-artefacts/</a>).</p>
+<p>Over the next month, the Engineering team will be directing our efforts towards updating all our artefacts to align them with the latest versions of the CDS standards. We expect to release a 0.9.3 version first, and expect subsequent versions (0.9.4, 0.9.5 and 0.9.6) to all be released by 30th of September (subject to there being no significant rule updates that might cause major revisions to the Standards). An important component of our effort is updating the payload validation tool in the reference testing suite.</p>
+<p>For those who are not familiar with our CDS testing suite, it has two components. The first component is a Payload Validation Tool, which checks the payload responses returned from Data Recipients. This tool accepts a JSON file as input (either locally or via a URL) and reports on the “correctness” of the structure of the data. It can be used to check the validity of endpoints defined in the Standards. The second tool – the Parameterised Test Tool - provides a way for testers to supply configuration files that specify custom input parameters to send to CDS endpoints and the response data that is expected to be returned. This tool utilises the open-source Serenity testing library (<a class="reference external" href="http://www.thucydides.info/#/whatisserenity">http://www.thucydides.info/#/whatisserenity</a>) to automatically make endpoint requests with the custom input parameters, and confirms that the responses are as expected. Currently it only supports the Product API, but work will begin on extending it to encompass Customer APIs in November.</p>
+<p>Once the Engineering artefacts have been updated to the latest version of the Standards API, our engineering efforts will focus on implementing support for the InfoSec API into the artefacts. This is expected to be a major update that may take several months of engineering effort.</p>
+<p>While our planned deliverables are currently confined to use in a desktop sandbox, we would welcome any contributions from the community that might extend them to support a cloud-based environment. We have created simple licensing agreements to ensure any individual or corporate contributions are recognised and these Harmony-based agreements will be published on the engineering website in the near future.</p>
+<p>As always, if there are any questions in regards to our artefacts, please feel free to contact the Engineering team, or raise a git issue if you find a bug or want to suggest a feature enhancements.</p>
+<p>We look forward to working with you as we head toward implementing the CDS.</p>
+<p>Nick Hamilton
+Interim Engineering Lead</p>
+</div>
 
-    <h2>
-      Posted in
-      <a href="2019.html">2019</a>
-    </h2>
+  <div class="section">
+  
     
+
+
+<div class="section">
+  <span style="float: left;">
+  
+  
+  <a href="20190730_stuart_farewell.html">
+    <i class="fa fa-arrow-circle-left"></i>
+    Stuart’s Farewell
+  </a>
+  
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right;">
+  
+</div>
+
+  
+  
     <div class="section">
-      <p>
-      
-      
-        09 August 2019
-      
-      - <a href="../updates/20190909_testing_artefacts.html">Stuart’s Farewell</a>
-      </p>
-      
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'cds-engineering';
+        var disqus_identifier = '/updates/20190909_testing_artefacts/';
+        var disqus_title = 'Stuart’s Farewell';
+        var disqus_url = 'https://consumerdatastandardsaustralia.github.io/engineering/updates/20190909_testing_artefacts';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        30 July 2019
-      
-      - <a href="../updates/20190730_stuart_farewell.html">Stuart’s Farewell</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        19 July 2019
-      
-      - <a href="../updates/20190719_0.9.3_artefacts_updated.html">0.9.3 Artefacts Updated</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        01 July 2019
-      
-      - <a href="../updates/20190701_0.9.3_documentation_updated.html">0.9.3 Documentation Updated</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        03 June 2019
-      
-      - <a href="../updates/20190603_sprint6_started.html">Sprint #6 Started</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        05 May 2019
-      
-      - <a href="../updates/20190505_video_update.html">Sprint #3 Engineering Video Update</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        03 May 2019
-      
-      - <a href="../updates/20190503_sprint3_complete.html">Sprint #3 Complete</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        18 April 2019
-      
-      - <a href="../updates/20190418_sprint2_closed.html">Sprint #2 Closed</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        05 April 2019
-      
-      - <a href="../updates/20190405_sprint1_completed.html">Sprint #1 Completed</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        28 March 2019
-      
-      - <a href="../updates/20190328_feedback_round1.html">Feedback Requests Round #1</a>
-      </p>
-      
-    </div>
-    
-    <div class="section">
-      <p>
-      
-      
-        22 March 2019
-      
-      - <a href="../updates/20190322_sprint0_completed.html">Sprint #0 Completed</a>
-      </p>
-      
-    </div>
-    
+  
   </div>
-  
-  
 
      </div>
      
