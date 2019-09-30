@@ -16,6 +16,11 @@
       <name>Nick Hamilton</name>
     </author>
     <content type="html">&lt;p&gt;Hi all,&lt;/p&gt;
+&lt;p&gt;The Engineering team are pleased to announce a new release of our testing artefacts, which have been updated to conform to version 1.0.0 of the Data Standards.&lt;/p&gt;
+&lt;p&gt;The key artefacts of interest in this release are the payload validation tool, available in a &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/ConsumerDataStandardsAustralia/java-artefacts/tree/master/client-cli/&quot;&gt;standalone command line tool&lt;/a&gt; and our parameterised test tool, which is executed as a maven goal and can be found in the reference-test suite &lt;a class=&quot;reference external&quot; href=&quot;https://github.com/ConsumerDataStandardsAustralia/java-artefacts/tree/master/reference-test/&quot;&gt;reference-test suite&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a quick overview of how the two tools work, please refer to these two diagrams:&lt;/p&gt;
+&lt;p&gt;Nick Hamilton
+Interim Engineering Lead&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="https://consumerdatastandardsaustralia.github.io/engineering/blog/atom.xml">
