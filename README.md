@@ -2,11 +2,11 @@
 
 https://consumerdatastandards.org.au/
 
-Data61 has been appointed as technical advisor to the interim data standards body by the Australian federal government, as part of the introduction of [Consumer Data Right](https://www.accc.gov.au/focus-areas/consumer-data-right "ACCC Consumer Data Right webpage") legislation to give Australians greater control over their data.
+CSIRO Data61 has been appointed as the Data Standards Body (DSB) by the Australian federal government, as part of the introduction of [Consumer Data Right](https://www.accc.gov.au/focus-areas/consumer-data-right "ACCC Consumer Data Right webpage") legislation to give Australians greater control over their data.
 
-The Consumer Data Right is intended to apply sector by sector across the whole economy, beginning in the banking sector. The energy and telecommunications sectors will follow. In the first instance Australia’s four major banks have been tasked with implementing an open banking standard by 1 July 2019, and so developing an open banking standard - building on existing open banking and financial API standards - is Data61’s immediate focus. All other banks will need to comply with these standards by 1 July 2020.
+The Consumer Data Right is intended to apply sector by sector across the whole economy, beginning in the banking sector. The energy and telecommunications sectors will follow. In the first instance Australia’s four major banks have been tasked with implementing an open banking standard by 1 July 2019, and so developing an open banking standard - building on existing open banking and financial API standards - is the DSB's immediate focus. All other banks will need to comply with these standards by 1 July 2020.
 
-This work is being delivered by a newly formed team within Data61 - the Consumer Data Standards team - acting as the interim standards body. The work of the team will be overseen by Mr. Andrew Stevens as interim Chair, with industry and consumer advice provided by an Advisory Committee. Data61 will be working closely with the Australian Competition and Consumer Commission (ACCC) as lead regulator of the Consumer Data Right, supported by the Office of the Australian Information Commissioner (OAIC).
+The work of the DSB will be overseen by Mr. Andrew Stevens as the Data Standards Chair, with industry and consumer advice provided by an Advisory Committee. The DSB will be working closely with the Australian Competition and Consumer Commission (ACCC) as lead regulator of the Consumer Data Right, supported by the Office of the Australian Information Commissioner (OAIC).
 
 ## About the Engineering Working Group
 
